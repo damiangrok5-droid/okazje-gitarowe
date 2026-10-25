@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#111318" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="referrer" content="no-referrer">
+<title>Okazje gitarowe – gitary elektryczne</title>
+<link rel="stylesheet" href="style.css?v=202610252237">
+</head>
+<body>
+<header class="top">
+  <h1>Okazje gitarowe <span>– gitary elektryczne</span></h1>
+  <p id="summary" class="muted">Ładowanie…</p>
+</header>
+<main>
+  <section id="metrics" class="metrics"></section>
+  <section class="filters">
+    <div id="views" class="seg" role="tablist"></div>
+    <div class="selects">
+      <label>Sortuj<select id="sort">
+        <option value="deal">Okazja % (malejąco)</option>
+        <option value="rating">Ocena ogólna</option>
+        <option value="total">Cena razem (rosnąco)</option>
+      </select></label>
+      <label>Źródło<select id="src"><option value="all">Wszystkie źródła</option></select></label>
+      <label>Werdykt<select id="verdict">
+        <option value="all">Wszystkie werdykty</option>
+        <option>polecam</option><option>do rozważenia</option><option>nie polecam</option>
+      </select></label>
+    </div>
+    <label class="toggle"><input type="checkbox" id="verified"> Tylko ze zweryfikowaną wartością rynkową</label>
+  </section>
+  <h2 id="count">Oferty</h2>
+  <section id="grid" class="grid"></section>
+  <p class="muted small">Oznaczenia (ulubione, kupione, archiwum) zapisują się w pamięci tej przeglądarki (localStorage) pod stałym ID oferty i nie są nadpisywane przy aktualizacji danych. Są lokalne dla urządzenia.</p>
+  <details class="box"><summary>Metodologia</summary><ul id="method"></ul></details>
+  <details class="box"><summary>Źródła i blokady</summary><ul id="sources"></ul></details>
+</main>
+<footer class="muted small">Dane: OLX.pl, Kleinanzeigen.de, Reverb. Ceny ofertowe, nie transakcyjne. Nie licytowano, nie kupowano i nie kontaktowano się ze sprzedawcami.</footer>
+<script src="app.js?v=202610252237"></script>
+</body>
+</html>

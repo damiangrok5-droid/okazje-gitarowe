@@ -1,0 +1,1071 @@
+{
+ "meta": {
+  "updated": "2026-10-25T22:36+00:00",
+  "fx": {
+   "EUR": 4.3917,
+   "USD": 3.9247,
+   "GBP": 5.2498,
+   "source": "NBP tabela A z 2026-10-23",
+   "url": "https://api.nbp.pl/api/exchangerates/tables/A/?format=json"
+  },
+  "budget": "5000–15000 zł z dostawą",
+  "scope": "tylko gitary elektryczne",
+  "weights": {
+   "cena": 0.2,
+   "stan": 0.1,
+   "sprzedawca": 0.1,
+   "oryginalnosc": 0.1,
+   "grywalnosc": 0.2,
+   "plynnosc": 0.2,
+   "wysylka": 0.1
+  },
+  "sources": {
+   "OLX.pl": "OK (publiczne API ofert)",
+   "Reverb": "OK (publiczne API, filtr: sprzedawcy z UE)",
+   "Kleinanzeigen": "OK (HTML wyszukiwarki i ogłoszeń)",
+   "Allegro": "zablokowane (HTTP 403 / timeout)",
+   "eBay": "zablokowane (HTTP 403); podgląd wyników nie zawiera linków do ofert, więc nie użyto"
+  },
+  "skipped": [
+   "Rickenbacker 330 (2013, Kleinanzeigen, Bonn) – tylko odbiór osobisty",
+   "Gibson Les Paul „Custom Shop 1998” (OLX) – niejasny model, brak wiarygodnej wyceny"
+  ]
+ },
+ "offers": [
+  {
+   "id": "olx-1096526667",
+   "source": "OLX",
+   "url": "https://www.olx.pl/d/oferta/duesenberg-starplayer-tv-CID751-ID1ccUFZ.html",
+   "title": "Duesenberg Starplayer TV z casem",
+   "originalTitle": "Duesenberg starplayer TV.",
+   "description": "Duesenberg Starplayer TV z futerałem, według sprzedawcy w pełni oryginalny. Bardzo krótki opis, brak rocznika i koloru w tekście.",
+   "photo": "https://ireland.apollo.olxcdn.com:443/v1/files/3qa4f5cjwbkl-PL/image;s=800x600",
+   "condition": "Używana, 'wszystko oryginalne' (krótki opis, 4 zdjęcia)",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Janikowo",
+   "currency": "PLN",
+   "priceOriginal": 5200,
+   "shippingOriginal": 80,
+   "price": {
+    "cena": 5200,
+    "wysylka": 80,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 5280
+   },
+   "shippingNote": "Założenie: kurier ok. 80 zł lub odbiór w Janikowie.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 8680.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 17 porównywalnych używanych ofert (OLX 3, Reverb 5, Kleinanzeigen 9), zakres 5490–11860 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=duesenberg%20starplayer%20tv&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-duesenberg-starplayer-tv/"
+    },
+    {
+     "label": "Reverb: 2010 Duesenberg - Starplayer TV - ID 2690 (8682 zł)",
+     "url": "https://reverb.com/item/65999358-2010-duesenberg-starplayer-tv-id-2690"
+    },
+    {
+     "label": "Reverb: Duesenberg Starplayer III Catalina Blue OCCASION (8739 zł)",
+     "url": "https://reverb.com/item/99434694-duesenberg-starplayer-iii-catalina-blue-occasion"
+    },
+    {
+     "label": "Kleinanzeigen: DUESENBERG STARPLAYER TV SURF GREEN, GEBRAUCHT (8739 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/duesenberg-starplayer-tv-surf-green-gebraucht/3364993235-74-2136"
+    }
+   ],
+   "dealPct": 39.2,
+   "validTo": "2026-11-05",
+   "postedOrSince": "2026-09-06T17:32:35+02:00",
+   "scores": {
+    "cena": 9,
+    "stan": 5,
+    "sprzedawca": 6,
+    "oryginalnosc": 6,
+    "grywalnosc": 8,
+    "plynnosc": 7,
+    "wysylka": 7
+   },
+   "overall": 7.2,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: semi-hollow z Grand Vintage + Domino P90 i tremolo Duesenberg – świetna do grania. Odsprzedaż: ok. 40% pod medianą europejskich ofert to największy bufor w zestawieniu, ale opis jest szczątkowy. Najpierw rocznik, numer seryjny i zdjęcia detali.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "olx-950461512",
+   "source": "OLX",
+   "url": "https://www.olx.pl/d/oferta/gitara-music-man-axis-sport-CID751-ID12k2so.html",
+   "title": "Music Man Axis Sport HSS (1998)",
+   "originalTitle": "Gitara Music man Axis Sport",
+   "description": "Music Man Axis Sport z 1998, korpus jesion, układ HSS z rozłączaniem cewek humbuckera, twardy case. Tylko 3 zdjęcia, sprzedawca oferuje więcej na życzenie.",
+   "photo": "https://ireland.apollo.olxcdn.com:443/v1/files/l61wpon3dmsp3-PL/image;s=800x600",
+   "condition": "Dobry stan (wg sprzedawcy), twardy case",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Kielce",
+   "currency": "PLN",
+   "priceOriginal": 6500,
+   "shippingOriginal": 80,
+   "price": {
+    "cena": 6500,
+    "wysylka": 80,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 6580
+   },
+   "shippingNote": "Założenie: kurier ok. 80 zł lub odbiór w Kielcach.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 9890.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 9 porównywalnych używanych ofert (OLX 1, Reverb 7, Kleinanzeigen 1), zakres 7030–12080 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=music%20man%20axis&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-music-man-axis/"
+    },
+    {
+     "label": "Reverb: 2004 Ernie Ball Music Man Axis HH Floyd – Translucent Gold F (9889 zł)",
+     "url": "https://reverb.com/item/101835501-2004-ernie-ball-music-man-axis-hh-floyd-translucent-gold-flamed-maple-top-usa"
+    },
+    {
+     "label": "OLX: Ernie Ball Music Man Axis Roasted Amber Quilt (10000 zł)",
+     "url": "https://www.olx.pl/d/oferta/ernie-ball-music-man-axis-roasted-amber-quilt-CID751-ID1bgIBk.html"
+    },
+    {
+     "label": "Reverb: Music Man Axis 2011 - Translucent Orange (10935 zł)",
+     "url": "https://reverb.com/item/101866923-music-man-axis-2011-translucent-orange"
+    }
+   ],
+   "dealPct": 33.5,
+   "validTo": "2026-10-30",
+   "postedOrSince": "2024-10-08T08:47:15+02:00",
+   "scores": {
+    "cena": 8,
+    "stan": 6,
+    "sprzedawca": 6,
+    "oryginalnosc": 7,
+    "grywalnosc": 8,
+    "plynnosc": 6,
+    "wysylka": 7
+   },
+   "overall": 7.0,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: Axis Sport z gryfem z klonu i HSS to bardzo uniwersalna gitara. Odsprzedaż: ok. 34% pod medianą, ale rynek mały, a ogłoszenie wisi od października 2024. Przy zakupie trzeba poprosić o zdjęcia progów, numeru seryjnego i elektroniki.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "olx-968752789",
+   "source": "OLX",
+   "url": "https://www.olx.pl/d/oferta/gitara-prs-s2-mccarty-594-lake-blue-2022-CID751-ID13yMQZ.html",
+   "title": "PRS S2 McCarty 594 Lake Blue (2022)",
+   "originalTitle": "Gitara PRS S2 McCarty 594 Lake Blue 2022",
+   "description": "PRS S2 McCarty 594, 2022, kolor Lake Blue. Po pełnym serwisie lutniczym ze szlifem progów, drobne ryski na nitro. W pełni oryginalna poza straplockami Schaller. Oryginalny pokrowiec i akcesoria. Możliwość ogrania w Warszawie (Ursynów/Wawer).",
+   "photo": "https://ireland.apollo.olxcdn.com:443/v1/files/lmnmppgs2mn-PL/image;s=800x600",
+   "condition": "Używana, bardzo dobry stan, po serwisie i szlifie progów",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Warszawa",
+   "currency": "PLN",
+   "priceOriginal": 6400,
+   "shippingOriginal": 80,
+   "price": {
+    "cena": 6400,
+    "wysylka": 80,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 6480
+   },
+   "shippingNote": "Założenie: kurier ubezpieczony ok. 80 zł (ogłoszenie bez dostawy OLX) lub odbiór osobisty w Warszawie.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 9550.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 6 porównywalnych używanych ofert (OLX 0, Reverb 3, Kleinanzeigen 3), zakres 7910–12640 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=prs%20s2%20mccarty%20594&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-prs-s2-mccarty-594/"
+    },
+    {
+     "label": "Reverb: 2022 PRS S2 McCarty 594 Singlecut – Music Zoo Exclusive – Qu (9223 zł)",
+     "url": "https://reverb.com/item/94911182-2022-prs-s2-mccarty-594-singlecut-music-zoo-exclusive-quilt-maple-top-emerald-green-black-wrap-burst"
+    },
+    {
+     "label": "Kleinanzeigen: 2024 PRS S2 McCarty 594 Thinline USA Vintage Cherry Mint (9881 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/2024-prs-s2-mccarty-594-thinline-usa-vintage-cherry-mint/3459552386-74-1396"
+    },
+    {
+     "label": "Kleinanzeigen: 2021 PRS S2 McCarty 594 (9218 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/2021-prs-s2-mccarty-594/3349314654-74-2162"
+    }
+   ],
+   "dealPct": 32.1,
+   "validTo": "2026-11-02",
+   "postedOrSince": "2024-12-17T23:22:09+01:00",
+   "scores": {
+    "cena": 8,
+    "stan": 8,
+    "sprzedawca": 7,
+    "oryginalnosc": 8,
+    "grywalnosc": 9,
+    "plynnosc": 7,
+    "wysylka": 8
+   },
+   "overall": 7.9,
+   "verdict": "polecam",
+   "reasoning": "Gra: menzura 24,594\", przystawki 58/15 LT, gryf po szlifie progów – gotowa do grania. Odsprzedaż: S2 McCarty 594 schodzi w UE za ok. 9–10 tys. zł, więc jest bufor ok. 30%. Minus: ogłoszenie wisi od grudnia 2024 – warto sprawdzić, czemu się nie sprzedała.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "olx-1097563397",
+   "source": "OLX",
+   "url": "https://www.olx.pl/d/oferta/esp-e-ii-eclipse-db-vb-CID751-ID1chgnr.html",
+   "title": "ESP E-II Eclipse DB VB (MIJ, 2019)",
+   "originalTitle": "ESP E-II Eclipse DB VB",
+   "description": "ESP E-II Eclipse DB w kolorze Vintage Black, made in Japan, rocznik 2019 (zakup 2021). Mahoń z klonowym topem, wklejany gryf Thin U, heban. Oryginalny twardy futerał ESP. Cena do negocjacji.",
+   "photo": "https://ireland.apollo.olxcdn.com:443/v1/files/adc89c0ayj8i1-PL/image;s=800x600",
+   "condition": "Jak nowa (wg sprzedawcy), twardy futerał ESP",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Warszawa",
+   "currency": "PLN",
+   "priceOriginal": 6700,
+   "shippingOriginal": 80,
+   "price": {
+    "cena": 6700,
+    "wysylka": 80,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 6780
+   },
+   "shippingNote": "Założenie: kurier ok. 80 zł; sprzedawca preferuje odbiór osobisty (Warszawa, Wola).",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 9550.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 14 porównywalnych używanych ofert (OLX 0, Reverb 7, Kleinanzeigen 7), zakres 7420–13370 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=esp%20e-ii%20eclipse&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-esp-e-ii-eclipse/"
+    },
+    {
+     "label": "Reverb: ESP E-II Eclipse FR 2023 - Present - Charcoal Burst (9442 zł)",
+     "url": "https://reverb.com/item/96609935-esp-e-ii-eclipse-fr-2023-present-charcoal-burst"
+    },
+    {
+     "label": "Reverb: ESP E-II Eclipse 2019 - Lemon Burst (9662 zł)",
+     "url": "https://reverb.com/item/102309986-esp-e-ii-eclipse-2019-lemon-burst"
+    },
+    {
+     "label": "Reverb: ESP E-II Eclipse Full Thickness 2022 - Black Natural Burst (9442 zł)",
+     "url": "https://reverb.com/item/102693412-esp-e-ii-eclipse-full-thickness-2022-black-natural-burst"
+    }
+   ],
+   "dealPct": 29.0,
+   "validTo": "2026-11-10",
+   "postedOrSince": "2026-09-11T11:24:32+02:00",
+   "scores": {
+    "cena": 8,
+    "stan": 9,
+    "sprzedawca": 5,
+    "oryginalnosc": 7,
+    "grywalnosc": 9,
+    "plynnosc": 6,
+    "wysylka": 8
+   },
+   "overall": 7.5,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: japońska E-II to poziom wykonania zbliżony do Gibsona USA, gryf Thin U bardzo wygodny. Odsprzedaż: mniejszy rynek niż Gibson/Fender, ale cena ok. 30% pod medianą daje zapas. Ryzyko: konto sprzedawcy założone w sierpniu 2026 – tylko odbiór osobisty z oględzinami i sprawdzeniem numeru seryjnego.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "ka-3328285940",
+   "source": "Kleinanzeigen",
+   "url": "https://www.kleinanzeigen.de/s-anzeige/gretsch-g6120-brian-setzer-hot-rod-von-2007/3328285940-74-993",
+   "title": "Gretsch G6120 Brian Setzer Hot Rod (2007)",
+   "originalTitle": "Gretsch G6120 Brian Setzer Hot Rod von 2007",
+   "description": "Gretsch G6120 Brian Setzer Hot Rod z 2007 (MIJ), przetworniki TV Jones Classic, mechaniki Sperzel, certyfikat. Sprzedawca udostępnia film z gitarą i proponuje wideorozmowę.",
+   "photo": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/be/bedd7849-638b-46b8-a9f1-34ca6bdc1727?rule=$_59.JPG",
+   "condition": "Bardzo dobry (wg sprzedawcy), z certyfikatem",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "50733 Nippes, DE",
+   "currency": "EUR",
+   "priceOriginal": 1800,
+   "shippingOriginal": 50,
+   "price": {
+    "cena": 7905,
+    "wysylka": 220,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 8125
+   },
+   "shippingNote": "Założenie: DHL Paket DE→PL ok. 50 €; sprzedawca akceptuje PayPal/przelew.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 11130.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 15 porównywalnych używanych ofert (OLX 3, Reverb 7, Kleinanzeigen 5), zakres 9000–15370 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=gretsch%206120&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-gretsch-6120/"
+    },
+    {
+     "label": "Reverb: Gretsch Chet Atkins 6120W 1993 - Orange (11133 zł)",
+     "url": "https://reverb.com/item/102552376-gretsch-chet-atkins-6120w-1993-orange"
+    },
+    {
+     "label": "OLX: GRETSCH G6120 Brian Setzer Hot Rod, 2014 rok, gitara elektry (10999 zł)",
+     "url": "https://www.olx.pl/d/oferta/gretsch-g6120-brian-setzer-hot-rod-2014-rok-gitara-elektryczna-CID751-ID1bsa8F.html"
+    },
+    {
+     "label": "OLX: 1993 Gretsch 6120-60 Nashville Orange | TV Jones | Case (10999 zł)",
+     "url": "https://www.olx.pl/d/oferta/1993-gretsch-6120-60-nashville-orange-tv-jones-case-CID751-ID1cvHtP.html"
+    }
+   ],
+   "dealPct": 27.0,
+   "validTo": null,
+   "postedOrSince": null,
+   "scores": {
+    "cena": 8,
+    "stan": 8,
+    "sprzedawca": 8,
+    "oryginalnosc": 8,
+    "grywalnosc": 8,
+    "plynnosc": 7,
+    "wysylka": 5
+   },
+   "overall": 7.5,
+   "verdict": "polecam",
+   "reasoning": "Gra: japoński Gretsch pro-line z TV Jones – topowe brzmienie rockabilly. Odsprzedaż: 6120 trzyma cenę, ok. 27% pod medianą ofert w UE. Plus: PayPal (ochrona kupującego) i wideorozmowa; minus: duży hollowbody to delikatna przesyłka.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "ka-3507923127",
+   "source": "Kleinanzeigen",
+   "url": "https://www.kleinanzeigen.de/s-anzeige/2022-gibson-70s-explorer-in-classic-white/3507923127-74-9387",
+   "title": "Gibson 70s Explorer Classic White (2022)",
+   "originalTitle": "2022 Gibson 70s Explorer in Classic White",
+   "description": "Gibson 70s Explorer 2022, Classic White, 70s Tribute Humbucker, kondensator Orange Drop, futerał, akcesoria i pełne dokumenty. Drobne dingi i lekkie przebarwienia, bez uszkodzeń.",
+   "photo": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/30/30adfa62-0637-4e7e-92e9-02af2e7718fe?rule=$_59.JPG",
+   "condition": "Dobry stan 'player' – drobne dingi, ślady użytkowania",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "78464 Konstanz, DE",
+   "currency": "EUR",
+   "priceOriginal": 1450,
+   "shippingOriginal": 50,
+   "price": {
+    "cena": 6368,
+    "wysylka": 220,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 6588
+   },
+   "shippingNote": "Założenie: DHL Paket DE→PL ok. 50 € (sprzedawca ma 'Versand möglich'), Explorer wymaga dużego kartonu.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 8780.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 40 porównywalnych używanych ofert (OLX 9, Reverb 18, Kleinanzeigen 13), zakres 6360–14270 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=gibson%20explorer&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-gibson-explorer/"
+    },
+    {
+     "label": "Reverb: Gibson Explorer 2010 (8783 zł)",
+     "url": "https://reverb.com/item/98369318-gibson-explorer-2010"
+    },
+    {
+     "label": "Reverb: GIBSON  EXPLORER  2007 - EBONY FULL BLACK (8783 zł)",
+     "url": "https://reverb.com/item/98478324-gibson-explorer-2007-ebony-full-black"
+    },
+    {
+     "label": "OLX: Gibson Explorer Ebony 2005 – Stan Kolekcjonerski, I Właścici (8950 zł)",
+     "url": "https://www.olx.pl/d/oferta/gibson-explorer-ebony-2005-stan-kolekcjonerski-i-wlasciciel-sklep-rocknroll-CID751-ID1cMfha.html"
+    }
+   ],
+   "dealPct": 25.0,
+   "validTo": null,
+   "postedOrSince": null,
+   "scores": {
+    "cena": 6,
+    "stan": 6,
+    "sprzedawca": 7,
+    "oryginalnosc": 8,
+    "grywalnosc": 8,
+    "plynnosc": 7,
+    "wysylka": 5
+   },
+   "overall": 6.8,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: aktualna seria Original z wygodnym Slim Taper. Odsprzedaż: biały Explorer to mniej popularny kolor; ok. 25% pod medianą Explorerów (porównano z ogólną kategorią Explorer – mało ofert 70s). Wysyłka dużego futerału przez granicę to dodatkowy koszt i ryzyko.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "ka-3543548463",
+   "source": "Kleinanzeigen",
+   "url": "https://www.kleinanzeigen.de/s-anzeige/gibson-sg-standard-ebony-schwarz-2021/3543548463-74-4856",
+   "title": "Gibson SG Standard Ebony (2021)",
+   "originalTitle": "Gibson SG Standard Ebony (schwarz) 2021",
+   "description": "SG Standard 2021, Ebony, technicznie bez zarzutu, mały odprysk lakieru z boku (zdjęcie w ogłoszeniu). Oryginalne akcesoria i Gibson Premium Soft Shell Case, nowe struny. Cena do negocjacji (VB), sprzedawca prywatny od 2022.",
+   "photo": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7b/7b9c03bf-9f3b-450a-abb0-e82ee634e7a6?rule=$_59.JPG",
+   "condition": "Dobry, mały odprysk lakieru z boku",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "35781 Weilburg, DE",
+   "currency": "EUR",
+   "priceOriginal": 1099,
+   "shippingOriginal": 50,
+   "price": {
+    "cena": 4826,
+    "wysylka": 220,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 5046
+   },
+   "shippingNote": "Założenie: DHL Paket DE→PL z ubezpieczeniem ok. 50 €; sprzedawca podaje 'Versand möglich', wysyłkę do Polski trzeba potwierdzić.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 6590.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 51 porównywalnych używanych ofert (OLX 15, Reverb 28, Kleinanzeigen 8), zakres 4400–34000 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=gibson%20sg%20standard&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-gibson-sg-standard/"
+    },
+    {
+     "label": "Reverb: Gibson SG Standard Ebony 2010 (6588 zł)",
+     "url": "https://reverb.com/item/102291280-gibson-sg-standard-ebony-2010"
+    },
+    {
+     "label": "OLX: Gibson SG Standard 2025 (6666 zł)",
+     "url": "https://www.olx.pl/d/oferta/gibson-sg-standard-2025-CID751-ID1cGLxK.html"
+    },
+    {
+     "label": "OLX: Gibson sg standard (6500 zł)",
+     "url": "https://www.olx.pl/d/oferta/gibson-sg-standard-CID751-ID14Y2BL.html"
+    }
+   ],
+   "dealPct": 23.4,
+   "validTo": null,
+   "postedOrSince": null,
+   "scores": {
+    "cena": 8,
+    "stan": 6,
+    "sprzedawca": 6,
+    "oryginalnosc": 8,
+    "grywalnosc": 8,
+    "plynnosc": 9,
+    "wysylka": 5
+   },
+   "overall": 7.5,
+   "verdict": "polecam",
+   "reasoning": "Gra: SG Standard z 490R/490T, lekki i wygodny. Odsprzedaż: SG Standard sprzedaje się szybko, cena ok. 23% pod medianą zostawia zapas mimo odprysku. Ryzyko: prywatna sprzedaż przez granicę – tylko płatność z ochroną lub odbiór osobisty.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "olx-968695500",
+   "source": "OLX",
+   "url": "https://www.olx.pl/d/oferta/gibson-les-paul-standard-50s-goldtop-CID751-ID13yxVY.html",
+   "title": "Gibson Les Paul Standard '50s Goldtop (2019)",
+   "originalTitle": "Gibson Les Paul Standard 50's goldtop",
+   "description": "Les Paul Standard '50s Goldtop z 2019, kupiony w Polsce (Elektryczna Dusza) 2 lata temu. Lakier nitro, komplet fabrycznych akcesoriów i papierów. Sprzedawca rozważa też zamianę.",
+   "photo": "https://ireland.apollo.olxcdn.com:443/v1/files/b56bzhsebq3w1-PL/image;s=800x600",
+   "condition": "Używana, komplet fabryczny (multitool, papiery, pasek)",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Bydgoszcz",
+   "currency": "PLN",
+   "priceOriginal": 7400,
+   "shippingOriginal": 80,
+   "price": {
+    "cena": 7400,
+    "wysylka": 80,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 7480
+   },
+   "shippingNote": "Założenie: kurier ok. 80 zł lub odbiór w Bydgoszczy.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 9650.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 26 porównywalnych używanych ofert (OLX 17, Reverb 2, Kleinanzeigen 7), zakres 7900–11110 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=gibson%20les%20paul%20standard%2050s&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-gibson-les-paul-standard-50s/"
+    },
+    {
+     "label": "OLX: Gitara elekktryczna Gibson Les Paul Standard 50 s USA (9600 zł)",
+     "url": "https://www.olx.pl/d/oferta/gitara-elekktryczna-gibson-les-paul-standard-50-s-usa-CID751-ID19S9ZA.html"
+    },
+    {
+     "label": "OLX: Gibson Les Paul Standard 50s Figured Top - USA (9700 zł)",
+     "url": "https://www.olx.pl/d/oferta/gibson-les-paul-standard-50s-figured-top-usa-CID751-ID1cDcC2.html"
+    },
+    {
+     "label": "OLX: Gibson Les Paul Standard 50s (9599 zł)",
+     "url": "https://www.olx.pl/d/oferta/gibson-les-paul-standard-50s-CID751-ID1bvJcR.html"
+    }
+   ],
+   "dealPct": 22.5,
+   "validTo": "2026-11-15",
+   "postedOrSince": "2024-12-17T18:25:53+01:00",
+   "scores": {
+    "cena": 7,
+    "stan": 7,
+    "sprzedawca": 8,
+    "oryginalnosc": 8,
+    "grywalnosc": 9,
+    "plynnosc": 9,
+    "wysylka": 7
+   },
+   "overall": 8.0,
+   "verdict": "polecam",
+   "reasoning": "Gra: aktualny LP Standard 50s z Burstbucker 1/2 i grubszym gryfem 50s – klasyka. Odsprzedaż: najpłynniejszy model w zestawieniu; ok. 22,5% pod medianą używanych, polskie źródło zakupu i papiery ułatwiają weryfikację. Ogłoszenie od grudnia 2024 – sprawdzić stan i ewentualne naprawy.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "reverb-101608010",
+   "source": "Reverb",
+   "url": "https://reverb.com/item/101608010-gibson-es-335-dot-2013-cherry",
+   "title": "Gibson ES-335 Dot Cherry (2013) – po naprawie główki",
+   "originalTitle": "Gibson ES-335 Dot 2013 Cherry",
+   "description": "ES-335 Dot 2013 Cherry, Classic 57. Sprzedawca otwarcie pisze, że główka była (dobrze) naprawiana, gałki wymienione, futerał zastępczy, certyfikat w zestawie.",
+   "photo": "https://rvb-img.reverb.com/i/s--4swd-Hnd--/quality=medium-low,height=800,width=800,fit=contain/308e3b80-8586-453f-8294-9ebede46cca8.jpeg",
+   "condition": "Very Good, ale NAPRAWIANA GŁÓWKA",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Paryż, FR – bassNguitar",
+   "currency": "EUR",
+   "priceOriginal": 2199,
+   "shippingOriginal": 49.5,
+   "price": {
+    "cena": 9657,
+    "wysylka": 217,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 9874
+   },
+   "shippingNote": "Wysyłka do Polski wg Reverb: 49,50 € (Paryż → PL, UE).",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 12740.0,
+   "valueVerified": false,
+   "valueMethod": "Mediana 9 porównywalnych używanych ofert (OLX 0, Reverb 9, Kleinanzeigen 0), zakres 10970–14450 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=gibson%20es-335%20dot&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-gibson-es-335-dot/"
+    },
+    {
+     "label": "Reverb: Gibson Memphis ES-335 Dot P-90 2019 - Ebony (12736 zł)",
+     "url": "https://reverb.com/item/103009383-gibson-memphis-es-335-dot-p-90-2019-ebony"
+    },
+    {
+     "label": "Reverb: Gibson   Es 335 Dot Ebony Black 2023 (12608 zł)",
+     "url": "https://reverb.com/item/92284046-gibson-es-335-dot-ebony-black-2023"
+    },
+    {
+     "label": "Reverb: Gibson ES-335 Dot 2011 Cherry (11853 zł)",
+     "url": "https://reverb.com/item/102434948-gibson-es-335-dot-2011-cherry"
+    }
+   ],
+   "dealPct": 22.5,
+   "validTo": null,
+   "postedOrSince": null,
+   "scores": {
+    "cena": 4,
+    "stan": 4,
+    "sprzedawca": 7,
+    "oryginalnosc": 7,
+    "grywalnosc": 7,
+    "plynnosc": 3,
+    "wysylka": 6
+   },
+   "overall": 5.2,
+   "verdict": "nie polecam",
+   "reasoning": "Gra: po dobrej naprawie główki ES-335 może grać bez zarzutu. Odsprzedaż: naprawa główki mocno obniża wartość i płynność; mediana dotyczy egzemplarzy bez napraw, więc nie da się zweryfikować wartości – nie traktuję tego jako okazji.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "olx-1103703800",
+   "source": "OLX",
+   "url": "https://www.olx.pl/d/oferta/gibson-es-335-50s-demo-CID751-ID1cH1Mc.html",
+   "title": "Gibson ES-335 50s Demo, Vintage Natural (2026)",
+   "originalTitle": "Gibson ES-335 50s Demo",
+   "description": "Tegoroczny Gibson ES-335 '50s (seria ES Standard) w Vintage Natural, pierwszy właściciel, grana tylko w domu. Kupiona w Gibson European Demo Shop – udokumentowane wady kosmetyczne: ślad kleju przy siodełku, nierówne markery boczne, wada wykończenia na rogu główki.",
+   "photo": "https://ireland.apollo.olxcdn.com:443/v1/files/imgfzfrys1un1-PL/image;s=800x600",
+   "condition": "Demo z Gibson European Demo Shop, opisane drobne wady kosmetyczne",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Łódź",
+   "currency": "PLN",
+   "priceOriginal": 9500,
+   "shippingOriginal": 80,
+   "price": {
+    "cena": 9500,
+    "wysylka": 80,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 9580
+   },
+   "shippingNote": "Założenie: kurier ok. 80 zł lub odbiór w Łodzi.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 12300.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 25 porównywalnych używanych ofert (OLX 4, Reverb 14, Kleinanzeigen 7), zakres 6400–16000 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=gibson%20es-335&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-gibson-es-335/"
+    },
+    {
+     "label": "Reverb: Gibson ES 335 1989 - Sunburst (12297 zł)",
+     "url": "https://reverb.com/item/102328513-gibson-es-335-1989-sunburst"
+    },
+    {
+     "label": "Reverb: Gibson Es 335 Sixties cherry 2021 (12060 zł)",
+     "url": "https://reverb.com/item/84550262-gibson-es-335-sixties-cherry-2021"
+    },
+    {
+     "label": "Reverb: Gibson   Es 335 Dot Ebony Black 2023 (12608 zł)",
+     "url": "https://reverb.com/item/92284046-gibson-es-335-dot-ebony-black-2023"
+    }
+   ],
+   "dealPct": 22.1,
+   "validTo": "2026-11-08",
+   "postedOrSince": "2026-10-09T13:10:30+02:00",
+   "scores": {
+    "cena": 7,
+    "stan": 8,
+    "sprzedawca": 7,
+    "oryginalnosc": 9,
+    "grywalnosc": 9,
+    "plynnosc": 8,
+    "wysylka": 7
+   },
+   "overall": 7.9,
+   "verdict": "polecam",
+   "reasoning": "Gra: aktualna seria ES z grubszym gryfem 50s, praktycznie nowa. Odsprzedaż: ES-335 to jeden z najpłynniejszych modeli Gibsona; status 'demo' z dokumentem lekko obniża cenę przy odsprzedaży, ale zakup ok. 23% poniżej mediany używanych to rozsądny bufor. Pakowanie semi-hollow wymaga dobrego futerału.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "ka-3534292119",
+   "source": "Kleinanzeigen",
+   "url": "https://www.kleinanzeigen.de/s-anzeige/gibson-es-335-satin-vintage-burst/3534292119-74-394",
+   "title": "Gibson ES-335 Satin Vintage Burst (2024)",
+   "originalTitle": "Gibson ES 335 Satin Vintage Burst",
+   "description": "ES-335 Satin Vintage Burst kupiona w grudniu 2024, grana bardzo mało w domu, bez dingów. Oryginalny futerał Gibsona i akcesoria. Tylko przedpłata przelewem lub gotówka przy odbiorze, bez PayPal.",
+   "photo": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/93/936f8578-96a2-4913-9cdc-c199d8134990?rule=$_59.JPG",
+   "condition": "Jak nowa, kupiona 12/2024, oryginalny futerał",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "66129 Bübingen, DE",
+   "currency": "EUR",
+   "priceOriginal": 2100,
+   "shippingOriginal": 50,
+   "price": {
+    "cena": 9223,
+    "wysylka": 220,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 9443
+   },
+   "shippingNote": "Założenie: ubezpieczony DHL ok. 50 € (sprzedawca oferuje wysyłkę na koszt kupującego).",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 11860.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 10 porównywalnych używanych ofert (OLX 1, Reverb 5, Kleinanzeigen 4), zakres 9440–13830 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=gibson%20es%20335%20satin&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-gibson-es-335-satin/"
+    },
+    {
+     "label": "Reverb: Gibson ES-335 Satin Faded Cherry 2023 (11858 zł)",
+     "url": "https://reverb.com/item/94439146-gibson-es-335-satin-faded-cherry-2023"
+    },
+    {
+     "label": "Kleinanzeigen: Gibson ES 335 Memphis Satin Cherry (11853 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/gibson-es-335-memphis-satin-cherry/3277810550-74-1656"
+    },
+    {
+     "label": "OLX: Gibson ES335 Block Satin Cherry 2017 (11999 zł)",
+     "url": "https://www.olx.pl/d/oferta/gibson-es335-block-satin-cherry-2017-CID751-ID1cd424.html"
+    }
+   ],
+   "dealPct": 20.4,
+   "validTo": null,
+   "postedOrSince": null,
+   "scores": {
+    "cena": 7,
+    "stan": 9,
+    "sprzedawca": 6,
+    "oryginalnosc": 8,
+    "grywalnosc": 9,
+    "plynnosc": 8,
+    "wysylka": 4
+   },
+   "overall": 7.5,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: praktycznie nowa ES-335. Odsprzedaż: płynny model, a ok. 20% pod medianą satynowych ES-335 to solidny, choć nie wyjątkowy bufor. Przedpłata przelewem do prywatnej osoby za granicą bez ochrony – tylko z odbiorem osobistym.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "olx-1104953667",
+   "source": "OLX",
+   "url": "https://www.olx.pl/d/oferta/gibson-explorer-antiqe-natural-500t-496r-CID751-ID1cMgWl.html",
+   "title": "Gibson Explorer 2019, Antique Natural",
+   "originalTitle": "Gibson Explorer Antiqe Natural 500T/496R",
+   "description": "Gibson Explorer z 2019, Antique Natural, używany w domu. Przystawki 500T/496R, mahoń, palisander, profil Slim Taper. Wszystkie dokumenty w komplecie, możliwość ogrania w Krakowie.",
+   "photo": "https://ireland.apollo.olxcdn.com:443/v1/files/q8gnhlz3haig2-PL/image;s=800x600",
+   "condition": "Normalne ślady użytkowania, komplet dokumentów",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Kraków",
+   "currency": "PLN",
+   "priceOriginal": 6990,
+   "shippingOriginal": 80,
+   "price": {
+    "cena": 6990,
+    "wysylka": 80,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 7070
+   },
+   "shippingNote": "Założenie: kurier ok. 80 zł lub odbiór w Krakowie.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 8780.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 40 porównywalnych używanych ofert (OLX 9, Reverb 18, Kleinanzeigen 13), zakres 6360–14270 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=gibson%20explorer&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-gibson-explorer/"
+    },
+    {
+     "label": "Reverb: Gibson Explorer 2010 (8783 zł)",
+     "url": "https://reverb.com/item/98369318-gibson-explorer-2010"
+    },
+    {
+     "label": "Reverb: GIBSON  EXPLORER  2007 - EBONY FULL BLACK (8783 zł)",
+     "url": "https://reverb.com/item/98478324-gibson-explorer-2007-ebony-full-black"
+    },
+    {
+     "label": "OLX: Gibson Explorer Ebony 2005 – Stan Kolekcjonerski, I Właścici (8950 zł)",
+     "url": "https://www.olx.pl/d/oferta/gibson-explorer-ebony-2005-stan-kolekcjonerski-i-wlasciciel-sklep-rocknroll-CID751-ID1cMfha.html"
+    }
+   ],
+   "dealPct": 19.5,
+   "validTo": "2026-11-13",
+   "postedOrSince": "2026-10-14T20:54:02+02:00",
+   "scores": {
+    "cena": 6,
+    "stan": 7,
+    "sprzedawca": 7,
+    "oryginalnosc": 8,
+    "grywalnosc": 8,
+    "plynnosc": 8,
+    "wysylka": 7
+   },
+   "overall": 7.3,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: klasyczny Explorer z mocnymi 500T/496R, wygodny Slim Taper. Odsprzedaż: Gibson USA z dokumentami łatwo się sprzedaje; ok. 20% pod medianą to umiarkowany bufor. Rozmiar futerału utrudnia wysyłkę – najlepiej odbiór.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "reverb-102803889",
+   "source": "Reverb",
+   "url": "https://reverb.com/item/102803889-gibson-sg-standard-61-2025-as-new",
+   "title": "Gibson SG Standard '61 (2025)",
+   "originalTitle": "Gibson SG Standard '61 2025 as new",
+   "description": "SG Standard '61 z 2025 w stanie jak nowy, z twardym futerałem. Sprzedawca z Francji ze statusem Preferred Seller, możliwość składania ofert.",
+   "photo": "https://rvb-img.reverb.com/i/s--NipFMakW--/quality=medium-low,height=800,width=800,fit=contain/06b9de85-43ba-4d0e-a08d-9081b748fad9.jpg",
+   "condition": "Excellent (Reverb), 'as new', twardy futerał",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Francja – Fred's Gear Locker",
+   "currency": "EUR",
+   "priceOriginal": 1249,
+   "shippingOriginal": 49,
+   "price": {
+    "cena": 5485,
+    "wysylka": 215,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 5700
+   },
+   "shippingNote": "Wysyłka do Polski wg Reverb: 49 € (Francja → PL, UE, bez cła i VAT importowego).",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 6920.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 9 porównywalnych używanych ofert (OLX 0, Reverb 5, Kleinanzeigen 4), zakres 6150–8560 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=gibson%20sg%20standard%2061&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-gibson-sg-standard-61/"
+    },
+    {
+     "label": "Reverb: Gibson SG Standard 61 stopbar, Vintage cherry sunburst | DEM (6915 zł)",
+     "url": "https://reverb.com/item/102291272-gibson-sg-standard-61-stopbar-vintage-cherry-sunburst-demo"
+    },
+    {
+     "label": "Kleinanzeigen: 2024 Gibson SG Standard ’61 Vintage Cherry | USA BurstBucker (6803 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/2024-gibson-sg-standard-61-vintage-cherry-usa-burstbucker/3489536474-74-12892"
+    },
+    {
+     "label": "Reverb: Gibson SG Standard '61 with Stoptail 2019 - Present - Vintag (7093 zł)",
+     "url": "https://reverb.com/item/102957192-gibson-sg-standard-61-with-stoptail-2019-present-vintage-cherry"
+    }
+   ],
+   "dealPct": 17.6,
+   "validTo": null,
+   "postedOrSince": null,
+   "scores": {
+    "cena": 6,
+    "stan": 9,
+    "sprzedawca": 8,
+    "oryginalnosc": 8,
+    "grywalnosc": 8,
+    "plynnosc": 9,
+    "wysylka": 8
+   },
+   "overall": 7.9,
+   "verdict": "polecam",
+   "reasoning": "Gra: aktualny SG '61 z cienkim gryfem 60s i Burstbucker 61. Odsprzedaż: bardzo płynny model; ok. 18% pod medianą używanych w UE plus ochrona kupującego Reverb to najbezpieczniejsza pozycja w zestawieniu. Można złożyć ofertę.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "olx-1103772063",
+   "source": "OLX",
+   "url": "https://www.olx.pl/d/oferta/music-man-jp-6-2002-usa-perla-bialy-kruk-CID751-ID1cHjxd.html",
+   "title": "Music Man JP6 (2002, USA), Pearl",
+   "originalTitle": "Music Man Jp 6  2002 USA PERŁA Biały Kruk",
+   "description": "Ernie Ball Music Man John Petrucci 6 z 2002 r. (San Luis Obispo), wczesna specyfikacja przetworników. Ogłoszenie z 12 zdjęciami, cena stała.",
+   "photo": "https://ireland.apollo.olxcdn.com:443/v1/files/9ttela2v91or2-PL/image;s=800x600",
+   "condition": "Używana (szczegóły stanu w ogłoszeniu)",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Gdańsk",
+   "currency": "PLN",
+   "priceOriginal": 8888,
+   "shippingOriginal": 80,
+   "price": {
+    "cena": 8888,
+    "wysylka": 80,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 8968
+   },
+   "shippingNote": "Założenie: kurier ok. 80 zł lub odbiór w Gdańsku.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 10000.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 9 porównywalnych używanych ofert (OLX 1, Reverb 8, Kleinanzeigen 0), zakres 9130–13390 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=music%20man%20jp6&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-music-man-jp6/"
+    },
+    {
+     "label": "OLX: Music Man JP6 Piezo ,Gibson, Fender  Ibanez. (9999 zł)",
+     "url": "https://www.olx.pl/d/oferta/music-man-jp6-piezo-gibson-fender-ibanez-CID751-ID1cFQOI.html"
+    },
+    {
+     "label": "Reverb: Ernie Ball Music Man John Petrucci Signature JP6 2014 (10097 zł)",
+     "url": "https://reverb.com/item/103190549-ernie-ball-music-man-john-petrucci-signature-jp6-2014"
+    },
+    {
+     "label": "Reverb: Ernie Ball Music Man   John Petrucci Jp 6 Sol ID Black (9703 zł)",
+     "url": "https://reverb.com/item/92389634-ernie-ball-music-man-john-petrucci-jp-6-sol-id-black"
+    }
+   ],
+   "dealPct": 10.3,
+   "validTo": "2026-11-08",
+   "postedOrSince": "2026-10-09T18:43:47+02:00",
+   "scores": {
+    "cena": 5,
+    "stan": 7,
+    "sprzedawca": 7,
+    "oryginalnosc": 8,
+    "grywalnosc": 9,
+    "plynnosc": 6,
+    "wysylka": 7
+   },
+   "overall": 6.9,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: JP6 to świetny instrument (piezo, tremolo, wygodny gryf). Odsprzedaż: niszowy rynek fanów Petrucciego; ok. 11% poniżej mediany ofert to za mało na okazję po opłatach i ryzyku. Opis marketingowy ('biały kruk') przesadzony – dobra cena, nie okazja.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "reverb-92389634",
+   "source": "Reverb",
+   "url": "https://reverb.com/item/92389634-ernie-ball-music-man-john-petrucci-jp-6-sol-id-black",
+   "title": "Music Man JP6 Sol ID Black",
+   "originalTitle": "Ernie Ball Music Man   John Petrucci Jp 6 Sol ID Black",
+   "description": "Music Man John Petrucci JP6 w Sol ID Black, sklep MUSIC WORKS (Legnano, IT, Preferred Seller). Testowana, lekkie rysy, twardy futerał, 12 miesięcy gwarancji i 14 dni na wymianę.",
+   "photo": "https://rvb-img.reverb.com/i/s--YaZElmAM--/quality=medium-low,height=800,width=800,fit=contain/xmepznvl6jhxex7m1plk.jpg",
+   "condition": "Good – lekkie rysy, sprawdzona, 12 mies. gwarancji sklepu",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Legnano, IT – MUSIC WORKS",
+   "currency": "EUR",
+   "priceOriginal": 2209.5,
+   "shippingOriginal": 33,
+   "price": {
+    "cena": 9703,
+    "wysylka": 145,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 9848
+   },
+   "shippingNote": "Wysyłka do Polski wg Reverb: 33 € (Włochy → PL, UE).",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 10000.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 9 porównywalnych używanych ofert (OLX 2, Reverb 7, Kleinanzeigen 0), zakres 8890–13390 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=music%20man%20jp6&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-music-man-jp6/"
+    },
+    {
+     "label": "OLX: Music Man JP6 Piezo ,Gibson, Fender  Ibanez. (9999 zł)",
+     "url": "https://www.olx.pl/d/oferta/music-man-jp6-piezo-gibson-fender-ibanez-CID751-ID1cFQOI.html"
+    },
+    {
+     "label": "Reverb: Ernie Ball Music Man John Petrucci Signature JP6 2014 (10097 zł)",
+     "url": "https://reverb.com/item/103190549-ernie-ball-music-man-john-petrucci-signature-jp6-2014"
+    },
+    {
+     "label": "Reverb: Ernie Ball Music Man  JP6 2001 (9662 zł)",
+     "url": "https://reverb.com/item/101834676-ernie-ball-music-man-jp6-2001"
+    }
+   ],
+   "dealPct": 1.5,
+   "validTo": null,
+   "postedOrSince": null,
+   "scores": {
+    "cena": 3,
+    "stan": 7,
+    "sprzedawca": 9,
+    "oryginalnosc": 9,
+    "grywalnosc": 9,
+    "plynnosc": 6,
+    "wysylka": 8
+   },
+   "overall": 6.9,
+   "verdict": "nie polecam",
+   "reasoning": "Gra: świetny JP6 z gwarancją sklepu. Odsprzedaż: cena praktycznie równa medianie (ok. 1% poniżej), więc to uczciwa cena rynkowa, a nie okazja. Ma sens tylko do grania.",
+   "firstSeen": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-25T22:36+00:00",
+   "status": "aktywne"
+  }
+ ]
+}
