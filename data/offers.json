@@ -24,7 +24,7 @@
    "Reverb": "OK (publiczne API, filtr: sprzedawcy z UE)",
    "Kleinanzeigen": "OK (HTML wyszukiwarki i ogłoszeń)",
    "Allegro": "zablokowane (HTTP 403, sprawdzono 2026-10-26)",
-   "eBay": "zablokowane (HTTP 403, sprawdzono 2026-10-26)"
+   "eBay": "wyłączone – brak kluczy eBay Browse API (EBAY_CLIENT_ID / EBAY_CLIENT_SECRET); strony eBay zwracają HTTP 403 (sprawdzono 2026-10-26)"
   },
   "skipped": [
    "Rickenbacker 330 (2013, Kleinanzeigen, Bonn) – tylko odbiór osobisty",
@@ -55,6 +55,18 @@
     "reason": "OLX API: HTTP 410 Gone (ogłoszenie zakończone/usunięte)",
     "removedAt": "2026-10-26T17:20+00:00"
    }
+  ],
+  "types": [
+   "Semi-hollow / hollow",
+   "Offset",
+   "SG",
+   "Explorer / V / kształty",
+   "Tele / T",
+   "Superstrat",
+   "Strat / ST",
+   "Double-cut (PRS)",
+   "Les Paul / LP",
+   "Inne"
   ]
  },
  "offers": [
@@ -125,7 +137,9 @@
    "reasoning": "Gra: semi-hollow z Grand Vintage + Domino P90 i tremolo Duesenberg – świetna do grania. Odsprzedaż: ok. 40% pod medianą europejskich ofert to największy bufor w zestawieniu, ale opis jest szczątkowy. Najpierw rocznik, numer seryjny i zdjęcia detali.",
    "firstSeen": "2026-10-25T22:36+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Semi-hollow / hollow",
+   "brand": "Duesenberg"
   },
   {
    "id": "olx-950461512",
@@ -194,7 +208,9 @@
    "reasoning": "Gra: Axis Sport z gryfem z klonu i HSS to bardzo uniwersalna gitara. Odsprzedaż: ok. 34% pod medianą, ale rynek mały, a ogłoszenie wisi od października 2024. Przy zakupie trzeba poprosić o zdjęcia progów, numeru seryjnego i elektroniki.",
    "firstSeen": "2026-10-25T22:36+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Superstrat",
+   "brand": "Music Man"
   },
   {
    "id": "olx-968752789",
@@ -263,7 +279,9 @@
    "reasoning": "Gra: menzura 24,594\", przystawki 58/15 LT, gryf po szlifie progów – gotowa do grania. Odsprzedaż: S2 McCarty 594 schodzi w UE za ok. 9–10 tys. zł, więc jest bufor ok. 30%. Minus: ogłoszenie wisi od grudnia 2024 – warto sprawdzić, czemu się nie sprzedała.",
    "firstSeen": "2026-10-25T22:36+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Double-cut (PRS)",
+   "brand": "PRS"
   },
   {
    "id": "ka-3535370709",
@@ -332,7 +350,9 @@
    "reasoning": "Gra: amerykański CE24 – 24 progi, tremolo PRS, wygodny gryf, przetworniki 57/08 z wyższej półki niż w seriach S2/SE. Odsprzedaż: ok. 29% pod medianą porównywalnych używanych CE24 w PL/UE, a cena właśnie spadła i nadal jest do negocjacji; CE24 sprzedaje się nieco wolniej niż Custom 24, stąd płynność 7. Ryzyko: prywatna sprzedaż przez granicę bez 'Sicher bezahlen' i bez rękojmi – poprosić o numer seryjny (weryfikacja roku i modelu), zdjęcia progów, płacić z ochroną lub odebrać osobiście.",
    "firstSeen": "2026-10-26T17:20+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Double-cut (PRS)",
+   "brand": "PRS"
   },
   {
    "id": "olx-1097563397",
@@ -401,7 +421,9 @@
    "reasoning": "Gra: japońska E-II to poziom wykonania zbliżony do Gibsona USA, gryf Thin U bardzo wygodny. Odsprzedaż: mniejszy rynek niż Gibson/Fender, ale cena ok. 30% pod medianą daje zapas. Ryzyko: konto sprzedawcy założone w sierpniu 2026 – tylko odbiór osobisty z oględzinami i sprawdzeniem numeru seryjnego.",
    "firstSeen": "2026-10-25T22:36+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Les Paul / LP",
+   "brand": "ESP"
   },
   {
    "id": "ka-3494133621",
@@ -470,7 +492,9 @@
    "reasoning": "Gra: ta sama platforma co S2 McCarty 594 z OLX – menzura 24,594\", 58/15 S z rozłączaniem cewek, lekka (3,38 kg). Odsprzedaż: ok. 29% pod medianą używanych S2 594 w UE, a cena jest jeszcze do negocjacji. Ryzyko: prywatna sprzedaż przez granicę bez 'Sicher bezahlen' i tylko gigbag – płatność z ochroną lub odbiór osobisty, poprosić o numer seryjny.",
    "firstSeen": "2026-10-26T07:17+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Double-cut (PRS)",
+   "brand": "PRS"
   },
   {
    "id": "ka-3328285940",
@@ -539,7 +563,9 @@
    "reasoning": "Gra: japoński Gretsch pro-line z TV Jones – topowe brzmienie rockabilly. Odsprzedaż: 6120 trzyma cenę, ok. 27% pod medianą ofert w UE. Plus: PayPal (ochrona kupującego) i wideorozmowa; minus: duży hollowbody to delikatna przesyłka.",
    "firstSeen": "2026-10-25T22:36+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Semi-hollow / hollow",
+   "brand": "Gretsch"
   },
   {
    "id": "ka-3507923127",
@@ -608,7 +634,9 @@
    "reasoning": "Gra: aktualna seria Original z wygodnym Slim Taper. Odsprzedaż: biały Explorer to mniej popularny kolor; ok. 25% pod medianą Explorerów (porównano z ogólną kategorią Explorer – mało ofert 70s). Wysyłka dużego futerału przez granicę to dodatkowy koszt i ryzyko.",
    "firstSeen": "2026-10-25T22:36+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Explorer / V / kształty",
+   "brand": "Gibson"
   },
   {
    "id": "ka-3552220245",
@@ -677,7 +705,9 @@
    "reasoning": "Gra: klasyczny SG Standard (mahoń, dwa humbuckery, lekki i szybki gryf). Odsprzedaż: ok. 24% pod medianą używanych SG Standard, a model jest bardzo płynny. Ryzyko: brak roku i numeru seryjnego w ogłoszeniu, młode konto prywatne, preferowany odbiór osobisty i brak gwarancji – trzeba poprosić o zdjęcie numeru seryjnego/główki i potwierdzić wysyłkę do PL; dopiero wtedy warto.",
    "firstSeen": "2026-10-26T17:20+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "SG",
+   "brand": "Gibson"
   },
   {
    "id": "ka-3543548463",
@@ -746,7 +776,9 @@
    "reasoning": "Gra: SG Standard z 490R/490T, lekki i wygodny. Odsprzedaż: SG Standard sprzedaje się szybko, cena ok. 23% pod medianą zostawia zapas mimo odprysku. Ryzyko: prywatna sprzedaż przez granicę – tylko płatność z ochroną lub odbiór osobisty.",
    "firstSeen": "2026-10-25T22:36+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "SG",
+   "brand": "Gibson"
   },
   {
    "id": "olx-968695500",
@@ -815,7 +847,9 @@
    "reasoning": "Gra: aktualny LP Standard 50s z Burstbucker 1/2 i grubszym gryfem 50s – klasyka. Odsprzedaż: najpłynniejszy model w zestawieniu; ok. 22,5% pod medianą używanych, polskie źródło zakupu i papiery ułatwiają weryfikację. Ogłoszenie od grudnia 2024 – sprawdzić stan i ewentualne naprawy.",
    "firstSeen": "2026-10-25T22:36+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Les Paul / LP",
+   "brand": "Gibson"
   },
   {
    "id": "reverb-101608010",
@@ -884,7 +918,9 @@
    "reasoning": "Gra: po dobrej naprawie główki ES-335 może grać bez zarzutu. Odsprzedaż: naprawa główki mocno obniża wartość i płynność; mediana dotyczy egzemplarzy bez napraw, więc nie da się zweryfikować wartości – nie traktuję tego jako okazji.",
    "firstSeen": "2026-10-25T22:36+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Semi-hollow / hollow",
+   "brand": "Gibson"
   },
   {
    "id": "olx-1103703800",
@@ -953,7 +989,9 @@
    "reasoning": "Gra: aktualna seria ES z grubszym gryfem 50s, praktycznie nowa. Odsprzedaż: ES-335 to jeden z najpłynniejszych modeli Gibsona; status 'demo' z dokumentem lekko obniża cenę przy odsprzedaży, ale zakup ok. 23% poniżej mediany używanych to rozsądny bufor. Pakowanie semi-hollow wymaga dobrego futerału.",
    "firstSeen": "2026-10-25T22:36+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Semi-hollow / hollow",
+   "brand": "Gibson"
   },
   {
    "id": "ka-3534292119",
@@ -1022,7 +1060,9 @@
    "reasoning": "Gra: praktycznie nowa ES-335. Odsprzedaż: płynny model, a ok. 20% pod medianą satynowych ES-335 to solidny, choć nie wyjątkowy bufor. Przedpłata przelewem do prywatnej osoby za granicą bez ochrony – tylko z odbiorem osobistym.",
    "firstSeen": "2026-10-25T22:36+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Semi-hollow / hollow",
+   "brand": "Gibson"
   },
   {
    "id": "olx-1107293963",
@@ -1091,7 +1131,9 @@
    "reasoning": "Gra: aktualny LP Standard '60s z cieńszym gryfem Slim Taper i 60s Burstbuckerami. Odsprzedaż: jeden z najpłynniejszych modeli Gibsona, ale ok. 15% pod medianą to umiarkowany bufor – sensownie dopiero po negocjacji (cena 'do negocjacji'). Polski sprzedawca z kontem od 2021, papiery i sklep zakupu ułatwiają weryfikację.",
    "firstSeen": "2026-10-26T07:17+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Les Paul / LP",
+   "brand": "Gibson"
   },
   {
    "id": "olx-1103772063",
@@ -1160,7 +1202,9 @@
    "reasoning": "Gra: JP6 to świetny instrument (piezo, tremolo, wygodny gryf). Odsprzedaż: niszowy rynek fanów Petrucciego; ok. 11% poniżej mediany ofert to za mało na okazję po opłatach i ryzyku. Opis marketingowy ('biały kruk') przesadzony – dobra cena, nie okazja.",
    "firstSeen": "2026-10-25T22:36+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Superstrat",
+   "brand": "Music Man"
   },
   {
    "id": "reverb-92389634",
@@ -1229,7 +1273,9 @@
    "reasoning": "Gra: świetny JP6 z gwarancją sklepu. Odsprzedaż: cena praktycznie równa medianie (ok. 1% poniżej), więc to uczciwa cena rynkowa, a nie okazja. Ma sens tylko do grania.",
    "firstSeen": "2026-10-25T22:36+00:00",
    "lastChecked": "2026-10-26T17:20+00:00",
-   "status": "aktywne"
+   "status": "aktywne",
+   "type": "Superstrat",
+   "brand": "Music Man"
   }
  ]
 }

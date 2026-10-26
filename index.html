@@ -3,52 +3,127 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#111318" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Okazje">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="referrer" content="no-referrer">
 <title>Okazje gitarowe – gitary elektryczne</title>
-<link rel="stylesheet" href="style.css?v=607533af4a">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<script>try{var t=localStorage.getItem("okg-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="style.css?v=391be1f7dc">
 </head>
 <body>
-<header class="top">
-  <h1>Okazje gitarowe <span>– gitary elektryczne</span></h1>
-  <p id="summary" class="muted">Ładowanie…</p>
-</header>
-<main>
-  <section id="metrics" class="metrics"></section>
-  <section class="filters">
-    <div id="views" class="seg" role="tablist"></div>
-    <div class="selects">
-      <label>Sortuj<select id="sort">
-        <option value="new" selected>Najnowsze (pierwsze pojawienie się)</option>
-        <option value="deal">Okazja % (malejąco)</option>
-        <option value="rating">Ocena ogólna</option>
-        <option value="total">Cena razem (rosnąco)</option>
-      </select></label>
-      <label>Źródło<select id="src"><option value="all">Wszystkie źródła</option></select></label>
-      <label>Werdykt<select id="verdict">
-        <option value="all">Wszystkie werdykty</option>
-        <option>polecam</option><option>do rozważenia</option><option>nie polecam</option>
-      </select></label>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="m9.5 14 2 2 3.5-3.5"/></symbol>
+    <symbol id="i-archive" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="5" rx="1.5"/><path d="M5 9v10h14V9M10 13h4"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5H5V6h5"/></symbol>
+    <symbol id="i-auto" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="m21 16-5-5-8 8"/></symbol>
+  </defs>
+</svg>
+
+<header class="hero">
+  <div class="hero-row">
+    <div class="hero-text">
+      <h1>Okazje gitarowe</h1>
+      <p id="summary" class="sub">Ładowanie ofert…</p>
     </div>
+    <button type="button" id="theme" class="icon-btn" aria-label="Motyw: automatyczny"><svg class="ic"><use href="#i-auto"/></svg></button>
+  </div>
+  <div id="metrics" class="metrics" aria-label="Podsumowanie"></div>
+</header>
+
+<div id="bar" class="bar">
+  <form id="searchForm" class="search" role="search" autocomplete="off">
+    <label for="q" class="sr-only">Szukaj ofert</label>
+    <div class="field">
+      <svg class="ic ic-field" aria-hidden="true"><use href="#i-search"/></svg>
+      <input id="q" type="search" enterkeyhint="search" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Model lub marka">
+    </div>
+    <button type="submit" class="btn btn-fill" id="searchBtn">Szukaj</button>
+    <button type="button" class="btn btn-tint" id="openFilters" aria-haspopup="dialog" aria-controls="sheet" aria-label="Filtry">
+      <svg class="ic" aria-hidden="true"><use href="#i-sliders"/></svg><span class="btn-label">Filtry</span><span id="fbadge" class="badge" hidden></span>
+    </button>
+  </form>
+  <div id="views" class="seg" role="radiogroup" aria-label="Widok"></div>
+</div>
+
+<main id="main">
+  <div class="resbar">
+    <p id="count" class="count" role="status" aria-live="polite">Ładowanie…</p>
+    <label class="sort"><span class="sr-only">Sortowanie</span>
+      <select id="sort">
+        <option value="new">Najnowsze</option>
+        <option value="deal">Największa okazja</option>
+        <option value="rating">Najwyższa ocena</option>
+        <option value="total">Najtańsze</option>
+        <option value="totalDesc">Najdroższe</option>
+      </select>
+    </label>
+  </div>
+  <div id="chips" class="chips" aria-label="Aktywne filtry"></div>
+  <section id="grid" class="grid" aria-busy="true"></section>
+
+  <section class="info">
     <p id="store" class="store">Sprawdzanie zapisu oznaczeń…</p>
-    <label class="toggle"><input type="checkbox" id="verified"> Tylko ze zweryfikowaną wartością rynkową</label>
+    <details class="panel" id="mbox"><summary><span>Kopia oznaczeń</span><svg class="ic chev" aria-hidden="true"><use href="#i-chev"/></svg></summary>
+      <div class="panel-body">
+        <p class="note">Oznaczenia (ulubione, kupione, archiwum) zapisują się w tej przeglądarce (localStorage + kopia w cookie) pod stałym ID oferty i nie są nadpisywane przy aktualizacji danych. Żeby przenieść je na inne urządzenie, skopiuj kod.</p>
+        <label for="mcode" class="lbl">Twój kod oznaczeń</label>
+        <textarea id="mcode" rows="3" readonly></textarea>
+        <button type="button" id="mcopy" class="btn btn-tint">Kopiuj kod</button>
+        <label for="min" class="lbl">Wklej kod z innego urządzenia lub z aplikacji</label>
+        <textarea id="min" rows="3" placeholder="OKG1:…"></textarea>
+        <div class="row"><button type="button" id="mimport" class="btn btn-tint">Importuj</button><span id="mmsg" class="note" role="status"></span></div>
+      </div>
+    </details>
+    <details class="panel"><summary><span>Metodologia</span><svg class="ic chev" aria-hidden="true"><use href="#i-chev"/></svg></summary><ul id="method" class="panel-body list"></ul></details>
+    <details class="panel"><summary><span>Źródła i blokady</span><svg class="ic chev" aria-hidden="true"><use href="#i-chev"/></svg></summary><ul id="sources" class="panel-body list"></ul></details>
   </section>
-  <h2 id="count">Oferty</h2>
-  <section id="grid" class="grid"></section>
-  <p class="muted small">Oznaczenia (ulubione, kupione, archiwum) zapisują się w pamięci tej przeglądarki (localStorage + kopia w cookie) pod stałym ID oferty i nie są nadpisywane przy aktualizacji danych. Są lokalne dla urządzenia i przeglądarki – żeby przenieść je na inne urządzenie lub z widoku w aplikacji Grok, użyj kodu poniżej. „NOWE” = oferta pierwszy raz w zestawieniu w ciągu ostatnich 24 h.</p>
-  <details class="box" id="mbox"><summary>Kopia oznaczeń (eksport / import)</summary>
-    <p class="small">Twój kod oznaczeń:</p>
-    <textarea id="mcode" rows="3" readonly></textarea>
-    <p><button type="button" id="mcopy">Kopiuj kod</button></p>
-    <p class="small">Wklej kod z innego urządzenia lub z aplikacji, aby dodać oznaczenia:</p>
-    <textarea id="min" rows="3" placeholder="OKG1:…"></textarea>
-    <p><button type="button" id="mimport">Importuj</button> <span id="mmsg" class="muted small"></span></p>
-  </details>
-  <details class="box"><summary>Metodologia</summary><ul id="method"></ul></details>
-  <details class="box"><summary>Źródła i blokady</summary><ul id="sources"></ul></details>
 </main>
-<footer class="muted small">Dane: OLX.pl, Kleinanzeigen.de, Reverb. Ceny ofertowe, nie transakcyjne. Nie licytowano, nie kupowano i nie kontaktowano się ze sprzedawcami.</footer>
-<script src="app.js?v=607533af4a"></script>
+
+<footer class="foot">Dane: OLX.pl, Kleinanzeigen.de, Reverb, eBay (gdy włączone API). Ceny ofertowe, nie transakcyjne. Nie licytowano, nie kupowano i nie kontaktowano się ze sprzedawcami. <span id="dsrc"></span></footer>
+
+<div id="sheet" class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden>
+  <div class="scrim" data-close="1"></div>
+  <div class="sheet-card">
+    <div class="sheet-head">
+      <h2 id="sheetTitle">Filtry</h2>
+      <button type="button" class="icon-btn" data-close="1" aria-label="Zamknij filtry"><svg class="ic"><use href="#i-x"/></svg></button>
+    </div>
+    <div class="sheet-body">
+      <fieldset><legend>Źródło</legend><div id="f-src" class="opts"></div><p id="f-src-note" class="note"></p></fieldset>
+      <fieldset><legend>Typ gitary</legend><div id="f-type" class="opts"></div></fieldset>
+      <fieldset><legend>Producent</legend><div id="f-brand" class="opts"></div></fieldset>
+      <fieldset><legend>Cena razem z dostawą (zł)</legend>
+        <div class="range">
+          <label><span class="lbl">Od</span><input id="pmin" type="number" inputmode="numeric" min="0" step="500" placeholder="0"></label>
+          <span class="dash" aria-hidden="true">–</span>
+          <label><span class="lbl">Do</span><input id="pmax" type="number" inputmode="numeric" min="0" step="500" placeholder="15 000"></label>
+        </div>
+        <div id="f-preset" class="opts"></div>
+      </fieldset>
+      <fieldset><legend>Werdykt</legend><div id="f-verdict" class="opts"></div></fieldset>
+      <label class="switch"><span>Tylko ze zweryfikowaną wartością rynkową</span><input type="checkbox" id="verified" role="switch"><i aria-hidden="true"></i></label>
+    </div>
+    <div class="sheet-foot">
+      <button type="button" class="btn btn-plain" id="clearFilters">Wyczyść filtry</button>
+      <button type="button" class="btn btn-fill" id="applyFilters" data-close="1">Pokaż oferty</button>
+    </div>
+  </div>
+</div>
+<script src="app.js?v=391be1f7dc"></script>
 </body>
 </html>
