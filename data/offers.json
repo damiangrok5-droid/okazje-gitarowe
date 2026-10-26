@@ -1,6 +1,6 @@
 {
  "meta": {
-  "updated": "2026-10-25T22:36+00:00",
+  "updated": "2026-10-26T07:17+00:00",
   "fx": {
    "EUR": 4.3917,
    "USD": 3.9247,
@@ -23,12 +23,26 @@
    "OLX.pl": "OK (publiczne API ofert)",
    "Reverb": "OK (publiczne API, filtr: sprzedawcy z UE)",
    "Kleinanzeigen": "OK (HTML wyszukiwarki i ogłoszeń)",
-   "Allegro": "zablokowane (HTTP 403 / timeout)",
-   "eBay": "zablokowane (HTTP 403); podgląd wyników nie zawiera linków do ofert, więc nie użyto"
+   "Allegro": "zablokowane (HTTP 403, sprawdzono 2026-10-26)",
+   "eBay": "zablokowane (HTTP 403, sprawdzono 2026-10-26)"
   },
   "skipped": [
    "Rickenbacker 330 (2013, Kleinanzeigen, Bonn) – tylko odbiór osobisty",
-   "Gibson Les Paul „Custom Shop 1998” (OLX) – niejasny model, brak wiarygodnej wyceny"
+   "Gibson Les Paul „Custom Shop 1998” (OLX) – niejasny model, brak wiarygodnej wyceny",
+   "Gibson ES-335 Satin Vintage Burst (Kleinanzeigen 3552664877) – ponowne wystawienie tej samej gitary co ka-3534292119 (ten sam sprzedawca i opis)",
+   "Gibson Les Paul Standard 1990 (OLX 1107653516) i Les Paul Custom 1991 (OLX 1107354664) – naprawiana główka, brak wiarygodnej wyceny",
+   "PRS S2 Singlecut Standard Satin (Reverb 89453083) – cena na poziomie rynku dla S2 Singlecut Standard, brak okazji",
+   "Fender Stratocaster Ultra Luxe Vintage (OLX 1107182322) – ok. 8% pod medianą, za mało na okazję",
+   "Gibson ES-339 2019 (OLX 1107497537) – za mało porównywalnych ofert do wyceny"
+  ],
+  "removed": [
+   {
+    "id": "reverb-102803889",
+    "title": "Gibson SG Standard '61 (2025)",
+    "url": "https://reverb.com/item/102803889-gibson-sg-standard-61-2025-as-new",
+    "reason": "Reverb API: state=ended (ogłoszenie zakończone/wycofane)",
+    "removedAt": "2026-10-26T07:17+00:00"
+   }
   ]
  },
  "offers": [
@@ -57,7 +71,7 @@
    },
    "shippingNote": "Założenie: kurier ok. 80 zł lub odbiór w Janikowie.",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 8680.0,
+   "marketValue": 8680,
    "valueVerified": true,
    "valueMethod": "Mediana 17 porównywalnych używanych ofert (OLX 3, Reverb 5, Kleinanzeigen 9), zakres 5490–11860 zł",
    "valueSources": [
@@ -98,7 +112,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: semi-hollow z Grand Vintage + Domino P90 i tremolo Duesenberg – świetna do grania. Odsprzedaż: ok. 40% pod medianą europejskich ofert to największy bufor w zestawieniu, ale opis jest szczątkowy. Najpierw rocznik, numer seryjny i zdjęcia detali.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
@@ -126,7 +140,7 @@
    },
    "shippingNote": "Założenie: kurier ok. 80 zł lub odbiór w Kielcach.",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 9890.0,
+   "marketValue": 9890,
    "valueVerified": true,
    "valueMethod": "Mediana 9 porównywalnych używanych ofert (OLX 1, Reverb 7, Kleinanzeigen 1), zakres 7030–12080 zł",
    "valueSources": [
@@ -167,7 +181,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: Axis Sport z gryfem z klonu i HSS to bardzo uniwersalna gitara. Odsprzedaż: ok. 34% pod medianą, ale rynek mały, a ogłoszenie wisi od października 2024. Przy zakupie trzeba poprosić o zdjęcia progów, numeru seryjnego i elektroniki.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
@@ -195,7 +209,7 @@
    },
    "shippingNote": "Założenie: kurier ubezpieczony ok. 80 zł (ogłoszenie bez dostawy OLX) lub odbiór osobisty w Warszawie.",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 9550.0,
+   "marketValue": 9550,
    "valueVerified": true,
    "valueMethod": "Mediana 6 porównywalnych używanych ofert (OLX 0, Reverb 3, Kleinanzeigen 3), zakres 7910–12640 zł",
    "valueSources": [
@@ -236,7 +250,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: menzura 24,594\", przystawki 58/15 LT, gryf po szlifie progów – gotowa do grania. Odsprzedaż: S2 McCarty 594 schodzi w UE za ok. 9–10 tys. zł, więc jest bufor ok. 30%. Minus: ogłoszenie wisi od grudnia 2024 – warto sprawdzić, czemu się nie sprzedała.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
@@ -264,7 +278,7 @@
    },
    "shippingNote": "Założenie: kurier ok. 80 zł; sprzedawca preferuje odbiór osobisty (Warszawa, Wola).",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 9550.0,
+   "marketValue": 9550,
    "valueVerified": true,
    "valueMethod": "Mediana 14 porównywalnych używanych ofert (OLX 0, Reverb 7, Kleinanzeigen 7), zakres 7420–13370 zł",
    "valueSources": [
@@ -305,7 +319,76 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: japońska E-II to poziom wykonania zbliżony do Gibsona USA, gryf Thin U bardzo wygodny. Odsprzedaż: mniejszy rynek niż Gibson/Fender, ale cena ok. 30% pod medianą daje zapas. Ryzyko: konto sprzedawcy założone w sierpniu 2026 – tylko odbiór osobisty z oględzinami i sprawdzeniem numeru seryjnego.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
+   "status": "aktywne"
+  },
+  {
+   "id": "ka-3494133621",
+   "source": "Kleinanzeigen",
+   "url": "https://www.kleinanzeigen.de/s-anzeige/verkaufe-meine-prs-s2-mccarty-594-usa-2021/3494133621-74-2953",
+   "title": "PRS S2 McCarty 594 Brownburst (2021)",
+   "originalTitle": "Verkaufe meine PRS S2 McCARTY 594 USA 2021",
+   "description": "PRS S2 McCarty 594 z 2021 (USA), kolor Brownburst w połysku, mahoń z klonowym topem, gryf Soft-V z palisandrem i bird inlays, przetworniki 58/15 \"S\" z rozłączaniem cewek, waga ok. 3,38 kg. Stan 'sehr gut', w zestawie gigbag. Cena do negocjacji (VB), sprzedawca prywatny na Kleinanzeigen od 2019.",
+   "photo": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/7e/7e936b42-ff42-49d1-b2eb-345d6696931f?rule=$_59.JPG",
+   "condition": "Bardzo dobry (wg sprzedawcy), gigbag zamiast futerału",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "29664 Walsrode, DE",
+   "currency": "EUR",
+   "priceOriginal": 1500,
+   "shippingOriginal": 50,
+   "price": {
+    "cena": 6588,
+    "wysylka": 220,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 6808
+   },
+   "shippingNote": "Założenie: DHL Paket DE→PL z ubezpieczeniem ok. 50 €; ogłoszenie podaje 'Versand ab 2,99 €' (stawka krajowa), wysyłkę do Polski trzeba potwierdzić.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 9550,
+   "valueVerified": true,
+   "valueMethod": "Mediana 10 porównywalnych używanych ofert (OLX 1, Reverb 6, Kleinanzeigen 3), zakres 6400–12640 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=prs%20s2%20mccarty%20594&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-prs-s2-mccarty-594/"
+    },
+    {
+     "label": "Reverb: 2022 PRS S2 McCarty 594 Singlecut – Music Zoo Exclusive – Qu (9223 zł)",
+     "url": "https://reverb.com/item/94911182-2022-prs-s2-mccarty-594-singlecut-music-zoo-exclusive-quilt-maple-top-emerald-green-black-wrap-burst"
+    },
+    {
+     "label": "Kleinanzeigen: 2024 PRS S2 McCarty 594 Thinline USA Vintage Cherry Mint (9881 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/2024-prs-s2-mccarty-594-thinline-usa-vintage-cherry-mint/3459552386-74-1396"
+    },
+    {
+     "label": "Kleinanzeigen: 2021 PRS S2 McCarty 594 (9218 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/2021-prs-s2-mccarty-594/3349314654-74-2162"
+    }
+   ],
+   "dealPct": 28.7,
+   "validTo": null,
+   "postedOrSince": "2026-08-25",
+   "scores": {
+    "cena": 8,
+    "stan": 8,
+    "sprzedawca": 7,
+    "oryginalnosc": 8,
+    "grywalnosc": 9,
+    "plynnosc": 7,
+    "wysylka": 5
+   },
+   "overall": 7.6,
+   "verdict": "polecam",
+   "reasoning": "Gra: ta sama platforma co S2 McCarty 594 z OLX – menzura 24,594\", 58/15 S z rozłączaniem cewek, lekka (3,38 kg). Odsprzedaż: ok. 29% pod medianą używanych S2 594 w UE, a cena jest jeszcze do negocjacji. Ryzyko: prywatna sprzedaż przez granicę bez 'Sicher bezahlen' i tylko gigbag – płatność z ochroną lub odbiór osobisty, poprosić o numer seryjny.",
+   "firstSeen": "2026-10-26T07:17+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
@@ -333,7 +416,7 @@
    },
    "shippingNote": "Założenie: DHL Paket DE→PL ok. 50 €; sprzedawca akceptuje PayPal/przelew.",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 11130.0,
+   "marketValue": 11130,
    "valueVerified": true,
    "valueMethod": "Mediana 15 porównywalnych używanych ofert (OLX 3, Reverb 7, Kleinanzeigen 5), zakres 9000–15370 zł",
    "valueSources": [
@@ -374,7 +457,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: japoński Gretsch pro-line z TV Jones – topowe brzmienie rockabilly. Odsprzedaż: 6120 trzyma cenę, ok. 27% pod medianą ofert w UE. Plus: PayPal (ochrona kupującego) i wideorozmowa; minus: duży hollowbody to delikatna przesyłka.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
@@ -402,7 +485,7 @@
    },
    "shippingNote": "Założenie: DHL Paket DE→PL ok. 50 € (sprzedawca ma 'Versand möglich'), Explorer wymaga dużego kartonu.",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 8780.0,
+   "marketValue": 8780,
    "valueVerified": true,
    "valueMethod": "Mediana 40 porównywalnych używanych ofert (OLX 9, Reverb 18, Kleinanzeigen 13), zakres 6360–14270 zł",
    "valueSources": [
@@ -443,7 +526,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: aktualna seria Original z wygodnym Slim Taper. Odsprzedaż: biały Explorer to mniej popularny kolor; ok. 25% pod medianą Explorerów (porównano z ogólną kategorią Explorer – mało ofert 70s). Wysyłka dużego futerału przez granicę to dodatkowy koszt i ryzyko.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
@@ -471,7 +554,7 @@
    },
    "shippingNote": "Założenie: DHL Paket DE→PL z ubezpieczeniem ok. 50 €; sprzedawca podaje 'Versand möglich', wysyłkę do Polski trzeba potwierdzić.",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 6590.0,
+   "marketValue": 6590,
    "valueVerified": true,
    "valueMethod": "Mediana 51 porównywalnych używanych ofert (OLX 15, Reverb 28, Kleinanzeigen 8), zakres 4400–34000 zł",
    "valueSources": [
@@ -512,7 +595,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: SG Standard z 490R/490T, lekki i wygodny. Odsprzedaż: SG Standard sprzedaje się szybko, cena ok. 23% pod medianą zostawia zapas mimo odprysku. Ryzyko: prywatna sprzedaż przez granicę – tylko płatność z ochroną lub odbiór osobisty.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
@@ -540,7 +623,7 @@
    },
    "shippingNote": "Założenie: kurier ok. 80 zł lub odbiór w Bydgoszczy.",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 9650.0,
+   "marketValue": 9650,
    "valueVerified": true,
    "valueMethod": "Mediana 26 porównywalnych używanych ofert (OLX 17, Reverb 2, Kleinanzeigen 7), zakres 7900–11110 zł",
    "valueSources": [
@@ -581,7 +664,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: aktualny LP Standard 50s z Burstbucker 1/2 i grubszym gryfem 50s – klasyka. Odsprzedaż: najpłynniejszy model w zestawieniu; ok. 22,5% pod medianą używanych, polskie źródło zakupu i papiery ułatwiają weryfikację. Ogłoszenie od grudnia 2024 – sprawdzić stan i ewentualne naprawy.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
@@ -609,7 +692,7 @@
    },
    "shippingNote": "Wysyłka do Polski wg Reverb: 49,50 € (Paryż → PL, UE).",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 12740.0,
+   "marketValue": 12740,
    "valueVerified": false,
    "valueMethod": "Mediana 9 porównywalnych używanych ofert (OLX 0, Reverb 9, Kleinanzeigen 0), zakres 10970–14450 zł",
    "valueSources": [
@@ -650,7 +733,7 @@
    "verdict": "nie polecam",
    "reasoning": "Gra: po dobrej naprawie główki ES-335 może grać bez zarzutu. Odsprzedaż: naprawa główki mocno obniża wartość i płynność; mediana dotyczy egzemplarzy bez napraw, więc nie da się zweryfikować wartości – nie traktuję tego jako okazji.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
@@ -678,7 +761,7 @@
    },
    "shippingNote": "Założenie: kurier ok. 80 zł lub odbiór w Łodzi.",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 12300.0,
+   "marketValue": 12300,
    "valueVerified": true,
    "valueMethod": "Mediana 25 porównywalnych używanych ofert (OLX 4, Reverb 14, Kleinanzeigen 7), zakres 6400–16000 zł",
    "valueSources": [
@@ -719,7 +802,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: aktualna seria ES z grubszym gryfem 50s, praktycznie nowa. Odsprzedaż: ES-335 to jeden z najpłynniejszych modeli Gibsona; status 'demo' z dokumentem lekko obniża cenę przy odsprzedaży, ale zakup ok. 23% poniżej mediany używanych to rozsądny bufor. Pakowanie semi-hollow wymaga dobrego futerału.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
@@ -747,7 +830,7 @@
    },
    "shippingNote": "Założenie: ubezpieczony DHL ok. 50 € (sprzedawca oferuje wysyłkę na koszt kupującego).",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 11860.0,
+   "marketValue": 11860,
    "valueVerified": true,
    "valueMethod": "Mediana 10 porównywalnych używanych ofert (OLX 1, Reverb 5, Kleinanzeigen 4), zakres 9440–13830 zł",
    "valueSources": [
@@ -788,7 +871,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: praktycznie nowa ES-335. Odsprzedaż: płynny model, a ok. 20% pod medianą satynowych ES-335 to solidny, choć nie wyjątkowy bufor. Przedpłata przelewem do prywatnej osoby za granicą bez ochrony – tylko z odbiorem osobistym.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
@@ -816,7 +899,7 @@
    },
    "shippingNote": "Założenie: kurier ok. 80 zł lub odbiór w Krakowie.",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 8780.0,
+   "marketValue": 8780,
    "valueVerified": true,
    "valueMethod": "Mediana 40 porównywalnych używanych ofert (OLX 9, Reverb 18, Kleinanzeigen 13), zakres 6360–14270 zł",
    "valueSources": [
@@ -857,76 +940,76 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: klasyczny Explorer z mocnymi 500T/496R, wygodny Slim Taper. Odsprzedaż: Gibson USA z dokumentami łatwo się sprzedaje; ok. 20% pod medianą to umiarkowany bufor. Rozmiar futerału utrudnia wysyłkę – najlepiej odbiór.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
-   "id": "reverb-102803889",
-   "source": "Reverb",
-   "url": "https://reverb.com/item/102803889-gibson-sg-standard-61-2025-as-new",
-   "title": "Gibson SG Standard '61 (2025)",
-   "originalTitle": "Gibson SG Standard '61 2025 as new",
-   "description": "SG Standard '61 z 2025 w stanie jak nowy, z twardym futerałem. Sprzedawca z Francji ze statusem Preferred Seller, możliwość składania ofert.",
-   "photo": "https://rvb-img.reverb.com/i/s--NipFMakW--/quality=medium-low,height=800,width=800,fit=contain/06b9de85-43ba-4d0e-a08d-9081b748fad9.jpg",
-   "condition": "Excellent (Reverb), 'as new', twardy futerał",
+   "id": "olx-1107293963",
+   "source": "OLX",
+   "url": "https://www.olx.pl/d/oferta/gibson-les-paul-60s-bourbon-burst-usa-2024-CID751-ID1cV5K3.html",
+   "title": "Gibson Les Paul Standard '60s Bourbon Burst (2024)",
+   "originalTitle": "Gibson Les Paul 60s Bourbon Burst, USA 2024",
+   "description": "Les Paul Standard '60s z 2024 w kolorze Bourbon Burst: 60s Burstbucker, blokowane klucze Grover, ABR-1, klon AA, gryf Slim Taper. Normalne ślady używania (głównie tył korpusu). Metryczka i oryginalny futerał, kupiona w HR Guitars w 2025. Cena do negocjacji, możliwość testu.",
+   "photo": "https://ireland.apollo.olxcdn.com:443/v1/files/izox7nsta40c1-PL/image;s=800x600",
+   "condition": "Używana, normalne ślady użytkowania (tył korpusu), komplet z futerałem i metryczką",
    "listingType": "kup teraz / ogłoszenie",
    "auctionEnd": null,
-   "location": "Francja – Fred's Gear Locker",
-   "currency": "EUR",
-   "priceOriginal": 1249,
-   "shippingOriginal": 49,
+   "location": "Ostrowiec Świętokrzyski",
+   "currency": "PLN",
+   "priceOriginal": 8300,
+   "shippingOriginal": 80,
    "price": {
-    "cena": 5485,
-    "wysylka": 215,
+    "cena": 8300,
+    "wysylka": 80,
     "clo": 0,
     "vat": 0,
     "oplaty": 0,
-    "razem": 5700
+    "razem": 8380
    },
-   "shippingNote": "Wysyłka do Polski wg Reverb: 49 € (Francja → PL, UE, bez cła i VAT importowego).",
-   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 6920.0,
+   "shippingNote": "Założenie: kurier ubezpieczony ok. 80 zł (ogłoszenie bez dostawy OLX) lub odbiór w Ostrowcu Świętokrzyskim.",
+   "customsNote": "Zakup w Polsce – brak cła i VAT importowego.",
+   "marketValue": 9900,
    "valueVerified": true,
-   "valueMethod": "Mediana 9 porównywalnych używanych ofert (OLX 0, Reverb 5, Kleinanzeigen 4), zakres 6150–8560 zł",
+   "valueMethod": "Mediana 13 porównywalnych używanych ofert (OLX 5, Reverb 4, Kleinanzeigen 4), zakres 8120–22000 zł",
    "valueSources": [
     {
      "label": "Reverb – używane w UE",
-     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=gibson%20sg%20standard%2061&condition=used"
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=gibson%20les%20paul%20standard%2060s&condition=used"
     },
     {
      "label": "OLX – podobne ogłoszenia",
-     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-gibson-sg-standard-61/"
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-gibson-les-paul-standard-60s/"
     },
     {
-     "label": "Reverb: Gibson SG Standard 61 stopbar, Vintage cherry sunburst | DEM (6915 zł)",
-     "url": "https://reverb.com/item/102291272-gibson-sg-standard-61-stopbar-vintage-cherry-sunburst-demo"
+     "label": "OLX: Gibson Les Paul Standard 60s Iced Tea (9900 zł)",
+     "url": "https://www.olx.pl/d/oferta/gibson-les-paul-standard-60s-iced-tea-CID751-ID1br6cR.html"
     },
     {
-     "label": "Kleinanzeigen: 2024 Gibson SG Standard ’61 Vintage Cherry | USA BurstBucker (6803 zł)",
-     "url": "https://www.kleinanzeigen.de/s-anzeige/2024-gibson-sg-standard-61-vintage-cherry-usa-burstbucker/3489536474-74-12892"
+     "label": "Reverb: Gibson Les Paul Standard 60s - Plain Top Classic White Top (10139 zł)",
+     "url": "https://reverb.com/item/102035839-gibson-les-paul-standard-60s-plain-top-classic-white-top"
     },
     {
-     "label": "Reverb: Gibson SG Standard '61 with Stoptail 2019 - Present - Vintag (7093 zł)",
-     "url": "https://reverb.com/item/102957192-gibson-sg-standard-61-with-stoptail-2019-present-vintage-cherry"
+     "label": "Kleinanzeigen: Gibson Les Paul Standard 60s IT, unbespielt, 2022 (9223 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/gibson-les-paul-standard-60s-it-unbespielt-2022/3551085110-74-15740"
     }
    ],
-   "dealPct": 17.6,
-   "validTo": null,
-   "postedOrSince": null,
+   "dealPct": 15.4,
+   "validTo": "2026-11-23",
+   "postedOrSince": "2026-10-24T08:09:49+02:00",
    "scores": {
     "cena": 6,
-    "stan": 9,
-    "sprzedawca": 8,
+    "stan": 6,
+    "sprzedawca": 7,
     "oryginalnosc": 8,
-    "grywalnosc": 8,
+    "grywalnosc": 9,
     "plynnosc": 9,
-    "wysylka": 8
+    "wysylka": 7
    },
-   "overall": 7.9,
-   "verdict": "polecam",
-   "reasoning": "Gra: aktualny SG '61 z cienkim gryfem 60s i Burstbucker 61. Odsprzedaż: bardzo płynny model; ok. 18% pod medianą używanych w UE plus ochrona kupującego Reverb to najbezpieczniejsza pozycja w zestawieniu. Można złożyć ofertę.",
-   "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "overall": 7.6,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: aktualny LP Standard '60s z cieńszym gryfem Slim Taper i 60s Burstbuckerami. Odsprzedaż: jeden z najpłynniejszych modeli Gibsona, ale ok. 15% pod medianą to umiarkowany bufor – sensownie dopiero po negocjacji (cena 'do negocjacji'). Polski sprzedawca z kontem od 2021, papiery i sklep zakupu ułatwiają weryfikację.",
+   "firstSeen": "2026-10-26T07:17+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
@@ -954,7 +1037,7 @@
    },
    "shippingNote": "Założenie: kurier ok. 80 zł lub odbiór w Gdańsku.",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 10000.0,
+   "marketValue": 10000,
    "valueVerified": true,
    "valueMethod": "Mediana 9 porównywalnych używanych ofert (OLX 1, Reverb 8, Kleinanzeigen 0), zakres 9130–13390 zł",
    "valueSources": [
@@ -995,7 +1078,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: JP6 to świetny instrument (piezo, tremolo, wygodny gryf). Odsprzedaż: niszowy rynek fanów Petrucciego; ok. 11% poniżej mediany ofert to za mało na okazję po opłatach i ryzyku. Opis marketingowy ('biały kruk') przesadzony – dobra cena, nie okazja.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   },
   {
@@ -1023,7 +1106,7 @@
    },
    "shippingNote": "Wysyłka do Polski wg Reverb: 33 € (Włochy → PL, UE).",
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
-   "marketValue": 10000.0,
+   "marketValue": 10000,
    "valueVerified": true,
    "valueMethod": "Mediana 9 porównywalnych używanych ofert (OLX 2, Reverb 7, Kleinanzeigen 0), zakres 8890–13390 zł",
    "valueSources": [
@@ -1064,7 +1147,7 @@
    "verdict": "nie polecam",
    "reasoning": "Gra: świetny JP6 z gwarancją sklepu. Odsprzedaż: cena praktycznie równa medianie (ok. 1% poniżej), więc to uczciwa cena rynkowa, a nie okazja. Ma sens tylko do grania.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-10-25T22:36+00:00",
+   "lastChecked": "2026-10-26T07:17+00:00",
    "status": "aktywne"
   }
  ]
