@@ -4,7 +4,10 @@
   var FKEY = "okazje-gitarowe-filters-v1"; // osobny klucz – filtry nigdy nie dotykają oznaczeń
   var SCORES = [["cena", "Cena vs wartość"], ["stan", "Stan"], ["sprzedawca", "Wiarygodność sprzedawcy"], ["oryginalnosc", "Oryginalność / ryzyko podróbki"], ["grywalnosc", "Grywalność i specyfikacja"], ["plynnosc", "Płynność odsprzedaży"], ["wysylka", "Ryzyko wysyłki i cła (10 = niskie)"]];
   var VIEWS = [["aktywne", "Aktywne"], ["ulubione", "Ulubione"], ["kupione", "Kupione"], ["archiwum", "Archiwum"], ["wszystkie", "Wszystkie"]];
-  var BASE_SOURCES = ["OLX", "Kleinanzeigen", "Reverb", "eBay"];
+  var BASE_SOURCES = ["OLX", "Allegro Lokalnie", "Sprzedajemy", "Kleinanzeigen", "willhaben", "Marktplaats", "2dehands", "Blocket", "Tori", "DBA", "FINN", "Bazoš.cz", "Bazoš.sk", "Reverb", "eBay"];
+  var TYPE_ALL = ["Strat / ST", "Tele / T", "Les Paul / LP", "SG", "Semi-hollow / hollow", "Superstrat", "Offset", "Double-cut (PRS)", "Explorer / V / kształty", "Inne"];
+  var BRAND_POP = ["Fender", "Gibson", "PRS", "Music Man", "Gretsch", "Ibanez", "ESP", "Jackson", "Charvel", "Schecter", "Suhr", "Tom Anderson", "Mayones", "Duesenberg", "Rickenbacker", "G&L", "Yamaha", "Epiphone", "Squier", "EVH", "Strandberg", "Hagström", "Heritage", "Godin", "Eastman", "Nik Huber", "Knaggs", "Inna"];
+  var showAllBrands = false;
   var VERDICTS = ["polecam", "do rozważenia", "nie polecam"];
   var PRESETS = [["do 7 tys.", 0, 7000], ["7–10 tys.", 7000, 10000], ["10–15 tys.", 10000, 15000]];
   var DEF = { view: "aktywne", sort: "new", q: "", src: [], type: [], brand: [], verdict: [], pmin: null, pmax: null, verified: false };
@@ -133,7 +136,7 @@
     if (state.pmax != null && o.price.razem > state.pmax) return false;
     if (state.verified && !o.valueVerified) return false;
     if (state.q) {
-      var hay = norm([o.title, o.originalTitle, o.brand, o.type, o.source, o.location, o.description, o.condition].join(" "));
+      var hay = o._hay || (o._hay = norm([o.title, o.originalTitle, o.brand, o.type, o.source, o.location, o.description, o.condition, o.verdict, o.listingType === "auction" ? "aukcja licytacja" : "kup teraz", o.valueVerified ? "zweryfikowana" : "", o.reasoning && o.reasoning.play, o.reasoning && o.reasoning.resale].join(" ")));
       var words = norm(state.q).split(/\s+/).filter(Boolean);
       for (var i = 0; i < words.length; i++) if (hay.indexOf(words[i]) < 0) return false;
     }
@@ -177,12 +180,12 @@
   }
   function opt(group, value, label, count) {
     var on = state[group].indexOf(value) >= 0;
-    return '<button type="button" class="opt" data-g="' + group + '" data-v="' + esc(value) + '" aria-pressed="' + on + '">' + esc(label) + (count != null ? '<small>' + count + '</small>' : "") + '</button>';
+    return '<button type="button" class="opt' + (count === 0 && !on ? " zero" : "") + '" data-g="' + group + '" data-v="' + esc(value) + '" aria-pressed="' + on + '">' + esc(label) + (count != null ? '<small>' + count + '</small>' : "") + '</button>';
   }
   function facet(group, values) {
     var base = DATA.offers.filter(function (o) { return inView(o) && matches(o, group); });
-    var key = { src: "source", type: "type", brand: "brand", verdict: "verdict" }[group];
-    return values.map(function (v) { return opt(group, v, v, base.filter(function (o) { return o[key] === v; }).length); }).join("");
+    var key = { src: "source", type: "type", brand: "brand", verdict: "verdict" }[group], dflt = { type: "Inne", brand: "Inna" }[group];
+    return values.map(function (v) { return opt(group, v, v, base.filter(function (o) { return (o[key] || dflt) === v; }).length); }).join("");
   }
   function uniq(key, order) {
     var s = {}; DATA.offers.forEach(function (o) { if (o[key]) s[o[key]] = 1; });
@@ -191,18 +194,32 @@
     else xs.sort(function (a, b) { return a.localeCompare(b, "pl"); });
     return xs;
   }
+  function brandList() {
+    var c = {}; DATA.offers.forEach(function (o) { var b = o.brand || "Inna"; c[b] = (c[b] || 0) + 1; });
+    var have = Object.keys(c).sort(function (a, b) { return c[b] - c[a] || a.localeCompare(b, "pl"); });
+    state.brand.forEach(function (b) { if (have.indexOf(b) < 0) have.push(b); });
+    var rest = BRAND_POP.filter(function (b) { return have.indexOf(b) < 0; });
+    return { shown: showAllBrands ? have.concat(rest) : have, more: rest.length };
+  }
+  function resetBtns() {
+    document.querySelectorAll("[data-reset]").forEach(function (b) { var k = b.dataset.reset; b.hidden = k === "price" ? state.pmin == null && state.pmax == null : !state[k].length; });
+  }
   function renderSheet() {
     var srcs = BASE_SOURCES.slice(); uniq("source").forEach(function (s) { if (srcs.indexOf(s) < 0) srcs.push(s); });
     $("f-src").innerHTML = facet("src", srcs);
     var eb = (DATA.meta.sources || {}).eBay || "";
     $("f-src-note").textContent = DATA.offers.some(function (o) { return o.source === "eBay"; }) ? "" : "eBay: " + eb + ".";
-    $("f-type").innerHTML = facet("type", uniq("type", DATA.meta.types || []));
-    $("f-brand").innerHTML = facet("brand", uniq("brand"));
+    var types = TYPE_ALL.slice(); (DATA.meta.types || []).concat(uniq("type")).forEach(function (t) { if (types.indexOf(t) < 0) types.splice(types.length - 1, 0, t); });
+    $("f-type").innerHTML = facet("type", types);
+    var bl = brandList();
+    $("f-brand").innerHTML = facet("brand", bl.shown) + (bl.more ? '<button type="button" class="opt more" data-act="brands" aria-expanded="' + showAllBrands + '">' + (showAllBrands ? "Pokaż mniej" : "Pokaż wszystkie (+" + bl.more + ")") + '</button>' : "");
+    resetBtns();
     $("f-verdict").innerHTML = facet("verdict", VERDICTS);
     $("f-preset").innerHTML = PRESETS.map(function (p) { var on = state.pmin === (p[1] || null) && state.pmax === p[2]; return '<button type="button" class="opt" data-preset="' + p[1] + "-" + p[2] + '" aria-pressed="' + on + '">' + p[0] + '</button>'; }).join("");
     if (document.activeElement !== $("pmin")) $("pmin").value = state.pmin != null ? state.pmin : "";
     if (document.activeElement !== $("pmax")) $("pmax").value = state.pmax != null ? state.pmax : "";
     $("verified").checked = state.verified;
+    resetBtns();
   }
   function update() { saveFilters(); render(); }
   function clearFilters() { var keep = { view: state.view, sort: state.sort }; state = JSON.parse(JSON.stringify(DEF)); state.view = keep.view; state.sort = keep.sort; $("q").value = ""; update(); }
@@ -226,9 +243,9 @@
     $("method").innerHTML = [
       "Okazja = cena łączna w Polsce wyraźnie poniżej wartości rynkowej. Okazja % = (wartość − cena łączna) / wartość.",
       "Cena łączna = cena + wysyłka do PL. Dla wysyłek spoza UE doliczamy cło 3,2% (CN 9202), VAT 23% od (cena + wysyłka + cło) oraz opłatę agencji celnej przewoźnika ok. 50–100 zł (w obliczeniach 75 zł).",
-      "Wysyłka: Reverb – stawka do Polski z API Reverb; eBay – najtańsza opcja dostawy do PL z eBay Browse API; OLX – założenie 80 zł za kuriera z ubezpieczeniem (lub odbiór osobisty); Kleinanzeigen – założenie 50 € za ubezpieczoną paczkę DHL DE→PL, do potwierdzenia ze sprzedawcą.",
+      "Wysyłka: Reverb – stawka do Polski z API Reverb; eBay – najtańsza opcja dostawy do PL z eBay Browse API; OLX – założenie 80 zł za kuriera z ubezpieczeniem (lub odbiór osobisty); Kleinanzeigen – założenie 50 € za ubezpieczoną paczkę DHL DE→PL; willhaben, Marktplaats, 2dehands – ok. 45 €; Blocket, Tori, DBA – ok. 60 €; FINN (Norwegia, spoza UE) – ok. 70 € plus cło 3,2%, VAT 23% i opłata agencji; Bazoš – ok. 25 €; Allegro Lokalnie i Sprzedajemy – 80 zł. Wysyłkę za granicę zawsze trzeba potwierdzić ze sprzedawcą.",
       "Kurs walut: " + fx.source + " (EUR " + fx.EUR + ", USD " + fx.USD + ", GBP " + fx.GBP + ").",
-      "Wartość rynkowa = mediana cen ofertowych porównywalnych UŻYWANYCH egzemplarzy tego samego modelu (Reverb – sprzedawcy z UE, OLX, Kleinanzeigen). To ceny wywoławcze, a nie transakcyjne – dane o sprzedanych egzemplarzach nie były dostępne, więc realne ceny sprzedaży mogą być niższe.",
+      "Wartość rynkowa = mediana cen ofertowych porównywalnych UŻYWANYCH egzemplarzy tego samego modelu (Reverb – sprzedawcy z UE, OLX, Kleinanzeigen, a także willhaben, Marktplaats, 2dehands, Blocket, Tori, DBA, FINN, Bazoš i Allegro Lokalnie). To ceny wywoławcze, a nie transakcyjne – dane o sprzedanych egzemplarzach nie były dostępne, więc realne ceny sprzedaży mogą być niższe.",
       "Typ gitary i producent są wyprowadzane automatycznie z tytułu ogłoszenia (np. ES-335 → semi-hollow, McCarty 594 → double-cut PRS).",
       "Ocena ogólna (1–10) = średnia ważona: cena vs wartość " + P("cena") + ", grywalność " + P("grywalnosc") + ", płynność odsprzedaży " + P("plynnosc") + " (gra i odsprzedaż mają równą wagę), stan " + P("stan") + ", sprzedawca " + P("sprzedawca") + ", oryginalność " + P("oryginalnosc") + ", ryzyko wysyłki " + P("wysylka") + ".",
       "„NOWE” = oferta pierwszy raz w zestawieniu w ciągu ostatnich 24 h. Domyślnie najnowsze są na górze.",
@@ -238,19 +255,19 @@
     $("sources").innerHTML = Object.keys(so).map(function (k) { return "<li><b>" + esc(k) + "</b> – " + esc(so[k]) + "</li>"; }).join("") + (meta.skipped || []).map(function (s) { return "<li>Pominięte: " + esc(s) + "</li>"; }).join("") + (meta.removed || []).map(function (r) { return "<li>Usunięte " + esc(dtt(r.removedAt)) + ": " + esc(r.title) + " – " + esc(r.reason) + "</li>"; }).join("");
   }
 
-  // ---- Motyw: Auto / Jasny / Ciemny ----
-  var THEMES = [["auto", "automatyczny", "auto"], ["light", "jasny", "sun"], ["dark", "ciemny", "moon"]];
-  function curTheme() { return document.documentElement.dataset.theme || "auto"; }
+  // ---- Motyw: domyślnie ciemny, przełącznik Ciemny / Jasny ----
+  var THEMES = [["dark", "ciemny", "moon"], ["light", "jasny", "sun"]];
+  function curTheme() { return document.documentElement.dataset.theme === "light" ? "light" : "dark"; }
   function paintTheme() {
-    var t = THEMES.filter(function (x) { return x[0] === curTheme(); })[0];
-    $("theme").innerHTML = icon(t[2]); $("theme").setAttribute("aria-label", "Motyw: " + t[1] + ". Zmień motyw");
-    var dark = t[0] === "dark" || t[0] === "auto" && window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches;
-    document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) { if (t[0] === "auto") { m.setAttribute("content", /dark/.test(m.media) ? "#000000" : "#f2f2f7"); } else m.setAttribute("content", dark ? "#000000" : "#f2f2f7"); });
+    var t = curTheme(), nx = t === "dark" ? THEMES[1] : THEMES[0];
+    document.documentElement.dataset.theme = t;
+    $("theme").innerHTML = icon(nx[2]); $("theme").setAttribute("aria-label", "Motyw: " + (t === "dark" ? "ciemny" : "jasny") + ". Przełącz na " + nx[1]);
+    document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) { m.setAttribute("content", t === "dark" ? "#000000" : "#ffffff"); });
   }
   $("theme").addEventListener("click", function () {
-    var i = THEMES.map(function (x) { return x[0]; }).indexOf(curTheme()), n = THEMES[(i + 1) % 3][0];
-    if (n === "auto") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = n;
-    try { if (n === "auto") localStorage.removeItem("okg-theme"); else localStorage.setItem("okg-theme", n); } catch (e) { }
+    var n = curTheme() === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = n;
+    try { localStorage.setItem("okg-theme", n); } catch (e) { }
     paintTheme();
   });
   paintTheme();
@@ -263,7 +280,9 @@
     if (b.dataset.view) { state.view = b.dataset.view; update(); return; }
     if (b.dataset.id) { toggleMark(b.dataset.id, b.dataset.k); return; }
     if (b.dataset.act === "clear") { clearFilters(); return; }
-    if (b.dataset.g) { var a = state[b.dataset.g], v = b.dataset.v, i = a.indexOf(v); if (i >= 0) a.splice(i, 1); else a.push(v); update(); return; }
+    if (b.dataset.act === "brands") { showAllBrands = !showAllBrands; renderSheet(); var mb = $("f-brand").querySelector(".more"); if (mb) mb.focus(); return; }
+    if (b.dataset.reset) { if (b.dataset.reset === "price") { state.pmin = state.pmax = null; $("pmin").value = $("pmax").value = ""; } else state[b.dataset.reset] = []; update(); return; }
+    if (b.dataset.g) { var g = b.dataset.g, a = state[g], v = b.dataset.v, i = a.indexOf(v); if (i >= 0) a.splice(i, 1); else a.push(v); update(); var nb = $("sheet").hidden ? null : $("sheet").querySelector('[data-g="' + g + '"][data-v="' + (window.CSS && CSS.escape ? CSS.escape(v) : v) + '"]'); if (nb) nb.focus(); return; }
     if (b.dataset.preset) { var pr = b.dataset.preset.split("-").map(Number); var same = state.pmin === (pr[0] || null) && state.pmax === pr[1]; state.pmin = same ? null : (pr[0] || null); state.pmax = same ? null : pr[1]; update(); return; }
     if (b.dataset.chip) {
       var k = b.dataset.chip, val = b.dataset.v;
@@ -281,7 +300,7 @@
   });
   $("searchForm").addEventListener("submit", function (e) { e.preventDefault(); state.q = $("q").value.trim(); update(); $("q").blur(); var r = $("count"); if (r && r.scrollIntoView && window.scrollY > r.offsetTop) r.scrollIntoView({ block: "start" }); });
   $("q").addEventListener("search", function () { if (!$("q").value && state.q) { state.q = ""; update(); } }); // przycisk ✕ w polu
-  $("q").addEventListener("input", function () { if (!$("q").value && state.q) { state.q = ""; update(); } });
+  var qt; $("q").addEventListener("input", function () { clearTimeout(qt); qt = setTimeout(function () { var v = $("q").value.trim(); if (v !== state.q) { state.q = v; update(); } }, 180); }); // wyszukiwanie na żywo
   $("openFilters").addEventListener("click", openSheet);
   $("clearFilters").addEventListener("click", clearFilters);
   $("sort").addEventListener("change", function (e) { state.sort = e.target.value; update(); });
