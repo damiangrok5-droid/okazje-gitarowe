@@ -7,7 +7,7 @@
 <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
 <meta name="referrer" content="no-referrer">
 <title>Okazje gitarowe – gitary elektryczne</title>
-<link rel="stylesheet" href="style.css?v=0d62507aaf">
+<link rel="stylesheet" href="style.css?v=c09633f08a">
 </head>
 <body>
 <header class="top">
@@ -20,6 +20,7 @@
     <div id="views" class="seg" role="tablist"></div>
     <div class="selects">
       <label>Sortuj<select id="sort">
+        <option value="new" selected>Najnowsze (pierwsze pojawienie się)</option>
         <option value="deal">Okazja % (malejąco)</option>
         <option value="rating">Ocena ogólna</option>
         <option value="total">Cena razem (rosnąco)</option>
@@ -30,15 +31,24 @@
         <option>polecam</option><option>do rozważenia</option><option>nie polecam</option>
       </select></label>
     </div>
+    <p id="store" class="store">Sprawdzanie zapisu oznaczeń…</p>
     <label class="toggle"><input type="checkbox" id="verified"> Tylko ze zweryfikowaną wartością rynkową</label>
   </section>
   <h2 id="count">Oferty</h2>
   <section id="grid" class="grid"></section>
-  <p class="muted small">Oznaczenia (ulubione, kupione, archiwum) zapisują się w pamięci tej przeglądarki (localStorage) pod stałym ID oferty i nie są nadpisywane przy aktualizacji danych. Są lokalne dla urządzenia.</p>
+  <p class="muted small">Oznaczenia (ulubione, kupione, archiwum) zapisują się w pamięci tej przeglądarki (localStorage + kopia w cookie) pod stałym ID oferty i nie są nadpisywane przy aktualizacji danych. Są lokalne dla urządzenia i przeglądarki – żeby przenieść je na inne urządzenie lub z widoku w aplikacji Grok, użyj kodu poniżej. „NOWE” = oferta pierwszy raz w zestawieniu w ciągu ostatnich 24 h.</p>
+  <details class="box" id="mbox"><summary>Kopia oznaczeń (eksport / import)</summary>
+    <p class="small">Twój kod oznaczeń:</p>
+    <textarea id="mcode" rows="3" readonly></textarea>
+    <p><button type="button" id="mcopy">Kopiuj kod</button></p>
+    <p class="small">Wklej kod z innego urządzenia lub z aplikacji, aby dodać oznaczenia:</p>
+    <textarea id="min" rows="3" placeholder="OKG1:…"></textarea>
+    <p><button type="button" id="mimport">Importuj</button> <span id="mmsg" class="muted small"></span></p>
+  </details>
   <details class="box"><summary>Metodologia</summary><ul id="method"></ul></details>
   <details class="box"><summary>Źródła i blokady</summary><ul id="sources"></ul></details>
 </main>
 <footer class="muted small">Dane: OLX.pl, Kleinanzeigen.de, Reverb. Ceny ofertowe, nie transakcyjne. Nie licytowano, nie kupowano i nie kontaktowano się ze sprzedawcami.</footer>
-<script src="app.js?v=0d62507aaf"></script>
+<script src="app.js?v=c09633f08a"></script>
 </body>
 </html>

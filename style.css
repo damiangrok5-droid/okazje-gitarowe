@@ -56,3 +56,10 @@ table.props{width:100%;border-collapse:collapse;font-size:13px;margin:6px 0}
 .box summary{font-weight:650;cursor:pointer}.box li{margin:6px 0;font-size:14px}
 footer{padding-bottom:30px}
 .empty{color:var(--mut);padding:20px 0}
+
+.tag.new{background:#e5484d;color:#fff;font-weight:700;letter-spacing:.04em}
+.store{font-size:13px;margin:8px 0;padding:8px 10px;border-radius:8px}
+.store.ok{background:rgba(48,164,108,.12);color:inherit}
+.store.bad{background:rgba(229,72,77,.15);color:inherit;font-weight:600}
+#mbox textarea{width:100%;box-sizing:border-box;font:13px ui-monospace,monospace;padding:8px;border-radius:8px;border:1px solid rgba(127,127,127,.35);background:transparent;color:inherit}
+#mbox button{font:inherit;padding:8px 14px;border-radius:8px;border:1px solid rgba(127,127,127,.35);background:transparent;color:inherit}
