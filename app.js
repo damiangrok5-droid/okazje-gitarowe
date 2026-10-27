@@ -10,7 +10,7 @@
   var showAllBrands = false;
   var VERDICTS = ["polecam", "do rozważenia", "nie polecam"];
   var PRESETS = [["do 7 tys.", 0, 7000], ["7–10 tys.", 7000, 10000], ["10–15 tys.", 10000, 15000]];
-  var DEF = { view: "aktywne", sort: "new", q: "", src: [], type: [], brand: [], verdict: [], pmin: null, pmax: null, verified: false };
+  var DEF = { view: "aktywne", sort: "new", q: "", src: [], type: [], brand: [], verdict: [], pmin: null, pmax: null, verified: false, arch: "all" };
   var state = loadFilters();
   var DATA = null, marks = {};
 
@@ -150,11 +150,16 @@
       '</div></article>';
   }
 
-  // Zakończone oferty (DATA.ended) widać tylko, jeśli mają oznaczenie (ulubione/kupione/archiwum) – nigdy w „Aktywne”.
-  function pool() { return DATA.offers.concat((DATA.ended || []).filter(function (o) { var m = marks[o.id] || {}; return m.fav || m.bought || m.arch; })); }
+  // Zakończone oferty (DATA.ended) = niejawne archiwum: zawsze w „Archiwum” (i „Wszystkie”), nigdy w „Aktywne”.
+  // Nie zapisujemy nic do oznaczeń – własne oznaczenia (ulubione/kupione/archiwum) działają jak dotąd.
+  var ARCHSUB = [["all", "Wszystkie"], ["ended", "Zakończone"], ["manual", "Przeniesione ręcznie"]];
+  function isEnded(o) { return o.status === "zakończona"; }
+  function inArch(o, sub) { var m = marks[o.id] || {}; return sub === "ended" ? isEnded(o) : sub === "manual" ? !!m.arch : !!m.arch || isEnded(o); }
+  function pool() { return DATA.offers.concat(DATA.ended || []); }
   function inView(o) {
     var m = marks[o.id] || {};
-    if (o.status === "zakończona" && state.view === "aktywne") return false;
+    if (isEnded(o) && state.view === "aktywne") return false;
+    if (state.view === "archiwum") return inArch(o, state.arch || "all");
     if (state.view === "aktywne" && m.arch) return false;
     if (state.view === "ulubione" && !m.fav) return false;
     if (state.view === "kupione" && !m.bought) return false;
@@ -182,8 +187,10 @@
     if (!DATA) return;
     var offers = pool();
     var cnt = function (f) { return offers.filter(function (o) { return f(marks[o.id] || {}); }).length; };
-    var counts = { aktywne: offers.filter(function (o) { return o.status !== "zakończona" && !(marks[o.id] || {}).arch; }).length, ulubione: cnt(function (m) { return m.fav; }), kupione: cnt(function (m) { return m.bought; }), archiwum: cnt(function (m) { return m.arch; }), wszystkie: offers.length };
+    var counts = { aktywne: offers.filter(function (o) { return o.status !== "zakończona" && !(marks[o.id] || {}).arch; }).length, ulubione: cnt(function (m) { return m.fav; }), kupione: cnt(function (m) { return m.bought; }), archiwum: offers.filter(function (o) { return inArch(o, "all"); }).length, wszystkie: offers.length };
     $("views").innerHTML = VIEWS.map(function (v) { var on = state.view === v[0]; return '<button type="button" role="radio" aria-checked="' + on + '" tabindex="' + (on ? 0 : -1) + '" data-view="' + v[0] + '">' + v[1] + '<small>' + counts[v[0]] + '</small></button>'; }).join("");
+    var as = $("archsub");
+    if (as) { as.hidden = state.view !== "archiwum"; as.innerHTML = state.view !== "archiwum" ? "" : ARCHSUB.map(function (v) { var on = (state.arch || "all") === v[0]; return '<button type="button" role="radio" aria-checked="' + on + '" data-archsub="' + v[0] + '">' + v[1] + '<small>' + offers.filter(function (o) { return inArch(o, v[0]); }).length + '</small></button>'; }).join(""); }
     var list = filtered().sort(SORTS[state.sort] || SORTS["new"]);
     var n = activeCount() + (state.q ? 1 : 0);
     $("count").textContent = list.length ? plural(list.length, "oferta", "oferty", "ofert") + (n ? " po filtrach" : "") : "Brak wyników";
@@ -313,6 +320,7 @@
     if (b.dataset.close) { closeSheet(); return; }
     if (b.dataset.view) { state.view = b.dataset.view; update(); return; }
     if (b.dataset.od) { odToggle(b); return; }
+    if (b.dataset.archsub) { state.arch = b.dataset.archsub; update(); var ab = $("archsub").querySelector('[data-archsub="' + state.arch + '"]'); if (ab) ab.focus(); return; }
     if (b.dataset.id) { toggleMark(b.dataset.id, b.dataset.k); return; }
     if (b.dataset.act === "clear") { clearFilters(); return; }
     if (b.dataset.act === "brands") { showAllBrands = !showAllBrands; renderSheet(); var mb = $("f-brand").querySelector(".more"); if (mb) mb.focus(); return; }

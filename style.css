@@ -263,3 +263,10 @@ legend{font-size:13px;font-weight:600;color:var(--text-2);text-transform:upperca
 .pill.end { background: rgba(255, 69, 58, .92); color: #fff; }
 .card.ended .ph img { filter: grayscale(.85) brightness(.75); }
 .card.ended .deal { opacity: .6; }
+/* pod-filtr Archiwum: Wszystkie / Zakończone / Przeniesione ręcznie – segmentowany przełącznik w stylu iOS */
+.seg.sub{margin:10px 0 0;gap:2px;padding:3px;flex-wrap:nowrap;background:var(--field);border-radius:12px}
+.seg.sub[hidden]{display:none}
+.seg.sub button{flex:1 1 0;min-width:0;min-height:44px;padding:4px 6px;border:0;border-radius:9px;font-size:13px;line-height:1.15;white-space:normal;text-align:center;color:var(--text-2)}
+.seg.sub button[aria-checked="true"]{background:var(--sep-2);color:var(--text);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.35)}
+.seg.sub small{font-size:11px}
+@media (min-width:640px){.seg.sub{display:inline-flex;max-width:520px}.seg.sub button{flex:1 1 auto;padding:4px 14px}}
