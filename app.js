@@ -90,6 +90,36 @@
     totalDesc: function (a, b) { return b.price.razem - a.price.razem; }
   };
 
+  // ---- Opis sprzedawcy: polskie tłumaczenie (zwinięte), znacznik języka, przełącznik oryginału ----
+  var LANGS = { de: "niemieckiego", en: "angielskiego", sv: "szwedzkiego", fi: "fińskiego", da: "duńskiego", nl: "niderlandzkiego", no: "norweskiego", cs: "czeskiego", sk: "słowackiego", fr: "francuskiego", it: "włoskiego", es: "hiszpańskiego" };
+  var OD = {}; // stan rozwinięcia/oryginału per oferta (tylko w pamięci strony)
+  function descBlock(o) {
+    if (!o.descOrig) return "";
+    var st = OD[o.id] || {}, isPl = o.descLang === "pl", hasPl = !!o.descPl;
+    var showOrig = !hasPl || (st.orig && !isPl);
+    var txt = showOrig ? o.descOrig : o.descPl;
+    var tag = isPl ? "oryginał po polsku" : !hasPl ? "oryginał · tłumaczenie w przygotowaniu" : showOrig ? "oryginał z języka " + (LANGS[o.descLang] || o.descLang) : "przetłumaczone z " + (LANGS[o.descLang] || o.descLang);
+    var long = txt.length > 260 || (txt.match(/\n/g) || []).length > 4;
+    var oid = esc(o.id);
+    return '<section class="od" aria-label="Opis sprzedawcy">' +
+      '<div class="od-h"><span class="od-t">Opis sprzedawcy</span><span class="od-lang">' + esc(tag) + '</span></div>' +
+      '<div class="od-txt' + (long && !st.more ? " clamp" : "") + '" id="od-' + oid + '"' + (showOrig && !isPl ? ' lang="' + esc(o.descLang) + '"' : ' lang="pl"') + '>' + esc(txt) + '</div>' +
+      ((long || (hasPl && !isPl)) ? '<div class="od-btns">' +
+        (long ? '<button type="button" class="od-b" data-od="more" data-oid="' + oid + '" aria-expanded="' + !!st.more + '" aria-controls="od-' + oid + '">' + (st.more ? "Pokaż mniej" : "Pokaż więcej") + '</button>' : "") +
+        (hasPl && !isPl ? '<button type="button" class="od-b" data-od="orig" data-oid="' + oid + '" aria-pressed="' + !!st.orig + '" aria-controls="od-' + oid + '">' + (st.orig ? "Pokaż tłumaczenie" : "Pokaż oryginał") + '</button>' : "") +
+      '</div>' : "") +
+      '</section>';
+  }
+  function odToggle(b) {
+    var id = b.dataset.oid, k = b.dataset.od, st = OD[id] = OD[id] || {};
+    st[k] = !st[k];
+    var o = DATA && DATA.offers.filter(function (x) { return x.id === id; })[0]; if (!o) return;
+    var sec = b.closest(".od"); if (!sec) return;
+    var tmp = document.createElement("div"); tmp.innerHTML = descBlock(o);
+    var nw = tmp.firstChild; sec.parentNode.replaceChild(nw, sec);
+    var nb = nw.querySelector('[data-od="' + k + '"]'); if (nb) nb.focus();
+  }
+
   function card(o) {
     var m = marks[o.id] || {};
     var tone = o.verdict === "polecam" ? "ok" : o.verdict === "nie polecam" ? "bad" : "warn";
@@ -110,7 +140,7 @@
       '<div class="prices"><div class="pc main"><span>Razem z dostawą</span><b>' + zl(p.razem) + '</b></div><div class="pc"><span>Wartość</span><b>≈ ' + zl(o.marketValue) + '</b></div><div class="pc"><span>Różnica</span><b>' + (o.marketValue - p.razem > 0 ? "+" : "") + zl(o.marketValue - p.razem) + '</b></div></div>' +
       (o.valueVerified ? "" : '<div class="store bad">Wartość rynkowa niezweryfikowana</div>') +
       '<div class="verdict ' + tone + '"><div class="score">' + o.overall.toFixed(1).replace(".", ",") + '<small>/10</small></div><div><div class="vtext"><span class="dot"></span>' + esc(o.verdict) + '</div><div class="vsub">ocena ogólna · ' + esc(valid) + '</div></div></div>' +
-      '<p class="reason">' + esc(o.reasoning) + '</p>' +
+      '<p class="reason">' + esc(o.reasoning) + '</p>' + descBlock(o) +
       '<div class="marks">' + MK.map(function (x) { var on = !!m[x[0]]; return '<button type="button" class="mk" data-id="' + esc(o.id) + '" data-k="' + x[0] + '" aria-pressed="' + on + '">' + icon(x[2]) + x[1] + '</button>'; }).join("") + '</div>' +
       '<details class="more"><summary>Szczegóły, wycena i źródła' + '<svg class="ic chev" aria-hidden="true"><use href="#i-chev"/></svg></summary><div class="more-body"><p class="desc">' + esc(o.description) + '</p>' +
       '<table class="props"><caption class="sr-only">Rozbicie ceny i dane oferty</caption>' + rows.map(function (r) { return '<tr' + (r[0] === "Razem" ? ' class="sum"' : "") + '><th scope="row">' + esc(r[0]) + '</th><td>' + esc(r[1]) + '</td></tr>'; }).join("") + '</table>' +
@@ -136,7 +166,7 @@
     if (state.pmax != null && o.price.razem > state.pmax) return false;
     if (state.verified && !o.valueVerified) return false;
     if (state.q) {
-      var hay = o._hay || (o._hay = norm([o.title, o.originalTitle, o.brand, o.type, o.source, o.location, o.description, o.condition, o.verdict, o.listingType === "auction" ? "aukcja licytacja" : "kup teraz", o.valueVerified ? "zweryfikowana" : "", o.reasoning && o.reasoning.play, o.reasoning && o.reasoning.resale].join(" ")));
+      var hay = o._hay || (o._hay = norm([o.title, o.originalTitle, o.brand, o.type, o.source, o.location, o.description, o.descPl, o.condition, o.verdict, o.listingType === "auction" ? "aukcja licytacja" : "kup teraz", o.valueVerified ? "zweryfikowana" : "", o.reasoning && o.reasoning.play, o.reasoning && o.reasoning.resale].join(" ")));
       var words = norm(state.q).split(/\s+/).filter(Boolean);
       for (var i = 0; i < words.length; i++) if (hay.indexOf(words[i]) < 0) return false;
     }
@@ -278,6 +308,7 @@
     if (!b) return;
     if (b.dataset.close) { closeSheet(); return; }
     if (b.dataset.view) { state.view = b.dataset.view; update(); return; }
+    if (b.dataset.od) { odToggle(b); return; }
     if (b.dataset.id) { toggleMark(b.dataset.id, b.dataset.k); return; }
     if (b.dataset.act === "clear") { clearFilters(); return; }
     if (b.dataset.act === "brands") { showAllBrands = !showAllBrands; renderSheet(); var mb = $("f-brand").querySelector(".more"); if (mb) mb.focus(); return; }
