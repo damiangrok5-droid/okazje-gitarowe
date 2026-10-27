@@ -113,7 +113,7 @@
   function odToggle(b) {
     var id = b.dataset.oid, k = b.dataset.od, st = OD[id] = OD[id] || {};
     st[k] = !st[k];
-    var o = DATA && DATA.offers.filter(function (x) { return x.id === id; })[0]; if (!o) return;
+    var o = DATA && pool().filter(function (x) { return x.id === id; })[0]; if (!o) return;
     var sec = b.closest(".od"); if (!sec) return;
     var tmp = document.createElement("div"); tmp.innerHTML = descBlock(o);
     var nw = tmp.firstChild; sec.parentNode.replaceChild(nw, sec);
@@ -126,12 +126,13 @@
     var p = o.price;
     var cur = { EUR: "€", USD: "$", GBP: "£" }[o.currency] || o.currency;
     var orig = o.currency === "PLN" ? zl(o.priceOriginal) : o.priceOriginal.toLocaleString("pl-PL") + " " + cur + " = " + zl(p.cena);
-    var valid = o.auctionEnd ? "aukcja · koniec " + dtt(o.auctionEnd) : o.validTo ? "kup teraz · ważne do " + dt(o.validTo) : "kup teraz · bez daty końca";
+    var ended = o.status === "zakończona";
+    var valid = ended ? "zakończona " + dtt(o.endedAt) + (o.endReason ? " · " + o.endReason : "") : o.auctionEnd ? "aukcja · koniec " + dtt(o.auctionEnd) : o.validTo ? "kup teraz · ważne do " + dt(o.validTo) : "kup teraz · bez daty końca";
     var rows = [["Stan", o.condition], ["Cena w ogłoszeniu", orig], ["Wysyłka do PL", zl(p.wysylka) + " – " + o.shippingNote], ["Cło (3,2%)", zl(p.clo)], ["VAT importowy (23%)", zl(p.vat)], ["Opłaty przewoźnika / agencji", zl(p.oplaty) + " – " + o.customsNote], ["Razem", zl(p.razem)], ["Wartość rynkowa", "≈ " + zl(o.marketValue) + (o.valueVerified ? "" : " (niezweryfikowana)")], ["Wycena", o.valueMethod], ["Aukcja / ważność", valid], ["Wystawione", dt(o.postedOrSince)], ["Pierwszy raz w zestawieniu", dtt(o.firstSeen)], ["ID", o.id]];
     var MK = [["fav", "Ulubione", "heart"], ["bought", "Kupione", "bag"], ["arch", "Archiwum", "archive"]];
-    return '<article class="card' + (m.arch ? " arch" : "") + '" aria-labelledby="t-' + esc(o.id) + '">' +
+    return '<article class="card' + (m.arch ? " arch" : "") + (ended ? " ended" : "") + '" aria-labelledby="t-' + esc(o.id) + '">' +
       '<a class="ph" href="' + esc(o.url) + '" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img loading="lazy" decoding="async" width="800" height="500" referrerpolicy="no-referrer" src="' + esc(o.photo) + '" alt="" onerror="this.parentNode.classList.add(\'err\')"><span class="fb">' + icon("photo") + 'Zdjęcie w ogłoszeniu</span>' +
-      '<span class="ph-tags">' + (isNew(o) ? '<span class="pill new">NOWE</span>' : "") + '<span class="pill">' + esc(o.source) + '</span>' + (m.arch ? '<span class="pill">W archiwum</span>' : "") + (m.bought ? '<span class="pill">Kupione</span>' : "") + '</span>' +
+      '<span class="ph-tags">' + (ended ? '<span class="pill end">Zakończona</span>' : isNew(o) ? '<span class="pill new">NOWE</span>' : "") + '<span class="pill">' + esc(o.source) + '</span>' + (m.arch ? '<span class="pill">W archiwum</span>' : "") + (m.bought ? '<span class="pill">Kupione</span>' : "") + '</span>' +
       '<span class="deal' + (o.dealPct > 0 ? "" : " neg") + '">' + pct(o.dealPct) + '<small>' + (o.dealPct > 0 ? "pod wartością" : "nad wartością") + '</small></span></a>' +
       '<div class="body">' +
       '<div class="kicker"><b>' + esc(o.brand || "") + '</b><span>' + esc(o.type || "") + '</span></div>' +
@@ -149,8 +150,11 @@
       '</div></article>';
   }
 
+  // Zakończone oferty (DATA.ended) widać tylko, jeśli mają oznaczenie (ulubione/kupione/archiwum) – nigdy w „Aktywne”.
+  function pool() { return DATA.offers.concat((DATA.ended || []).filter(function (o) { var m = marks[o.id] || {}; return m.fav || m.bought || m.arch; })); }
   function inView(o) {
     var m = marks[o.id] || {};
+    if (o.status === "zakończona" && state.view === "aktywne") return false;
     if (state.view === "aktywne" && m.arch) return false;
     if (state.view === "ulubione" && !m.fav) return false;
     if (state.view === "kupione" && !m.bought) return false;
@@ -172,13 +176,13 @@
     }
     return true;
   }
-  function filtered() { return DATA.offers.filter(function (o) { return inView(o) && matches(o); }); }
+  function filtered() { return pool().filter(function (o) { return inView(o) && matches(o); }); }
 
   function render() {
     if (!DATA) return;
-    var offers = DATA.offers;
+    var offers = pool();
     var cnt = function (f) { return offers.filter(function (o) { return f(marks[o.id] || {}); }).length; };
-    var counts = { aktywne: offers.length - cnt(function (m) { return m.arch; }), ulubione: cnt(function (m) { return m.fav; }), kupione: cnt(function (m) { return m.bought; }), archiwum: cnt(function (m) { return m.arch; }), wszystkie: offers.length };
+    var counts = { aktywne: offers.filter(function (o) { return o.status !== "zakończona" && !(marks[o.id] || {}).arch; }).length, ulubione: cnt(function (m) { return m.fav; }), kupione: cnt(function (m) { return m.bought; }), archiwum: cnt(function (m) { return m.arch; }), wszystkie: offers.length };
     $("views").innerHTML = VIEWS.map(function (v) { var on = state.view === v[0]; return '<button type="button" role="radio" aria-checked="' + on + '" tabindex="' + (on ? 0 : -1) + '" data-view="' + v[0] + '">' + v[1] + '<small>' + counts[v[0]] + '</small></button>'; }).join("");
     var list = filtered().sort(SORTS[state.sort] || SORTS["new"]);
     var n = activeCount() + (state.q ? 1 : 0);
@@ -213,19 +217,19 @@
     return '<button type="button" class="opt' + (count === 0 && !on ? " zero" : "") + '" data-g="' + group + '" data-v="' + esc(value) + '" aria-pressed="' + on + '">' + esc(label) + (count != null ? '<small>' + count + '</small>' : "") + '</button>';
   }
   function facet(group, values) {
-    var base = DATA.offers.filter(function (o) { return inView(o) && matches(o, group); });
+    var base = pool().filter(function (o) { return inView(o) && matches(o, group); });
     var key = { src: "source", type: "type", brand: "brand", verdict: "verdict" }[group], dflt = { type: "Inne", brand: "Inna" }[group];
     return values.map(function (v) { return opt(group, v, v, base.filter(function (o) { return (o[key] || dflt) === v; }).length); }).join("");
   }
   function uniq(key, order) {
-    var s = {}; DATA.offers.forEach(function (o) { if (o[key]) s[o[key]] = 1; });
+    var s = {}; pool().forEach(function (o) { if (o[key]) s[o[key]] = 1; });
     var xs = Object.keys(s);
     if (order) xs.sort(function (a, b) { var i = order.indexOf(a), j = order.indexOf(b); return (i < 0 ? 99 : i) - (j < 0 ? 99 : j) || a.localeCompare(b, "pl"); });
     else xs.sort(function (a, b) { return a.localeCompare(b, "pl"); });
     return xs;
   }
   function brandList() {
-    var c = {}; DATA.offers.forEach(function (o) { var b = o.brand || "Inna"; c[b] = (c[b] || 0) + 1; });
+    var c = {}; pool().forEach(function (o) { var b = o.brand || "Inna"; c[b] = (c[b] || 0) + 1; });
     var have = Object.keys(c).sort(function (a, b) { return c[b] - c[a] || a.localeCompare(b, "pl"); });
     state.brand.forEach(function (b) { if (have.indexOf(b) < 0) have.push(b); });
     var rest = BRAND_POP.filter(function (b) { return have.indexOf(b) < 0; });
