@@ -13,7 +13,7 @@
 <link rel="apple-touch-icon" href="icon.png">
 <link rel="manifest" href="manifest.webmanifest">
 <script>document.documentElement.dataset.theme="dark";try{if(localStorage.getItem("okg-theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
-<link rel="stylesheet" href="style.css?v=b6a469aaa7">
+<link rel="stylesheet" href="style.css?v=78331b0a8a">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -37,14 +37,20 @@
   <div class="hero-row">
     <div class="hero-text">
       <h1>Okazje gitarowe</h1>
-      <p id="summary" class="sub">Ładowanie ofert…</p>
+      <p id="summary" class="sub g-only">Ładowanie ofert…</p>
+      <p id="csummary" class="sub c-only">Ładowanie koncertów…</p>
     </div>
     <button type="button" id="theme" class="icon-btn" aria-label="Motyw: ciemny"><svg class="ic"><use href="#i-sun"/></svg></button>
   </div>
-  <div id="metrics" class="metrics" aria-label="Podsumowanie"></div>
+  <div id="tabs" class="tabs" role="radiogroup" aria-label="Sekcja strony">
+    <button type="button" role="radio" data-tab="gitary" aria-checked="true">Gitary</button>
+    <button type="button" role="radio" data-tab="koncerty" aria-checked="false">Koncerty</button>
+  </div>
+  <div id="metrics" class="metrics g-only" aria-label="Podsumowanie"></div>
+  <div id="cmetrics" class="metrics cmetrics c-only" aria-label="Podsumowanie koncertów"></div>
 </header>
 
-<div id="bar" class="bar">
+<div id="bar" class="bar g-only">
   <form id="searchForm" class="search" role="search" autocomplete="off">
     <label for="q" class="sr-only">Szukaj ofert</label>
     <div class="field">
@@ -59,7 +65,7 @@
   <div id="chips" class="chips" aria-label="Aktywne filtry"></div>
 </div>
 
-<main id="main">
+<main id="main" class="g-only">
   <div id="views" class="seg" role="radiogroup" aria-label="Widok"></div>
   <div id="archsub" class="seg sub" role="radiogroup" aria-label="Archiwum: rodzaj" hidden></div>
   <div class="resbar">
@@ -94,7 +100,7 @@
   </section>
 </main>
 
-<footer class="foot">Dane: OLX.pl, Allegro Lokalnie, Sprzedajemy.pl, Kleinanzeigen.de, willhaben.at, Marktplaats.nl, 2dehands.be, Blocket.se, Tori.fi, DBA.dk, Bazoš.cz/sk, Reverb, eBay (gdy włączone API). Ceny ofertowe, nie transakcyjne. Nie licytowano, nie kupowano i nie kontaktowano się ze sprzedawcami. <span id="dsrc"></span></footer>
+<footer class="foot g-only">Dane: OLX.pl, Allegro Lokalnie, Sprzedajemy.pl, Kleinanzeigen.de, willhaben.at, Marktplaats.nl, 2dehands.be, Blocket.se, Tori.fi, DBA.dk, Bazoš.cz/sk, Reverb, eBay (gdy włączone API). Ceny ofertowe, nie transakcyjne. Nie licytowano, nie kupowano i nie kontaktowano się ze sprzedawcami. <span id="dsrc"></span></footer>
 
 <div id="sheet" class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden>
   <div class="scrim" data-close="1"></div>
@@ -124,6 +130,25 @@
     </div>
   </div>
 </div>
-<script src="app.js?v=b6a469aaa7"></script>
+<div id="cbar" class="bar c-only">
+  <form id="csearch" class="search" role="search" autocomplete="off">
+    <label for="cq" class="sr-only">Szukaj koncertu</label>
+    <div class="field"><svg class="ic ic-field" aria-hidden="true"><use href="#i-search"/></svg><input id="cq" type="search" enterkeyhint="search" autocomplete="off" autocorrect="off" spellcheck="false" placeholder="Artysta, miasto, sala"></div>
+  </form>
+  <div class="cfilters">
+    <label class="csel"><span class="sr-only">Miasto</span><select id="ccity"></select></label>
+    <label class="csel"><span class="sr-only">Miesiąc</span><select id="cmonthsel"></select></label>
+  </div>
+  <div id="cgroup" class="seg sub cgroup" role="radiogroup" aria-label="Dopasowanie"></div>
+</div>
+<section id="cview" class="cmain c-only" aria-label="Koncerty">
+  <div id="cviews" class="seg" role="radiogroup" aria-label="Widok koncertów"></div>
+  <div class="resbar"><p id="ccount" class="count" role="status" aria-live="polite">Ładowanie…</p><button type="button" id="cclear" class="btn btn-plain" hidden>Wyczyść filtry</button></div>
+  <div id="clist" class="clist" aria-busy="true"></div>
+  <details class="cinfo"><summary>Skąd są te koncerty</summary><ul id="csources"></ul></details>
+</section>
+<footer class="foot c-only">Dane: publiczne strony eBilet.pl i Ticketmaster.pl (każdy koncert ma link do źródła). Ceny „od” podaje sprzedawca; nic nie jest kupowane. Odświeżanie: <code>python3 concerts.py</code>.</footer>
+<script src="concerts.js?v=78331b0a8a" defer></script>
+<script src="app.js?v=78331b0a8a"></script>
 </body>
 </html>
