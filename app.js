@@ -130,19 +130,23 @@
     var valid = ended ? "zakończona " + dtt(o.endedAt) + (o.endReason ? " · " + o.endReason : "") : o.auctionEnd ? "aukcja · koniec " + dtt(o.auctionEnd) : o.validTo ? "kup teraz · ważne do " + dt(o.validTo) : "kup teraz · bez daty końca";
     var rows = [["Stan", o.condition], ["Cena w ogłoszeniu", orig], ["Wysyłka do PL", zl(p.wysylka) + " – " + o.shippingNote], ["Cło (3,2%)", zl(p.clo)], ["VAT importowy (23%)", zl(p.vat)], ["Opłaty przewoźnika / agencji", zl(p.oplaty) + " – " + o.customsNote], ["Razem", zl(p.razem)], ["Wartość rynkowa", "≈ " + zl(o.marketValue) + (o.valueVerified ? "" : " (niezweryfikowana)")], ["Wycena", o.valueMethod], ["Aukcja / ważność", valid], ["Wystawione", dt(o.postedOrSince)], ["Pierwszy raz w zestawieniu", dtt(o.firstSeen)], ["ID", o.id]];
     var MK = [["fav", "Ulubione", "heart"], ["bought", "Kupione", "bag"], ["arch", "Archiwum", "archive"]];
+    var diff = o.marketValue - p.razem;
+    var flags = (ended ? '<span class="flag end">Zakończona</span>' : isNew(o) ? '<span class="flag new">Nowa</span>' : "") + (m.arch ? '<span class="flag">W archiwum</span>' : "") + (m.bought ? '<span class="flag">Kupione</span>' : "");
     return '<article class="card' + (m.arch ? " arch" : "") + (ended ? " ended" : "") + '" aria-labelledby="t-' + esc(o.id) + '">' +
-      '<a class="ph" href="' + esc(o.url) + '" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img loading="lazy" decoding="async" width="800" height="500" referrerpolicy="no-referrer" src="' + esc(o.photo) + '" alt="" onerror="this.parentNode.classList.add(\'err\')"><span class="fb">' + icon("photo") + 'Zdjęcie w ogłoszeniu</span>' +
-      '<span class="ph-tags">' + (ended ? '<span class="pill end">Zakończona</span>' : isNew(o) ? '<span class="pill new">NOWE</span>' : "") + '<span class="pill">' + esc(o.source) + '</span>' + (m.arch ? '<span class="pill">W archiwum</span>' : "") + (m.bought ? '<span class="pill">Kupione</span>' : "") + '</span>' +
-      '<span class="deal' + (o.dealPct > 0 ? "" : " neg") + '">' + pct(o.dealPct) + '<small>' + (o.dealPct > 0 ? "pod wartością" : "nad wartością") + '</small></span></a>' +
+      '<a class="ph" href="' + esc(o.url) + '" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img loading="lazy" decoding="async" width="800" height="600" referrerpolicy="no-referrer" src="' + esc(o.photo) + '" alt="" onerror="this.parentNode.classList.add(\'err\')"><span class="fb">' + icon("photo") + 'Zdjęcie w ogłoszeniu</span>' +
+      (flags ? '<span class="ph-tags">' + flags + '</span>' : "") + '</a>' +
       '<div class="body">' +
-      '<div class="kicker"><b>' + esc(o.brand || "") + '</b><span>' + esc(o.type || "") + '</span></div>' +
+      '<div class="kicker"><b>' + esc(o.brand || "") + '</b><span>' + esc(o.type || "") + '</span><span>' + esc(o.source) + '</span></div>' +
       '<a class="title" id="t-' + esc(o.id) + '" href="' + esc(o.url) + '" target="_blank" rel="noopener noreferrer">' + esc(o.title) + '</a>' +
       '<div class="loc">' + esc(o.location || "–") + ' · oryg.: „' + esc(o.originalTitle) + '”</div>' +
-      '<div class="prices"><div class="pc main"><span>Razem z dostawą</span><b>' + zl(p.razem) + '</b></div><div class="pc"><span>Wartość</span><b>≈ ' + zl(o.marketValue) + '</b></div><div class="pc"><span>Różnica</span><b>' + (o.marketValue - p.razem > 0 ? "+" : "") + zl(o.marketValue - p.razem) + '</b></div></div>' +
-      (o.valueVerified ? "" : '<div class="store bad">Wartość rynkowa niezweryfikowana</div>') +
-      '<div class="verdict ' + tone + '"><div class="score">' + o.overall.toFixed(1).replace(".", ",") + '<small>/10</small></div><div><div class="vtext"><span class="dot"></span>' + esc(o.verdict) + '</div><div class="vsub">ocena ogólna · ' + esc(valid) + '</div></div></div>' +
+      '<div class="prices"><div class="pc main"><span class="sr-only">Razem z dostawą: </span><b>' + zl(p.razem) + '</b></div>' +
+      '<div class="pc dl' + (o.dealPct > 0 ? "" : " neg") + '"><b>' + pct(o.dealPct) + '</b><span>' + (o.dealPct > 0 ? "pod rynkiem" : "nad rynkiem") + '</span></div></div>' +
+      '<div class="pline">z dostawą do PL · rynek ≈ ' + zl(o.marketValue) + ' · różnica ' + (diff > 0 ? "+" : "") + zl(diff) + '</div>' +
+      (o.valueVerified ? "" : '<div class="warnline">Wartość rynkowa niezweryfikowana</div>') +
+      '<div class="verdict ' + tone + '"><span class="vtext"><span class="dot" aria-hidden="true"></span>' + esc(o.verdict) + '</span><span class="meter" aria-hidden="true"><i style="width:' + Math.round(o.overall * 10) + '%"></i></span><span class="score">' + o.overall.toFixed(1).replace(".", ",") + '<small>/10</small></span></div>' +
+      '<div class="vsub">' + esc(valid) + '</div>' +
       '<p class="reason">' + esc(o.reasoning) + '</p>' + descBlock(o) +
-      '<div class="marks">' + MK.map(function (x) { var on = !!m[x[0]]; return '<button type="button" class="mk" data-id="' + esc(o.id) + '" data-k="' + x[0] + '" aria-pressed="' + on + '">' + icon(x[2]) + x[1] + '</button>'; }).join("") + '</div>' +
+      '<div class="marks" role="group" aria-label="Oznacz ofertę">' + MK.map(function (x) { var on = !!m[x[0]]; return '<button type="button" class="mk" data-id="' + esc(o.id) + '" data-k="' + x[0] + '" aria-pressed="' + on + '">' + icon(x[2]) + x[1] + '</button>'; }).join("") + '</div>' +
       '<details class="more"><summary>Szczegóły, wycena i źródła' + '<svg class="ic chev" aria-hidden="true"><use href="#i-chev"/></svg></summary><div class="more-body"><p class="desc">' + esc(o.description) + '</p>' +
       '<table class="props"><caption class="sr-only">Rozbicie ceny i dane oferty</caption>' + rows.map(function (r) { return '<tr' + (r[0] === "Razem" ? ' class="sum"' : "") + '><th scope="row">' + esc(r[0]) + '</th><td>' + esc(r[1]) + '</td></tr>'; }).join("") + '</table>' +
       '<div class="scores" role="list" aria-label="Oceny 1–10">' + SCORES.map(function (s) { var v = o.scores[s[0]]; return '<div class="sb" role="listitem"><span>' + s[1] + '</span><div class="tr" aria-hidden="true"><i style="width:' + v * 10 + '%"></i></div><b>' + v + '</b></div>'; }).join("") + '</div>' +
@@ -201,12 +205,12 @@
     g.innerHTML = list.length ? list.map(card).join("") : emptyState();
     g.setAttribute("aria-busy", "false");
     $("applyFilters").textContent = list.length ? "Pokaż " + plural(list.length, "ofertę", "oferty", "ofert") : "Brak ofert – zmień filtry";
-    if (!$("sheet").hidden) renderSheet();
+    if (!$("sheet").hidden || wide()) renderSheet();
   }
   function emptyState() {
     var ebOnly = state.src.length === 1 && state.src[0] === "eBay";
     var msg = ebOnly ? "eBay: " + ((DATA.meta.sources || {}).eBay || "brak ofert") + "." : state.view !== "aktywne" && state.view !== "wszystkie" && !activeCount() && !state.q ? "Nie masz jeszcze ofert w tym widoku. Oznacz ofertę przyciskiem pod kartą." : "Żadna oferta nie pasuje do wyszukiwania i filtrów. Poluzuj filtry albo zmień frazę.";
-    return '<div class="empty"><b>Brak ofert</b>' + esc(msg) + (activeCount() || state.q ? '<br><button type="button" class="btn btn-tint" data-act="clear">Wyczyść filtry</button>' : "") + '</div>';
+    return '<div class="empty">' + icon(ebOnly || activeCount() || state.q ? "search" : "heart") + '<b>Brak ofert</b><p>' + esc(msg) + '</p>' + (activeCount() || state.q ? '<button type="button" class="btn btn-tint" data-act="clear">Wyczyść filtry</button>' : "") + '</div>';
   }
   function renderChips() {
     var c = [];
@@ -265,6 +269,15 @@
   function update() { saveFilters(); render(); }
   function clearFilters() { var keep = { view: state.view, sort: state.sort }; state = JSON.parse(JSON.stringify(DEF)); state.view = keep.view; state.sort = keep.sort; $("q").value = ""; update(); }
 
+  // ≥1100 px: filtry jako stały panel boczny (ten sam formularz co arkusz na telefonie)
+  var WIDE = window.matchMedia ? window.matchMedia("(min-width: 1100px)") : null;
+  function wide() { return !!(WIDE && WIDE.matches); }
+  function syncLayout() {
+    var sh = $("sheet");
+    if (wide()) { if (!sh.hidden) closeSheet(); sh.setAttribute("role", "region"); sh.removeAttribute("aria-modal"); sh.setAttribute("aria-label", "Filtry"); if (DATA) renderSheet(); }
+    else { sh.setAttribute("role", "dialog"); sh.setAttribute("aria-modal", "true"); sh.removeAttribute("aria-label"); }
+  }
+  if (WIDE) { if (WIDE.addEventListener) WIDE.addEventListener("change", syncLayout); else if (WIDE.addListener) WIDE.addListener(syncLayout); }
   var lastFocus = null;
   function openSheet() { lastFocus = document.activeElement; $("sheet").hidden = false; renderSheet(); document.body.style.overflow = "hidden"; setTimeout(function () { var b = $("sheet").querySelector(".sheet-head .icon-btn"); if (b) b.focus(); }, 30); }
   function closeSheet() { $("sheet").hidden = true; document.body.style.overflow = ""; if (lastFocus && lastFocus.focus) lastFocus.focus(); }
@@ -278,7 +291,7 @@
     var pol = offers.filter(function (o) { return o.verdict === "polecam"; }).length;
     var nNew = offers.filter(isNew).length;
     var fx = meta.fx;
-    $("metrics").innerHTML = [[offers.length, plural(offers.length, "oferta", "oferty", "ofert").replace(/^\d+ /, ""), ""], [nNew, "nowe w 24 h", ""], [pol, "„polecam”", ""], [best ? pct(best.dealPct) : "–", "największa okazja", "hl"], [String(fx.EUR).replace(".", ","), "zł za 1 € (NBP)", ""]].map(function (x) { return '<div class="metric ' + x[2] + '"><b>' + esc(x[0]) + '</b><span>' + esc(x[1]) + '</span></div>'; }).join("");
+    $("metrics").innerHTML = [[offers.length, "aktywne oferty", ""], [nNew, "nowe w 24 h", ""], [pol, "werdykt „polecam”", ""], [best ? pct(best.dealPct) : "–", "największa okazja", "hl"], [String(fx.EUR).replace(".", ","), "zł za 1 € (NBP)", ""]].map(function (x) { return '<div class="stat ' + x[2] + '"><dt>' + esc(x[1]) + '</dt><dd>' + esc(x[0]) + '</dd></div>'; }).join("");
     var w = meta.weights || {};
     var P = function (k) { return Math.round((w[k] || 0) * 100) + "%"; };
     $("method").innerHTML = [
@@ -303,7 +316,7 @@
     var t = curTheme(), nx = t === "dark" ? THEMES[1] : THEMES[0];
     document.documentElement.dataset.theme = t;
     $("theme").innerHTML = icon(nx[2]); $("theme").setAttribute("aria-label", "Motyw: " + (t === "dark" ? "ciemny" : "jasny") + ". Przełącz na " + nx[1]);
-    document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) { m.setAttribute("content", t === "dark" ? "#000000" : "#ffffff"); });
+    document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) { m.setAttribute("content", t === "dark" ? "#0b0b0c" : "#fafafa"); });
   }
   $("theme").addEventListener("click", function () {
     var n = curTheme() === "dark" ? "light" : "dark";
@@ -325,7 +338,7 @@
     if (b.dataset.act === "clear") { clearFilters(); return; }
     if (b.dataset.act === "brands") { showAllBrands = !showAllBrands; renderSheet(); var mb = $("f-brand").querySelector(".more"); if (mb) mb.focus(); return; }
     if (b.dataset.reset) { if (b.dataset.reset === "price") { state.pmin = state.pmax = null; $("pmin").value = $("pmax").value = ""; } else state[b.dataset.reset] = []; update(); return; }
-    if (b.dataset.g) { var g = b.dataset.g, a = state[g], v = b.dataset.v, i = a.indexOf(v); if (i >= 0) a.splice(i, 1); else a.push(v); update(); var nb = $("sheet").hidden ? null : $("sheet").querySelector('[data-g="' + g + '"][data-v="' + (window.CSS && CSS.escape ? CSS.escape(v) : v) + '"]'); if (nb) nb.focus(); return; }
+    if (b.dataset.g) { var g = b.dataset.g, a = state[g], v = b.dataset.v, i = a.indexOf(v); if (i >= 0) a.splice(i, 1); else a.push(v); update(); var nb = $("sheet").hidden && !wide() ? null : $("sheet").querySelector('[data-g="' + g + '"][data-v="' + (window.CSS && CSS.escape ? CSS.escape(v) : v) + '"]'); if (nb) nb.focus(); return; }
     if (b.dataset.preset) { var pr = b.dataset.preset.split("-").map(Number); var same = state.pmin === (pr[0] || null) && state.pmax === pr[1]; state.pmin = same ? null : (pr[0] || null); state.pmax = same ? null : pr[1]; update(); return; }
     if (b.dataset.chip) {
       var k = b.dataset.chip, val = b.dataset.v;
@@ -382,6 +395,6 @@
   $("mcopy").addEventListener("click", function () { var t = $("mcode"); t.select(); var done = function () { $("mmsg").textContent = "Skopiowano kod."; }; try { navigator.clipboard.writeText(t.value).then(done, function () { document.execCommand("copy"); done(); }); } catch (e) { document.execCommand("copy"); done(); } });
   $("mimport").addEventListener("click", function () { var n = importMarks($("min").value); $("mmsg").textContent = n ? "Zaimportowano oznaczenia: " + n + "." : "Nieprawidłowy kod."; if (n) $("min").value = ""; });
   fetch("data/offers.json?v=" + Date.now(), { cache: "no-store" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
-    DATA = d; header(); render(); $("dsrc").textContent = "Dane wczytane: data/offers.json.";
+    DATA = d; header(); syncLayout(); render(); $("dsrc").textContent = "Dane wczytane: data/offers.json.";
   }).catch(function (err) { $("summary").textContent = "Nie udało się wczytać danych (" + err.message + "). Odśwież stronę za chwilę."; $("grid").setAttribute("aria-busy", "false"); $("count").textContent = "Błąd wczytywania danych"; });
 })();

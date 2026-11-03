@@ -52,21 +52,24 @@
     var d = new Date(c.date + "T12:00:00"), m = mk(c.id);
     var links = [{ source: c.source, url: c.url }].concat(c.alt || []);
     var isNew = c.firstSeen && c.firstSeen.slice(0, 10) > FIRST && (Date.now() - new Date(c.firstSeen).getTime()) < 36e5 * 30;
+    var tags = (c.group === "moi" ? '<span class="tag mine">Twój artysta</span>' : "") + (isNew && !arch ? '<span class="tag new">Nowy</span>' : "") + (c.status ? '<span class="tag warn">' + esc(c.status) + "</span>" : "") + (arch ? '<span class="tag">' + esc(c.archiveReason || "archiwum") + "</span>" : "");
+    var ic = function (id) { return '<svg class="ic" aria-hidden="true"><use href="#i-' + id + '"/></svg>'; };
     return '<article class="cc' + (arch ? " arch" : "") + (c.group === "moi" ? " moi" : "") + '" data-id="' + esc(c.id) + '">' +
-      '<div class="cc-date" aria-hidden="true"><b>' + d.getDate() + '</b><span>' + MSHORT[d.getMonth()] + '</span><small>' + WD[d.getDay()] + '</small></div>' +
+      '<div class="cc-date" aria-hidden="true"><small>' + WD[d.getDay()] + '</small><b>' + d.getDate() + '</b><span>' + MSHORT[d.getMonth()] + '</span></div>' +
       '<div class="cc-body">' +
-        '<p class="cc-kick"><span class="score s' + (c.score >= 9 ? "hi" : c.score >= 7 ? "mid" : "lo") + '">' + c.score + '/10</span>' + (c.group === "moi" ? '<span class="tag">Twój artysta</span>' : "") + (isNew && !arch ? '<span class="tag new">Nowy</span>' : "") + (c.status ? '<span class="tag warn">' + esc(c.status) + "</span>" : "") + (arch ? '<span class="tag">' + esc(c.archiveReason || "archiwum") + "</span>" : "") + "</p>" +
         '<h3 class="cc-title">' + esc(c.title) + "</h3>" +
-        '<p class="cc-meta"><span class="sr-only">' + WD[d.getDay()] + " " + d.getDate() + " " + MGEN[d.getMonth()] + " " + d.getFullYear() + ", </span>" + (c.time ? esc(c.time) + " · " : "") + esc(c.city) + (c.venue ? " · " + esc(c.venue) : "") + "</p>" +
+        '<p class="cc-meta"><span class="sr-only">' + WD[d.getDay()] + " " + d.getDate() + " " + MGEN[d.getMonth()] + " " + d.getFullYear() + ", </span>" + (c.time ? '<span class="cc-time">' + esc(c.time) + "</span> · " : "") + esc(c.city) + (c.venue ? " · " + esc(c.venue) : "") + "</p>" +
+        '<p class="cc-kick"><span class="score s' + (c.score >= 9 ? "hi" : c.score >= 7 ? "mid" : "lo") + '" title="Dopasowanie do gustu"><span class="meter" aria-hidden="true"><i style="width:' + c.score * 10 + '%"></i></span>' + c.score + '/10</span>' + tags + "</p>" +
         '<p class="cc-why">' + esc(c.reason) + "</p>" +
-        '<div class="cc-foot"><span class="cc-price' + (c.soldOut ? " sold" : "") + '">' + esc(price(c)) + "</span>" +
-          links.map(function (l, i) { return '<a class="btn ' + (i ? "btn-plain" : "btn-tint") + ' cc-link" href="' + esc(l.url) + '" target="_blank" rel="noopener noreferrer">' + (i ? "" : "Bilety · ") + esc(l.source) + "</a>"; }).join("") +
-        "</div>" +
-        (arch ? "" : '<div class="cc-marks" role="group" aria-label="Oznacz koncert">' +
-          '<button type="button" class="mk" data-m="fav" aria-pressed="' + (m === "fav") + '"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg>Ulubiony</button>' +
-          '<button type="button" class="mk" data-m="got" aria-pressed="' + (m === "got") + '"><svg class="ic" aria-hidden="true"><use href="#i-bag"/></svg>Mam bilet</button>' +
-          '<button type="button" class="mk" data-m="hid" aria-pressed="' + (m === "hid") + '"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg>' + (m === "hid" ? "Przywróć" : "Ukryj") + "</button></div>") +
+
       "</div>" +
+      '<div class="cc-foot"><span class="cc-price' + (c.soldOut ? " sold" : "") + '">' + esc(price(c)) + "</span>" +
+        links.map(function (l, i) { return '<a class="cc-link' + (i ? " alt" : "") + '" href="' + esc(l.url) + '" target="_blank" rel="noopener noreferrer">' + (i ? "" : "Bilety · ") + esc(l.source) + ic("ext") + "</a>"; }).join("") +
+      "</div>" +
+      (arch ? "" : '<div class="cc-marks" role="group" aria-label="Oznacz koncert">' +
+          '<button type="button" class="mk" data-m="fav" aria-pressed="' + (m === "fav") + '">' + ic("heart") + 'Ulubiony</button>' +
+          '<button type="button" class="mk" data-m="got" aria-pressed="' + (m === "got") + '">' + ic("ticket") + 'Mam bilet</button>' +
+          '<button type="button" class="mk" data-m="hid" aria-pressed="' + (m === "hid") + '">' + ic("eye-off") + (m === "hid" ? "Przywróć" : "Ukryj") + "</button></div>") +
       (c.image ? '<img class="cc-img" src="' + esc(c.image) + '" alt="" loading="lazy" decoding="async" width="72" height="72" referrerpolicy="no-referrer" onerror="this.remove()">' : "") +
     "</article>";
   }
@@ -80,9 +83,9 @@
     var list = all.filter(function (x) { return inView(x[0], x[1]) && pass(x[0]); });
     if (F.view === "arch") list.sort(function (a, b) { return a[0].date < b[0].date ? 1 : -1; });
     var out = "", lastM = "";
-    list.forEach(function (x) { var ym = x[0].date.slice(0, 7); if (ym !== lastM) { lastM = ym; out += '<h2 class="cmonth">' + MONTHS[+ym.slice(5) - 1] + " " + ym.slice(0, 4) + "</h2>"; } out += card(x[0], x[1]); });
+    list.forEach(function (x) { var ym = x[0].date.slice(0, 7); if (ym !== lastM) { lastM = ym; out += '<h2 class="cmonth">' + MONTHS[+ym.slice(5) - 1].replace(/^./, function (ch) { return ch.toUpperCase(); }) + ' <span>' + ym.slice(0, 4) + "</span></h2>"; } out += card(x[0], x[1]); });
     var nf = (F.group !== "all") + !!F.city + !!F.month + !!F.q;
-    $("clist").innerHTML = out || '<div class="empty"><p>' + (nf ? "Żaden koncert nie pasuje do filtrów." : F.view === "up" ? "Brak nadchodzących koncertów." : "Nic tu jeszcze nie ma – oznacz koncert na liście „Nadchodzące”.") + "</p>" + (nf ? '<button type="button" class="btn btn-tint" id="cclear2">Wyczyść filtry</button>' : "") + "</div>";
+    $("clist").innerHTML = out || '<div class="empty"><svg class="ic" aria-hidden="true"><use href="#i-' + (nf ? "search" : "ticket") + '"/></svg><b>' + (nf ? "Brak wyników" : "Pusto") + '</b><p>' + (nf ? "Żaden koncert nie pasuje do filtrów." : F.view === "up" ? "Brak nadchodzących koncertów." : "Nic tu jeszcze nie ma – oznacz koncert na liście „Nadchodzące”.") + "</p>" + (nf ? '<button type="button" class="btn btn-tint" id="cclear2">Wyczyść filtry</button>' : "") + "</div>";
     $("clist").setAttribute("aria-busy", "false");
     $("ccount").textContent = list.length ? plural(list.length, "koncert", "koncerty", "koncertów") + (nf ? " po filtrach" : "") : "Brak wyników";
     $("cclear").hidden = !nf;
@@ -102,8 +105,9 @@
       opts($("ccity"), cl.map(function (c) { return [c, c + " (" + cities[c] + ")"]; }), F.city, "Wszystkie miasta");
       opts($("cmonthsel"), Object.keys(months).sort().map(function (m) { return [m, MONTHS[+m.slice(5) - 1] + " " + m.slice(0, 4)]; }), F.month, "Każdy miesiąc");
       var moi = cs.filter(function (c) { return c.group === "moi"; }), arts = {}; moi.forEach(function (c) { arts[c.artist.split(/ [-–&|]/)[0]] = 1; });
-      $("csummary").textContent = "Koncerty w Polsce pod Twój gust · aktualizacja " + d.updated.replace("T", ", ");
-      $("cmetrics").innerHTML = [[cs.length, "nadchodzących"], [moi.length, "koncertów z Twojej listy"], [Object.keys(arts).length, "artystów z Twojej listy"], [cl.length, "miast"]].map(function (x) { return '<div class="metric"><b>' + x[0] + "</b><span>" + esc(x[1]) + "</span></div>"; }).join("");
+      var up = new Date(d.updated.length > 16 ? d.updated : d.updated + ":00");
+      $("csummary").textContent = "Cała Polska · dobór według Twojej listy artystów · aktualizacja " + (isNaN(up) ? d.updated.replace("T", ", ") : up.toLocaleString("pl-PL", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }));
+      $("cmetrics").innerHTML = [[cs.length, "nadchodzące"], [moi.length, "z Twoimi artystami"], [Object.keys(arts).length, "Twoich artystów"], [cl.length, "miast"]].map(function (x) { return '<div class="stat"><dt>' + esc(x[1]) + "</dt><dd>" + x[0] + "</dd></div>"; }).join("");
       $("csources").innerHTML = d.sources.map(function (s) { return "<li><b>" + esc(s.name) + "</b> – " + (s.status === "ok" ? "działa" : "pominięte") + (s.note ? ": " + esc(s.note) : "") + "</li>"; }).join("") + "<li>Twoja lista: " + esc((d.taste || []).join(", ")) + ". Podobnych wykonawców dobiera stała lista klimatów (polski rock, blues-rock, gitarzyści, klasyczny rock, wielkie wokale); tribute’y i koncerty „przy świecach” mają niższą ocenę.</li><li>Nic nie jest kupowane – link prowadzi do strony sprzedawcy biletów.</li>";
       render();
     }).catch(function (e) { $("clist").setAttribute("aria-busy", "false"); $("clist").innerHTML = '<div class="empty"><p>Nie udało się wczytać koncertów (' + esc(e.message) + "). Odśwież stronę za chwilę.</p></div>"; $("ccount").textContent = "Błąd wczytywania"; });
