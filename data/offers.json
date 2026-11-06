@@ -328,13 +328,14 @@
    "firstSeen": "2026-11-06T07:39+00:00",
    "lastChecked": "2026-11-06T07:39+00:00",
    "status": "aktywne",
-   "type": "Inne",
+   "type": "Strat / ST",
    "brand": "Suhr",
    "descFetched": "2026-11-06T07:40Z",
    "descStatus": "OK",
    "descOrig": "Suhr Classic Antique, sold with original tremolo bar.\n\nLower attachment of the guitar strap is a bit loose from usage, but still holds well, needs an easy fix.",
    "descLang": "en",
-   "descPl": "Suhr Classic Antique, sprzedawana z oryginalnym ramieniem tremolo.\n\nDolny zaczep paska trochę się poluzował od używania, ale nadal dobrze trzyma – wymaga prostej naprawy."
+   "descPl": "Suhr Classic Antique, sprzedawana z oryginalnym ramieniem tremolo.\n\nDolny zaczep paska trochę się poluzował od używania, ale nadal dobrze trzyma – wymaga prostej naprawy.",
+   "typeManual": true
   },
   {
    "id": "bl-27580557",
@@ -481,13 +482,14 @@
    "firstSeen": "2026-11-06T07:39+00:00",
    "lastChecked": "2026-11-06T07:39+00:00",
    "status": "aktywne",
-   "type": "Inne",
+   "type": "Tele / T",
    "brand": "Suhr",
    "descFetched": "2026-11-06T07:40Z",
    "descStatus": "OK",
    "descOrig": "Grym telecaster i toppskick! Rostfria band, Buzz Feiten gör att den stämmer mkt bra över hela halsen, compound radius 10-14. Spelar som en dröm, väldigt allround och sjukt snygg!\nEj byten. Se övriga spec på separat bild. Välkommen att höra av dig vid intresse!",
    "descLang": "sv",
-   "descPl": "Świetny telecaster w topowym stanie! Progi ze stali nierdzewnej, system Buzz Feiten sprawia, że stroi bardzo dobrze na całym gryfie, compound radius 10–14. Gra jak marzenie, bardzo uniwersalna i niesamowicie ładna!\nBez wymian. Pozostała specyfikacja na osobnym zdjęciu. Zapraszam do kontaktu w razie zainteresowania!"
+   "descPl": "Świetny telecaster w topowym stanie! Progi ze stali nierdzewnej, system Buzz Feiten sprawia, że stroi bardzo dobrze na całym gryfie, compound radius 10–14. Gra jak marzenie, bardzo uniwersalna i niesamowicie ładna!\nBez wymian. Pozostała specyfikacja na osobnym zdjęciu. Zapraszam do kontaktu w razie zainteresowania!",
+   "typeManual": true
   },
   {
    "id": "bl-27039358",
