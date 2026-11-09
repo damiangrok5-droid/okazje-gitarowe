@@ -140,7 +140,8 @@
       '<a class="title" id="t-' + esc(o.id) + '" href="' + esc(o.url) + '" target="_blank" rel="noopener noreferrer">' + esc(o.title) + '</a>' +
       '<div class="loc">' + esc(o.location || "–") + ' · oryg.: „' + esc(o.originalTitle) + '”</div>' +
       '<div class="prices"><div class="pc main"><span class="sr-only">Razem z dostawą: </span><b>' + zl(p.razem) + '</b></div>' +
-      '<div class="pc dl' + (o.dealPct > 0 ? "" : " neg") + '"><b>' + pct(o.dealPct) + '</b><span>' + (o.dealPct > 0 ? "pod rynkiem" : "nad rynkiem") + '</span></div></div>' +
+      '<div class="pc dl' + (o.dealPct > 0 ? "" : " neg") + '"><b>' + pct(o.dealPct) + '</b><span>' + (o.dealPct > 0 ? "pod rynkiem" : "nad rynkiem") + '</span></div>' +
+      (o.dealThreshold === 10 && o.dealPct >= 10 && o.dealPct < 20 ? '<span class="pc thr" title="Marka premium/butikowa – za okazję uznajemy już 10% pod wartością rynkową (pozostałe marki: 20%)">premium · próg 10%</span>' : "") + '</div>' +
       '<div class="pline">z dostawą do PL · rynek ≈ ' + zl(o.marketValue) + ' · różnica ' + (diff > 0 ? "+" : "") + zl(diff) + '</div>' +
       (o.valueVerified ? "" : '<div class="warnline">Wartość rynkowa niezweryfikowana</div>') +
       '<div class="verdict ' + tone + '"><span class="vtext"><span class="dot" aria-hidden="true"></span>' + esc(o.verdict) + '</span><span class="meter" aria-hidden="true"><i style="width:' + Math.round(o.overall * 10) + '%"></i></span><span class="score">' + o.overall.toFixed(1).replace(".", ",") + '<small>/10</small></span></div>' +
