@@ -1,6 +1,6 @@
 {
  "meta": {
-  "updated": "2026-11-09T11:35+00:00",
+  "updated": "2026-11-10T07:32+00:00",
   "fx": {
    "EUR": 4.4026,
    "USD": 3.9293,
@@ -22,18 +22,18 @@
   "sources": {
    "OLX.pl": "OK (publiczne API ofert)",
    "Reverb": "OK (publiczne API, filtr: sprzedawcy z UE)",
-   "Kleinanzeigen": "zablokowane – wyszukiwarka zwraca HTTP 403 (pierwsze zapytanie, sprawdzono 2026-11-09); źródło pominięte bez obchodzenia blokady",
-   "Allegro": "zablokowane (HTTP 403, sprawdzono 2026-11-09)",
-   "eBay": "wyłączone – brak kluczy eBay Browse API (EBAY_CLIENT_ID / EBAY_CLIENT_SECRET); strony eBay zwracają HTTP 403 (sprawdzono 2026-11-09)",
-   "Marktplaats.nl": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 686 ogłoszeń w puli wyceny), w zestawieniu: 0",
-   "2dehands.be": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 281 ogłoszeń w puli wyceny), w zestawieniu: 0",
-   "willhaben.at": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 926 ogłoszeń w puli wyceny), w zestawieniu: 2",
-   "Blocket.se": "OK – publiczne strony wyszukiwania (29/33 zapytań z wynikami; pozostałe 4 – HTTP 403; 673 ogłoszeń w puli wyceny), w zestawieniu: 6",
-   "Tori.fi": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 605 ogłoszeń w puli wyceny), w zestawieniu: 2",
-   "DBA.dk": "OK – publiczne strony wyszukiwania (24/33 zapytań z wynikami; pozostałe 9 – HTTP 403; 840 ogłoszeń w puli wyceny), w zestawieniu: 2",
-   "Bazoš.cz": "OK – publiczne strony wyszukiwania (21/33 zapytań z wynikami; pozostałe 12 – HTTP 404 = brak wyników; 89 ogłoszeń w puli wyceny), w zestawieniu: 0",
+   "Kleinanzeigen": "zablokowane – wyszukiwarka zwraca HTTP 403 (pierwsze zapytanie, sprawdzono 2026-11-10); źródło pominięte bez obchodzenia blokady",
+   "Allegro": "zablokowane (HTTP 403, sprawdzono 2026-11-10)",
+   "eBay": "wyłączone – brak kluczy eBay Browse API (EBAY_CLIENT_ID / EBAY_CLIENT_SECRET); strony eBay zwracają HTTP 403 (sprawdzono 2026-11-10)",
+   "Marktplaats.nl": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 683 ogłoszeń w puli wyceny), w zestawieniu: 0",
+   "2dehands.be": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 278 ogłoszeń w puli wyceny), w zestawieniu: 0",
+   "willhaben.at": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 923 ogłoszeń w puli wyceny), w zestawieniu: 3",
+   "Blocket.se": "OK – publiczne strony wyszukiwania (32/33 zapytań z wynikami; pozostałe 1 – HTTP 403; 737 ogłoszeń w puli wyceny), w zestawieniu: 6",
+   "Tori.fi": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 589 ogłoszeń w puli wyceny), w zestawieniu: 2",
+   "DBA.dk": "OK – publiczne strony wyszukiwania (23/33 zapytań z wynikami; pozostałe 10 – HTTP 403; 803 ogłoszeń w puli wyceny), w zestawieniu: 3",
+   "Bazoš.cz": "OK – publiczne strony wyszukiwania (21/33 zapytań z wynikami; pozostałe 12 – HTTP 404 = brak wyników; 88 ogłoszeń w puli wyceny), w zestawieniu: 0",
    "Bazoš.sk": "OK – publiczne strony wyszukiwania (27/33 zapytań z wynikami; pozostałe 6 – HTTP 404 = brak wyników; 123 ogłoszeń w puli wyceny), w zestawieniu: 0",
-   "Allegro Lokalnie": "OK – publiczne strony wyszukiwania (29/33 zapytań z wynikami; pozostałe 4 – HTTP 429 = limit zapytań, pominięte bez ponawiania; 120 ogłoszeń w puli wyceny), w zestawieniu: 1",
+   "Allegro Lokalnie": "OK – publiczne strony wyszukiwania (22/33 zapytań z wynikami; pozostałe 11 – HTTP 429 = limit zapytań, pominięte bez ponawiania; 109 ogłoszeń w puli wyceny), w zestawieniu: 1",
    "Sprzedajemy.pl": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 26 ogłoszeń w puli wyceny), w zestawieniu: 0"
   },
   "skipped": [
@@ -116,7 +116,10 @@
    "Gibson Les Paul Classic 2022 Ebony (Blocket 27936169) – wymieniona elektronika (bez push-pull) i nowe progi, ok. 17% pod medianą – modyfikacje",
    "Fender Custom Shop Classic Stratocaster 1998 (Blocket 27749147) – ok. 11% pod medianą tylko 6 ofert FCS Classic – na granicy progu, za mało porównań",
    "Gibson SG '61 Standard 2024 (OLX 1107809985) – tylko 4 porównywalne oferty SG '61 – brak wiarygodnej wyceny",
-   "Kandydaci z Kleinanzeigen (m.in. Gibson ES-335 2022 3554150043, Les Paul Classic 1996 3554201478, PRS CE 24 2016 3562261708) – Kleinanzeigen zwraca HTTP 403, ogłoszeń nie da się zweryfikować – pominięte"
+   "Kandydaci z Kleinanzeigen (m.in. Gibson ES-335 2022 3554150043, Les Paul Classic 1996 3554201478, PRS CE 24 2016 3562261708) – Kleinanzeigen zwraca HTTP 403, ogłoszeń nie da się zweryfikować – pominięte",
+   "Fender American Vintage II 1957 Stratocaster (2dehands m2463783586) – ok. 21% pod medianą, ale Marktplaats/2dehands służą tylko do wyceny",
+   "Ibanez RG752LWFXLAGB Prestige LH (Tori 49666357) – ok. 17% pod medianą, ale to gitara leworęczna (wycena z puli praworęcznych niewiarygodna, mała płynność)",
+   "Kleinanzeigen – wyszukiwarka zwraca HTTP 403 (10.11), nowych ogłoszeń nie sprawdzono"
   ],
   "removed": [
    {
@@ -347,13 +350,13 @@
    }
   ],
   "lifecycle": {
-   "checked": 34,
+   "checked": 44,
    "ended": 0,
    "outage": [
     "Kleinanzeigen",
     "OLX"
    ],
-   "at": "2026-11-09T11:35+00:00"
+   "at": "2026-11-10T07:32+00:00"
   }
  },
  "offers": [
@@ -423,7 +426,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: lekki Classic T z P90, progami ze stali nierdzewnej i Buzz Feiten – bardziej rockowe brzmienie niż klasyczny tele. Odsprzedaż: ok. 43% pod medianą 8 używanych Classic T; rzadki kolor pomaga, wersja P90 trafia do węższej grupy. Cena spadła z 21 000 do 19 500 SEK względem poprzedniego ogłoszenia. Ryzyko: wysyłka ze Szwecji do PL do uzgodnienia (Blocket ma wysyłkę z ochroną tylko w kraju).",
    "firstSeen": "2026-11-06T07:39+00:00",
-   "lastChecked": "2026-11-09T11:35+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Tele / T",
    "brand": "Suhr",
@@ -501,7 +504,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: wczesny, w pełni oryginalny PRS CE 24 z olchy z przełącznikiem obrotowym – wygodny, uniwersalny i po ustawieniu u lutnika. Odsprzedaż: ok. 42% pod medianą 67 używanych PRS CE 24 w Europie; egzemplarze sprzed fabryki w Stevensville są poszukiwane. Ryzyko: cena podejrzanie niska jak na ten rocznik, prywatny sprzedawca – płacić wyłącznie przez Reverb (ochrona kupującego), poprosić o zdjęcie numeru seryjnego i główki od tyłu.",
    "firstSeen": "2026-11-09T11:35+00:00",
-   "lastChecked": "2026-11-09T11:35+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Double-cut (PRS)",
    "brand": "PRS",
@@ -539,7 +542,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 8340.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 13 porównywalnych używanych ofert (Kleinanzeigen 5, Reverb 3, OLX 2, Marktplaats 1, willhaben 1, Blocket 1), zakres 6400–12640 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 13 porównywalnych używanych ofert (Kleinanzeigen 5, Reverb 3, OLX 2, Marktplaats 1, willhaben 1, Blocket 1), zakres 6400–12640 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
@@ -578,7 +581,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: platforma 594 (menzura 24,594\", vintage'owe humbuckery) w lżejszym, cieńszym korpusie. Odsprzedaż: ok. 40% pod medianą używanych S2 594 w Europie. Ryzyko: przebarwienie nitro z tyłu i wysyłka ze Szwecji do uzgodnienia.",
    "firstSeen": "2026-10-26T21:27+00:00",
-   "lastChecked": "2026-11-09T11:35+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Double-cut (PRS)",
    "brand": "PRS",
@@ -694,7 +697,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 8340.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 41 porównywalnych używanych ofert (Reverb 13, OLX 6, Blocket 6, Kleinanzeigen 5, Marktplaats 3, DBA 3, 2dehands 2, willhaben 2, Tori 1), zakres 3520–22140 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 41 porównywalnych używanych ofert (Reverb 13, OLX 6, Blocket 6, Kleinanzeigen 5, Marktplaats 3, DBA 3, 2dehands 2, willhaben 2, Tori 1), zakres 3520–22140 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Tori – podobne ogłoszenia",
@@ -733,7 +736,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: klasyczny V z gryfem z lat 60. – świetny do rocka i metalu. Odsprzedaż: ok. 36% pod medianą używanych Flying V (USA), ale kształt ma węższe grono kupców. Wysyłka z Finlandii do uzgodnienia.",
    "firstSeen": "2026-10-26T21:27+00:00",
-   "lastChecked": "2026-11-09T11:35+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Explorer / V / kształty",
    "brand": "Gibson",
@@ -772,7 +775,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 17610.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 55 porównywalnych używanych ofert (Reverb 12, OLX 10, Marktplaats 7, willhaben 7, Blocket 5, Kleinanzeigen 4, 2dehands 4, DBA 3, Bazoš.cz 1, Bazoš.sk 1, Allegro Lokalnie 1), zakres 2640–55000 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 55 porównywalnych używanych ofert (Reverb 12, OLX 10, Marktplaats 7, willhaben 7, Blocket 5, Kleinanzeigen 4, 2dehands 4, DBA 3, Bazoš.cz 1, Bazoš.sk 1, Allegro Lokalnie 1), zakres 2640–55000 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
@@ -811,7 +814,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: vintage Custom z lat 80., z Fishmanami brzmi nowocześniej niż oryginał. Odsprzedaż: ok. 36% pod medianą używanych LP Custom, ale brak oryginalnych przetworników obniża wartość kolekcjonerską – realny bufor jest mniejszy. Tylko odbiór osobisty (sprzedawca nie wysyła) – doliczono koszt dojazdu. Sprawdzić numer seryjny, główkę i ślady przeróbek.",
    "firstSeen": "2026-10-26T21:27+00:00",
-   "lastChecked": "2026-11-09T11:35+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Les Paul / LP",
    "brand": "Gibson",
@@ -907,6 +910,83 @@
    "descLang": "pl",
    "descPl": "Żadnych obić czy czegoś takiego\n\nBardzo mało grana,progi bez śladów\n\nOdbiór wyłącznie osobisty\n\nCena ostateczna, proszę o to nie pytać, nie tracić mój czas\n\nZapraszam",
    "dealThreshold": 10
+  },
+  {
+   "id": "olx-1060135256",
+   "source": "OLX",
+   "url": "https://www.olx.pl/d/oferta/prs-ce24-made-in-usa-1997r-CID751-ID19KdBK.html",
+   "title": "PRS CE 24 (1997) USA, mahoniowy korpus",
+   "originalTitle": "PRS CE24, made in USA, 1997r.",
+   "description": "Paul Reed Smith CE 24 (Classic Electric 24) z 1997 roku, wyprodukowany w USA. Korpus mahoniowy, gryf klonowy, oryginalne przetworniki PRS i blokowane klucze. Według sprzedawcy świetny stan – jedynie mikroobicia na krawędzi korpusu i na główce, widoczne na zdjęciach. W komplecie ramię tremolo. Gitara ustawiona i gotowa do gry. Tylko odbiór osobisty w Poznaniu.",
+   "photo": "https://ireland.apollo.olxcdn.com:443/v1/files/bvc3rhkn4q3f2-PL/image;s=800x600",
+   "condition": "Bardzo dobry (wg sprzedawcy), mikroobicia na krawędzi korpusu i główce, ramię tremolo",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Poznań",
+   "currency": "PLN",
+   "priceOriginal": 6400,
+   "shippingOriginal": 80,
+   "price": {
+    "cena": 6400,
+    "wysylka": 80,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 6480
+   },
+   "shippingNote": "Założenie: tylko odbiór osobisty w Poznaniu (wg ogłoszenia, Przesyłka OLX niedostępna) – zamiast wysyłki przyjęto ok. 80 zł kosztu dojazdu.",
+   "customsNote": "Zakup w Polsce – brak cła i VAT importowego.",
+   "marketValue": 9960.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 67 porównywalnych używanych ofert (Reverb 32, OLX 13, Kleinanzeigen 8, Marktplaats 6, Blocket 2, Bazoš.sk 2, 2dehands 1, willhaben 1, Tori 1, Allegro Lokalnie 1), zakres 2420–15370 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=prs%20ce%2024&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-prs-ce-24/"
+    },
+    {
+     "label": "Reverb: PRS CE 24 2016 - Present - Gray Black (9965 zł)",
+     "url": "https://reverb.com/item/102965086-prs-ce-24-2016-present-gray-black"
+    },
+    {
+     "label": "Kleinanzeigen: 1991 PRS CE24 Brazilian Board (9881 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/1991-prs-ce24-brazilian-board/3186294415-74-2162"
+    },
+    {
+     "label": "Kleinanzeigen: PRS DW CE 24 Hardtail Limited Edition - 2023 (10101 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/prs-dw-ce-24-hardtail-limited-edition-2023/3523604426-74-17432"
+    }
+   ],
+   "dealPct": 34.9,
+   "validTo": null,
+   "postedOrSince": "2026-03-11",
+   "scores": {
+    "cena": 9,
+    "stan": 7,
+    "sprzedawca": 6,
+    "oryginalnosc": 8,
+    "grywalnosc": 8,
+    "plynnosc": 7,
+    "wysylka": 4
+   },
+   "overall": 7.3,
+   "verdict": "polecam",
+   "reasoning": "Gra: PRS CE 24 z USA z mahoniowym korpusem i klonowym gryfem, oryginalne przetworniki – uniwersalne, rockowe brzmienie, ustawiona do gry. Odsprzedaż: ok. 35% pod medianą 67 używanych PRS CE 24 w Europie (premium – próg 10%); starsze CE 24 bywają tańsze od nowszych, ale zapas na odsprzedaż jest duży. Ryzyko: tylko odbiór w Poznaniu, brak futerału w opisie – przy odbiorze sprawdzić numer seryjny, oryginalność przetworników i działanie tremolo.",
+   "firstSeen": "2026-11-10T07:32+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
+   "status": "aktywne",
+   "type": "Double-cut (PRS)",
+   "brand": "PRS",
+   "dealThreshold": 10,
+   "descFetched": "2026-11-10T07:34Z",
+   "descStatus": "OK",
+   "descOrig": "Paul Reed Smith CE 24 (Classic Electric 24), made in USA, 1997r. Korpus mahoń, gryf klon, oryginalne pickupy PRS i blokowane klucze. Świetny stan, jedynie mikro obicia na krawędzi korpusu i główce, widoczne na zdjęciach. W komplecie wajcha tremolo.\n\nPRSy potrafią wyglądać jak z festynu, ale akurat to wiosło wizualnie zadziwia prostotą i klasą. Brzmieniowo wywala grajka z butów, to jest esencja amerykańskiego rockowego (i nie tylko) brzmienia. Wspaniały instrument, polecam :)\n\nZapraszam na inne moje ogłoszenia, sprzedaję sporo gitar z mojej kolekcji. Ustawione, gotowe do gry, w dobrych cenach.\n\nTreści ogłoszeń nie są wygenerowane w AI, zdjęcia nie są edytowane - to co widzisz to to co faktycznie sprzedaję.\n\nOdbiór w Poznaniu",
+   "descLang": "pl",
+   "descPl": "Paul Reed Smith CE 24 (Classic Electric 24), made in USA, 1997r. Korpus mahoń, gryf klon, oryginalne pickupy PRS i blokowane klucze. Świetny stan, jedynie mikro obicia na krawędzi korpusu i główce, widoczne na zdjęciach. W komplecie wajcha tremolo.\n\nPRSy potrafią wyglądać jak z festynu, ale akurat to wiosło wizualnie zadziwia prostotą i klasą. Brzmieniowo wywala grajka z butów, to jest esencja amerykańskiego rockowego (i nie tylko) brzmienia. Wspaniały instrument, polecam :)\n\nZapraszam na inne moje ogłoszenia, sprzedaję sporo gitar z mojej kolekcji. Ustawione, gotowe do gry, w dobrych cenach.\n\nTreści ogłoszeń nie są wygenerowane w AI, zdjęcia nie są edytowane - to co widzisz to to co faktycznie sprzedaję.\n\nOdbiór w Poznaniu"
   },
   {
    "id": "olx-950461512",
@@ -1012,7 +1092,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 8340.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 41 porównywalnych używanych ofert (Reverb 13, OLX 6, Blocket 6, Kleinanzeigen 5, Marktplaats 3, 2dehands 2, willhaben 2, Tori 2, DBA 2), zakres 3520–22140 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 41 porównywalnych używanych ofert (Reverb 13, OLX 6, Blocket 6, Kleinanzeigen 5, Marktplaats 3, 2dehands 2, willhaben 2, Tori 2, DBA 2), zakres 3520–22140 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "DBA – podobne ogłoszenia",
@@ -1051,7 +1131,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: metalowy V z EMG 81/85 i gryfem New Century. Odsprzedaż: ok. 33% pod medianą używanych Flying V, ale wymienione przetworniki i gigbag zawężają rynek. Dania w UE – bez cła; wysyłka do uzgodnienia.",
    "firstSeen": "2026-10-26T21:27+00:00",
-   "lastChecked": "2026-11-09T11:35+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Explorer / V / kształty",
    "brand": "Gibson",
@@ -1090,7 +1170,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 8650,
    "valueVerified": true,
-   "valueMethod": "Mediana 19 porównywalnych używanych ofert (Reverb 10, Kleinanzeigen 4, Marktplaats 4, 2dehands 1), zakres 7040–11400 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 19 porównywalnych używanych ofert (Reverb 10, Kleinanzeigen 4, Marktplaats 4, 2dehands 1), zakres 7040–11400 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
@@ -1133,7 +1213,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: AV II to wierne odtworzenie vintage Strata (nitro, vintage'owe progi i przetworniki) – świetne do klasycznego brzmienia, mniej wygodne do nowoczesnej gry. Odsprzedaż: ok. 33% pod medianą 19 używanych AV II Strat, model płynny. Ryzyko: ogłoszenie bez żadnego opisu i numeru seryjnego, wysyłka ze Szwecji do uzgodnienia – bez dodatkowych zdjęć (główka, numer, progi) i płatności z ochroną nie kupować.",
    "firstSeen": "2026-10-27T07:31+00:00",
-   "lastChecked": "2026-11-09T11:35+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Strat / ST",
    "brand": "Fender",
@@ -1370,7 +1450,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 15390.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 40 porównywalnych używanych ofert (OLX 9, Reverb 9, DBA 7, Marktplaats 5, Kleinanzeigen 3, willhaben 3, Blocket 2, 2dehands 1, Bazoš.sk 1), zakres 10870–42930 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 40 porównywalnych używanych ofert (OLX 9, Reverb 9, DBA 7, Marktplaats 5, Kleinanzeigen 3, willhaben 3, Blocket 2, 2dehands 1, Bazoš.sk 1), zakres 10870–42930 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "DBA – podobne ogłoszenia",
@@ -1409,7 +1489,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: Custom Deluxe to nowoczesny Tele Custom Shopu (wygodny gryf, flame maple). Odsprzedaż: ok. 30% pod medianą używanych Teli Custom Shop. Dania w UE – brak cła; wysyłkę trzeba uzgodnić.",
    "firstSeen": "2026-10-26T21:27+00:00",
-   "lastChecked": "2026-11-09T11:35+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Tele / T",
    "brand": "Fender",
@@ -1534,7 +1614,7 @@
    "customsNote": "Zakup w Polsce – brak cła i VAT importowego.",
    "marketValue": 9580.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 10 porównywalnych używanych ofert (Reverb 5, OLX 2, Kleinanzeigen 1, Marktplaats 1, Allegro Lokalnie 1), zakres 7800–12550 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 10 porównywalnych używanych ofert (Reverb 5, OLX 2, Kleinanzeigen 1, Marktplaats 1, Allegro Lokalnie 1), zakres 7800–12550 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Allegro Lokalnie – podobne ogłoszenia",
@@ -1573,7 +1653,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: japońska siedmiostrunówka z Floyd Rose do metalu. Odsprzedaż: ok. 29% pod medianą używanych 7-strunowych ESP E-II, ale 7-strunowce z Floydem sprzedają się wolniej. Polska oferta – wysyłka deklarowana, płatność przez Allegro Lokalnie z ochroną.",
    "firstSeen": "2026-10-26T21:27+00:00",
-   "lastChecked": "2026-11-09T07:44+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Superstrat",
    "brand": "ESP",
@@ -1922,7 +2002,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 14050.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 23 porównywalnych używanych ofert (Marktplaats 7, Reverb 6, Kleinanzeigen 6, Blocket 3, DBA 1), zakres 10060–33370 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 23 porównywalnych używanych ofert (Marktplaats 7, Reverb 6, Kleinanzeigen 6, Blocket 3, DBA 1), zakres 10060–33370 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "willhaben – podobne ogłoszenia",
@@ -1961,7 +2041,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: nowoczesny superstrat do szybkiej gry – progi ze stali, compound radius, po serwisie. Odsprzedaż: ok. 27% pod medianą używanych Suhr Modern. Wysyłka GLS deklarowana w ogłoszeniu; płacić tylko PayPal z ochroną kupującego (nie 'friends').",
    "firstSeen": "2026-10-26T21:27+00:00",
-   "lastChecked": "2026-11-09T11:35+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Superstrat",
    "brand": "Suhr",
@@ -2551,7 +2631,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 16000,
    "valueVerified": true,
-   "valueMethod": "Mediana 15 porównywalnych używanych ofert (Blocket 4, OLX 3, Reverb 2, Kleinanzeigen 2, DBA 2, Marktplaats 1, willhaben 1), zakres 12650–23720 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 15 porównywalnych używanych ofert (Blocket 4, OLX 3, Reverb 2, Kleinanzeigen 2, DBA 2, Marktplaats 1, willhaben 1), zakres 12650–23720 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Reverb – używane w UE",
@@ -2975,7 +3055,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: wczesny PRS CE 24 z olchowym korpusem i gryfem Wide Thin – uniwersalna, wygodna gitara z przetwornikami Vintage Bass/HFS. Odsprzedaż: ok. 21% pod medianą 69 używanych PRS CE 24 w Europie; PRS z USA sprzedaje się łatwo, a wczesne roczniki mają swoich zwolenników. Ryzyko: okazja tuż nad progiem 20%; ten sam egzemplarz jest prawdopodobnie wystawiony też na Kleinanzeigen (3562626026, strona HTTP 403); prywatny sprzedawca bez zwrotów – zapytać o numer seryjny i stan progów.",
    "firstSeen": "2026-11-06T07:39+00:00",
-   "lastChecked": "2026-11-09T11:35+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Double-cut (PRS)",
    "brand": "PRS",
@@ -3090,7 +3170,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 7230.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 32 porównywalnych używanych ofert (Reverb 13, Kleinanzeigen 8, OLX 4, Marktplaats 3, DBA 2, willhaben 1, Blocket 1), zakres 5840–8780 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 32 porównywalnych używanych ofert (Reverb 13, Kleinanzeigen 8, OLX 4, Marktplaats 3, DBA 2, willhaben 1, Blocket 1), zakres 5840–8780 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
@@ -3297,6 +3377,160 @@
    "descPl": "Sprzedam PRS CE 24 Limited Edition w wykończeniu Faded Gray Black. Gitara została wyprodukowana w USA w limitowanej serii 300 egzemplarzy na cały świat. W komplecie oryginalny pokrowiec PRS Premium Gig Bag.\n\nTę wersję CE 24 wyróżnia układ trzech przetworników. Przy mostku i gryfie zamontowano humbuckery PRS 85/15, a między nimi dodatkowy przetwornik PRS NS-01. Do wyboru brzmień służą pięciopozycyjny przełącznik i potencjometr tonu z funkcją push-pull.\n\nSpecyfikacja\n\n* Mahoniowy korpus (Khaya ivorensis) z topem z klonu płomienistego\n\n* Klonowy gryf o smukłym profilu Pattern Thin, menzura 635 mm (25″)\n\n* Podstrunnica z palisandru indyjskiego (Dalbergia latifolia), 24 progi i charakterystyczne dla PRS inkrustacje Birds\n\n* Regulacja głośności i tonu\n\n* Mostek PRS Patented Tremolo\n\n* Blokowane klucze PRS Phase III i niklowany osprzęt\n\nGitara kupiona jako B-stock z pełną gwarancją sklepu."
   },
   {
+   "id": "wh-1182994560",
+   "source": "willhaben",
+   "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/d/duesenberg-fullerton-tv-vintage-white-uvp-2590-1182994560/",
+   "title": "Duesenberg Fullerton TV Vintage White z futerałem",
+   "originalTitle": "Duesenberg Fullerton TV Vintage White (UVP: €2590)",
+   "description": "Duesenberg Fullerton TV w kolorze Vintage White (cena katalogowa nowej wg sprzedawcy 2 590 €). Według sprzedawcy w bardzo, bardzo dobrym stanie; w komplecie futerał Duesenberg Custom Line. Specyfikacja z ogłoszenia: semi-hollow z blokiem sustain i otworem f, laminowana świerkowa płyta i klonowy korpus, kremowe obszycie, jednoczęściowy klonowy gryf wklejany o profilu Medium „D”, podstrunnica palisandrowa (promień 12\"), menzura 648 mm, 22 progi jumbo, siodełko 42,5 mm; przetworniki Duesenberg GrandVintage (humbucker przy mostku) i Domino P90 (przy gryfie), przełącznik 3-pozycyjny, volume i tone; mostek Duesenberg ze stalowymi siodełkami i tremolo Diamond Deluxe, klucze Z-Tuners. Gitara praworęczna. Tylko odbiór osobisty w Wiedniu.",
+   "photo": "https://cache.willhaben.at/mmo/0/118/299/4560_-1097361245_hoved.jpg",
+   "condition": "Bardzo dobry (wg sprzedawcy), futerał Duesenberg Custom Line",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Wiedeń, Austria",
+   "currency": "EUR",
+   "priceOriginal": 1500.0,
+   "shippingOriginal": 100,
+   "price": {
+    "cena": 6604,
+    "wysylka": 440,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 7044
+   },
+   "shippingNote": "Założenie: ogłoszenie tylko z odbiorem osobistym w Wiedniu – zamiast wysyłki przyjęto ok. 100 € kosztu dojazdu z Polski; wysyłki sprzedawca nie oferuje.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 8740.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 6 porównywalnych używanych ofert (Marktplaats 2, Reverb 1, Kleinanzeigen 1, 2dehands 1, Blocket 1), zakres 7120–11010 zł",
+   "valueSources": [
+    {
+     "label": "willhaben – podobne ogłoszenia",
+     "url": "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz?keyword=duesenberg"
+    },
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=duesenberg&condition=used"
+    },
+    {
+     "label": "Reverb: Duesenberg Fullerton TV - Vintage White (8696 zł)",
+     "url": "https://reverb.com/item/92159800-duesenberg-fullerton-tv-vintage-white"
+    },
+    {
+     "label": "Kleinanzeigen: Duesenberg Fullerton Elite (8783 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/duesenberg-fullerton-elite/3549754713-74-2040"
+    },
+    {
+     "label": "2dehands: DUESENBERG Fullerton Hollow Series (2012) in NIEUWSTAAT !!! (8145 zł)",
+     "url": "https://www.2dehands.be/v/muziek-en-instrumenten/snaarinstrumenten-gitaren-elektrisch/m2308464541-duesenberg-fullerton-hollow-series-2012-in-nieuwstaat"
+    }
+   ],
+   "dealPct": 19.4,
+   "validTo": null,
+   "postedOrSince": "2026-11-09T21:36:42Z",
+   "scores": {
+    "cena": 6,
+    "stan": 8,
+    "sprzedawca": 6,
+    "oryginalnosc": 9,
+    "grywalnosc": 8,
+    "plynnosc": 6,
+    "wysylka": 3
+   },
+   "overall": 6.6,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: Fullerton TV to semi-hollow Duesenberga z humbuckerem GrandVintage, P90 Domino i tremolo Diamond Deluxe – szerokie, vintage’owe brzmienie, niemiecka jakość wykonania. Odsprzedaż: ok. 19% pod medianą 6 używanych Fullertonów w Europie (premium – próg 10%); w puli są też droższe wersje Elite i Hollow, a rynek Duesenberga jest węższy niż Fendera czy Gibsona. Ryzyko: tylko odbiór w Wiedniu (koszt i czas dojazdu) – na miejscu sprawdzić stan lakieru i działanie tremolo.",
+   "firstSeen": "2026-11-10T07:32+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
+   "status": "aktywne",
+   "type": "Semi-hollow / hollow",
+   "brand": "Duesenberg",
+   "dealThreshold": 10,
+   "descFetched": "2026-11-10T07:34Z",
+   "descStatus": "OK",
+   "descOrig": "Verkaufe Duesenberg Fullerton TV Vintage White E-Gitarre in sehr sehr gutem Zustand!\n\nAllgemein\nModell: Duesenberg Fullerton TV VW\nSerie: Fullerton\nAnzahl Saiten: 6\nOrientierung: Rechtshändig\nInklusive Duesenberg Custom Line Case\n\nKorpus\nKorpusform: Semi-Hollow mit Sustain Block & F-Loch\nDecke: Fichte (laminiert)\nKorpus: Ahorn (laminiert)\nBinding: Cream, 5-layer purfling\n\nHals\nHals: 1-teiliger Ahorn\nHalskonstruktion: Set-In\nHals-Profil: Medium \"D\"\nGriffbrett: Palisander\nGriffbrett-Radius: 305 mm / 12\"\nGriffbrett-Einlagen: Cream dots\nMensur:648 mm / 25,5\"\nBünde: 22 Jumbo\nSattelbreite: 42,5 mm / 1,67\"\n\nElektronik\nBridge Pickup: Duesenberg GrandVintage Humbucker\nNeck Pickup: Duesenberg Domino P90\nPickup-Schalter: 3-Wege Schalter\nRegler: 1 x Master Volume und 1 x Master Tone\n\nHardware\nFinish: Nickel\nBridge/Tailpiece: Duesenberg Steel Saddle Bridge mit Duesenberg Diamond Deluxe Tremola\nMechaniken: Duesenberg Z-Tuners\nPickguard: Black Custom\nRegler-Kappen: Nickel\n\nFarbe & Finish\nFarbe: Vintage White All Over\nFinish: Polyester\n\nNichtraucher Haushalt ohne Tiere.\nAbzuholen in der [imię usunięte], [imię usunięte] Wien",
+   "descLang": "de",
+   "descPl": "Sprzedam gitarę elektryczną Duesenberg Fullerton TV Vintage White w bardzo, bardzo dobrym stanie!\n\nOgólne\nModel: Duesenberg Fullerton TV VW\nSeria: Fullerton\nLiczba strun: 6\nOrientacja: praworęczna\nW zestawie futerał Duesenberg Custom Line\n\nKorpus\nKształt korpusu: semi-hollow z blokiem sustain i otworem f\nPłyta: świerk (laminowany)\nKorpus: klon (laminowany)\nObszycie: kremowe, 5-warstwowe purfling\n\nGryf\nGryf: jednoczęściowy klon\nMocowanie gryfu: wklejany (set-in)\nProfil gryfu: Medium \"D\"\nPodstrunnica: palisander\nPromień podstrunnicy: 305 mm / 12\"\nZnaczniki: kremowe kropki\nMenzura: 648 mm / 25,5\"\nProgi: 22 jumbo\nSzerokość siodełka: 42,5 mm / 1,67\"\n\nElektronika\nPrzetwornik przy mostku: Duesenberg GrandVintage Humbucker\nPrzetwornik przy gryfie: Duesenberg Domino P90\nPrzełącznik przetworników: 3-pozycyjny\nRegulatory: 1 x Master Volume i 1 x Master Tone\n\nOsprzęt\nWykończenie: nikiel\nMostek/strunociąg: Duesenberg Steel Saddle Bridge z Duesenberg Diamond Deluxe Tremola\nKlucze: Duesenberg Z-Tuners\nMaskownica: Black Custom\nGałki: nikiel\n\nKolor i wykończenie\nKolor: Vintage White All Over\nWykończenie: poliester\n\nDom bez palaczy i bez zwierząt.\nDo odbioru: [adres usunięty] Wiedeń"
+  },
+  {
+   "id": "reverb-103143102",
+   "source": "Reverb",
+   "url": "https://reverb.com/item/103143102-gibson-es-335-60s-sixties-cherry-demo",
+   "title": "Gibson ES-335 60s Sixties Cherry (2026) – demo B-Stock z gwarancją",
+   "originalTitle": "Gibson ES-335 60s, Sixties Cherry | DEMO",
+   "description": "Gibson ES-335 60s z 2026 roku w kolorze Sixties Cherry, egzemplarz demonstracyjny (B-Stock) z Gibson European Demo Shop. Tył główki ostemplowany „DEMO”. Opisane wady kosmetyczne: zaciek lakieru przy otworze f od strony wiolinowej i pęcherzyk lakieru przy 17. progu od strony basowej. W zestawie używany futerał Gibson, certyfikat Demo Shop, profesjonalny set-up i ograniczona gwarancja Gibson (opisane wady nie są nią objęte). Specyfikacja: gryf mahoniowy SlimTaper (0,82\" na 1. progu, 0,90\" na 12.), siodełko Graph Tech 1,708\", menzura 24,75\", podstrunnica palisandrowa o promieniu 12\", 22 progi, korpus klon/topola/klon, lakier nitro.",
+   "photo": "https://rvb-img.reverb.com/i/s--YGP5mkqj--/quality=medium-low,height=800,width=800,fit=contain/a844e7bc-4d44-4f00-a2f5-746749eb8bbb.jpg",
+   "condition": "B-Stock (demo) – drobne wady lakieru opisane w ogłoszeniu, używany futerał Gibson, gwarancja Gibson",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Amersfoort, Holandia (Reverb, Gibson European Demo Shop)",
+   "currency": "EUR",
+   "priceOriginal": 2458.98,
+   "shippingOriginal": 0,
+   "price": {
+    "cena": 10826,
+    "wysylka": 0,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 10826
+   },
+   "shippingNote": "Darmowa wysyłka do Polski podana w ogłoszeniu Reverb; cena z VAT.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 13130.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 75 porównywalnych używanych ofert (Reverb 24, Blocket 14, Kleinanzeigen 9, willhaben 7, Tori 6, OLX 5, Marktplaats 5, DBA 3, 2dehands 2), zakres 1980–35190 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=gibson%20es-335&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-gibson-es-335/"
+    },
+    {
+     "label": "Kleinanzeigen: Gibson ES-335 Twilight Indigo (13131 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/gibson-es-335-twilight-indigo/3537445511-74-3196"
+    },
+    {
+     "label": "Reverb: Gibson ES335 Memphis 2017 - Faded Light Burst (13166 zł)",
+     "url": "https://reverb.com/item/96368352-gibson-es335-memphis-2017-faded-light-burst"
+    },
+    {
+     "label": "2dehands: Gibson ES-335 Dot Translucent Brown 2000 OHSC (13186 zł)",
+     "url": "https://www.2dehands.be/v/muziek-en-instrumenten/snaarinstrumenten-gitaren-elektrisch/m2448508301-gibson-es-335-dot-translucent-brown-2000-ohsc"
+    }
+   ],
+   "dealPct": 17.5,
+   "validTo": null,
+   "postedOrSince": "2026-11-10",
+   "scores": {
+    "cena": 6,
+    "stan": 8,
+    "sprzedawca": 9,
+    "oryginalnosc": 9,
+    "grywalnosc": 9,
+    "plynnosc": 8,
+    "wysylka": 9
+   },
+   "overall": 8.1,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: współczesny ES-335 60s z cieńszym gryfem SlimTaper i lakierem nitro, po profesjonalnym set-upie – klasyczny semi-hollow do bluesa, rocka i jazzu. Odsprzedaż: ok. 18% pod medianą 75 używanych ES-335 w Europie (premium – próg 10%); nowy ES-335 kosztuje w sklepach ok. 2 800 € i więcej, a ES-335 to płynny model. Ryzyko: stempel „DEMO” na główce i opisane wady lakieru obniżą cenę przy odsprzedaży; sprzedawca to oficjalny sklep Gibsona – zakup z ochroną Reverb i gwarancją producenta.",
+   "firstSeen": "2026-11-10T07:32+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
+   "status": "aktywne",
+   "type": "Semi-hollow / hollow",
+   "brand": "Gibson",
+   "dealThreshold": 10,
+   "descFetched": "2026-11-10T07:34Z",
+   "descStatus": "OK",
+   "descOrig": "Gibson ES-335 60s, Sixties Cherry | DEMO\nDetails: Modifications: Back of headstock stamped DEMO. Noted Cosmetic Defect(s): Finish Top: Finish bleed at the f-hole, treble side.\nFinish Sides: N/A.\nFinish Back: N/A.\nFinish neck: Solvent pop near fret 17, bass side.\nFinish Headstock: N/A.\nFinish Nut: N/A.\nFingerboard: N/A.\nInlays: N/A.\nNeck Binding: N/A.\nNeck Joint: N/A.\nTuners: N/A.\nBridge: N/A.\nTailpiece: N/A.\nJack: N/A.\nPickups: N/A.\nCase Condition: Used hardcaseIncluded: Gibson HardcaseDemo Shop COADemo Shop Pro SetupGibson Limited Warranty (Products may have minor cosmetic defects which are described on the listing for each product. These defects are AS-IS and are not covered under the Limited Warranty.)What you see is what you get. Case candy and accessories are only included if are photographed.Spec Notes:\nNeck Profile: SlimTaper\nNeck Material: Mahogany\nDepth at 1st (in): 0.82\"\nDepth at 12th (in): 0.90\"\nNut Width (in): 1.708\"\nNut Material: Graph Tech\nScale: 24.75\"\nFingerboard Material: Rosewood\nFingerboard Radius: 12\"\nFret Count: 22\nBody Shape: ES-335\nBody Material: Maple/poplar/maple\nFinish Type: Gloss Nitrocellulose Lacquer\nTuners: Grover Milk Bottle\nBridge: ABR-1 Tune-O-Matic\nNeck Pickup: T-Type\nBridge Pickup: T-Type\nMid Pickup: N/A\nControls: 2 volume, 2 tone, 3 way switch\nStrings: .010, .013, .017, .026, .036, .046\nWeight (lbs): 4.15\nYear: 2026\nSerial Number: [telefon usunięty]",
+   "descLang": "en",
+   "descPl": "Gibson ES-335 60s, Sixties Cherry | DEMO\nSzczegóły: Modyfikacje: tył główki ostemplowany DEMO. Odnotowane wady kosmetyczne: Lakier – płyta: zaciek lakieru przy otworze f, od strony wiolinowej.\nLakier – boki: brak.\nLakier – tył: brak.\nLakier – gryf: pęcherzyk lakieru (solvent pop) w okolicy 17. progu, od strony basowej.\nLakier – główka: brak.\nSiodełko: brak.\nPodstrunnica: brak.\nZnaczniki: brak.\nObszycie gryfu: brak.\nPołączenie gryfu: brak.\nKlucze: brak.\nMostek: brak.\nStrunociąg: brak.\nGniazdo: brak.\nPrzetworniki: brak.\nStan futerału: używany futerał twardy. W zestawie: futerał twardy Gibson, certyfikat autentyczności Demo Shop, profesjonalny set-up Demo Shop, ograniczona gwarancja Gibson (produkty mogą mieć drobne wady kosmetyczne opisane w ogłoszeniu każdego produktu; wady te są sprzedawane w stanie „jak jest” i nie są objęte ograniczoną gwarancją). Dostajesz to, co widzisz. Drobne akcesoria są dołączone tylko wtedy, gdy są na zdjęciach. Uwagi do specyfikacji:\nProfil gryfu: SlimTaper\nMateriał gryfu: mahoń\nGrubość przy 1. progu (cale): 0.82\"\nGrubość przy 12. progu (cale): 0.90\"\nSzerokość siodełka (cale): 1.708\"\nMateriał siodełka: Graph Tech\nMenzura: 24.75\"\nMateriał podstrunnicy: palisander\nPromień podstrunnicy: 12\"\nLiczba progów: 22\nKształt korpusu: ES-335\nMateriał korpusu: klon/topola/klon\nWykończenie: błyszczący lakier nitrocelulozowy\nKlucze: Grover Milk Bottle\nMostek: ABR-1 Tune-O-Matic\nPrzetwornik przy gryfie: T-Type\nPrzetwornik przy mostku: T-Type\nPrzetwornik środkowy: brak\nRegulatory: 2 volume, 2 tone, przełącznik 3-pozycyjny\nStruny: .010, .013, .017, .026, .036, .046\nWaga (funty): 4.15\nRok: 2026\nNumer seryjny: [telefon usunięty]"
+  },
+  {
    "id": "olx-1110253636",
    "source": "OLX",
    "url": "https://www.olx.pl/d/oferta/gibson-flying-v67-CID751-ID1d8wGI.html",
@@ -3372,6 +3606,83 @@
    "descOrig": "Na sprzedaż Gibson Flying V ’67 z 2008 roku, produkcja USA, kolor Ebony.\n\nGitara w bardzo dobrym stanie wizualnym i technicznym, z niewielkimi śladami użytkowania. Lakier cały, rogi bez obić.\n\nPrzeszła profesjonalny setup w Śliwa Guitars w Gdańsku.\n\nW moich rękach od ponad pół roku, sprzedaję z prywatnej kolekcji.\n\nW zestawie pokrowiec oraz dodatkowy komplet strun.\n\nNumer seryjny: [telefon usunięty].\n\nCena: 7499zł\n\nMożliwość obejrzenia i ogrania na miejscu. Więcej informacji i zdjęć na priv.",
    "descLang": "pl",
    "descPl": "Na sprzedaż Gibson Flying V ’67 z 2008 roku, produkcja USA, kolor Ebony.\n\nGitara w bardzo dobrym stanie wizualnym i technicznym, z niewielkimi śladami użytkowania. Lakier cały, rogi bez obić.\n\nPrzeszła profesjonalny setup w Śliwa Guitars w Gdańsku.\n\nW moich rękach od ponad pół roku, sprzedaję z prywatnej kolekcji.\n\nW zestawie pokrowiec oraz dodatkowy komplet strun.\n\nNumer seryjny: [telefon usunięty].\n\nCena: 7499zł\n\nMożliwość obejrzenia i ogrania na miejscu. Więcej informacji i zdjęć na priv."
+  },
+  {
+   "id": "dba-26606232",
+   "source": "DBA",
+   "url": "https://www.dba.dk/recommerce/forsale/item/26606232",
+   "title": "Rickenbacker 330 Fireglo (2012) z futerałem",
+   "originalTitle": "Elguitar. Rickenbacker 330 Fireglo.",
+   "description": "Rickenbacker 330 z 2012 roku w kolorze Fireglo. Według sprzedawcy w pełni oryginalny i jak nowy; w komplecie oryginalny futerał, instrukcja, ściereczka i klucze. Ogłoszenie nie podaje sposobu dostawy.",
+   "photo": "https://images.dbastatic.dk/dynamic/default/item/26606232/77528406-7756-404c-a730-971e329e2806",
+   "condition": "Jak nowa, w pełni oryginalna (wg sprzedawcy), oryginalny futerał",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Hvidovre, Dania",
+   "currency": "DKK",
+   "priceOriginal": 14500.0,
+   "shippingOriginal": 60,
+   "price": {
+    "cena": 8540,
+    "wysylka": 264,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 8804
+   },
+   "shippingNote": "Założenie: ubezpieczona paczka Dania→PL ok. 60 € (ogłoszenie nie podaje sposobu dostawy; wysyłkę za granicę i płatność z ochroną trzeba uzgodnić ze sprzedawcą).",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 10590.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 14 porównywalnych używanych ofert (Reverb 7, Kleinanzeigen 4, Marktplaats 1, willhaben 1, DBA 1), zakres 7910–15330 zł",
+   "valueSources": [
+    {
+     "label": "DBA – podobne ogłoszenia",
+     "url": "https://www.dba.dk/recommerce/forsale/search?q=rickenbacker"
+    },
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=rickenbacker&condition=used"
+    },
+    {
+     "label": "Reverb: Rickenbacker Rickenbacker 330 E-Gitarre Baujahr 1991 Fire Gl (10764 zł)",
+     "url": "https://reverb.com/item/97129253-rickenbacker-rickenbacker-330-e-gitarre-baujahr-1991-fire-glow-1991-fire-glow"
+    },
+    {
+     "label": "Reverb: Rickenbacker 330/6 1997 - Fireglo (10426 zł)",
+     "url": "https://reverb.com/item/100896833-rickenbacker-330-6-1997-fireglo"
+    },
+    {
+     "label": "Reverb: Rickenbacker 330 fire glo 2010 (10843 zł)",
+     "url": "https://reverb.com/item/95079742-rickenbacker-330-fire-glo-2010"
+    }
+   ],
+   "dealPct": 16.9,
+   "validTo": null,
+   "postedOrSince": null,
+   "scores": {
+    "cena": 6,
+    "stan": 9,
+    "sprzedawca": 5,
+    "oryginalnosc": 8,
+    "grywalnosc": 7,
+    "plynnosc": 7,
+    "wysylka": 4
+   },
+   "overall": 6.6,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: Rickenbacker 330 to klasyczny semi-hollow z dźwięcznymi single coilami – charakterystyczne, jangle’owe brzmienie (Beatlesi, The Jam), gryf dość wąski i specyficzny. Odsprzedaż: ok. 17% pod medianą 14 używanych Rickenbackerów 330 w Europie (premium – próg 10%); 330 Fireglo to najbardziej rozpoznawalna wersja, rynek mniejszy niż Fendera i Gibsona. Ryzyko: krótki opis – poprosić o zdjęcia numeru seryjnego i szczegółów; wysyłkę z Danii trzeba uzgodnić.",
+   "firstSeen": "2026-11-10T07:32+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
+   "status": "aktywne",
+   "type": "Semi-hollow / hollow",
+   "brand": "Rickenbacker",
+   "dealThreshold": 10,
+   "descFetched": "2026-11-10T07:34Z",
+   "descStatus": "OK",
+   "descOrig": "Helt original og som ny. Fra 2012. Original\nKasse, manual, pudseklud og keys medfølger",
+   "descLang": "da",
+   "descPl": "W pełni oryginalna i jak nowa. Z 2012 roku. W komplecie oryginalny\nfuterał, instrukcja, ściereczka do czyszczenia i klucze."
   },
   {
    "id": "olx-1107293963",
@@ -3524,7 +3835,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: Paloma to Duesenberg z humbuckerem Grand Vintage i single coilem Domino P90, niemiecka jakość wykonania. Odsprzedaż: ok. 15% pod medianą 10 używanych Paloma w Europie (premium – próg 10%); rynek Duesenberga jest węższy niż Fendera czy Gibsona. Ryzyko: brak lokalizacji i sposobu wysyłki w ogłoszeniu, prywatny sprzedawca w Finlandii – płacić tylko z ochroną kupującego.",
    "firstSeen": "2026-11-09T11:35+00:00",
-   "lastChecked": "2026-11-09T11:35+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Inne",
    "brand": "Duesenberg",
@@ -3601,7 +3912,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: współczesny Les Paul Classic z cieńszym gryfem i czterema push-pull – bardzo dużo brzmień jak na Les Paula. Odsprzedaż: ok. 14% pod medianą 89 używanych Les Paul Classic w Europie (premium – próg 10%); LP Classic to jeden z najpłynniejszych Gibsonów. Ryzyko: tylko odbiór w Wiedniu (koszt i czas dojazdu) – przed zapłatą sprawdzić numer seryjny i elektronikę.",
    "firstSeen": "2026-11-09T11:35+00:00",
-   "lastChecked": "2026-11-09T11:35+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Les Paul / LP",
    "brand": "Gibson",
@@ -3832,7 +4143,7 @@
    "verdict": "nie polecam",
    "reasoning": "Gra: świetny JP6 z gwarancją sklepu. Odsprzedaż: cena praktycznie równa medianie (ok. 1% poniżej), więc to uczciwa cena rynkowa, a nie okazja. Ma sens tylko do grania.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-11-09T11:35+00:00",
+   "lastChecked": "2026-11-10T07:32+00:00",
    "status": "aktywne",
    "type": "Superstrat",
    "brand": "Music Man",
@@ -3948,7 +4259,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 15370.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 41 porównywalnych używanych ofert (OLX 9, Reverb 9, DBA 8, Marktplaats 5, Kleinanzeigen 3, willhaben 3, Blocket 2, 2dehands 1, Bazoš.sk 1), zakres 10870–42930 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 41 porównywalnych używanych ofert (OLX 9, Reverb 9, DBA 8, Marktplaats 5, Kleinanzeigen 3, willhaben 3, Blocket 2, 2dehands 1, Bazoš.sk 1), zakres 10870–42930 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
@@ -4027,7 +4338,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 13900.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 8 porównywalnych używanych ofert (Reverb 2, Blocket 2, OLX 1, Marktplaats 1, 2dehands 1, Tori 1), zakres 7710–23060 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 8 porównywalnych używanych ofert (Reverb 2, Blocket 2, OLX 1, Marktplaats 1, 2dehands 1, Tori 1), zakres 7710–23060 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
@@ -4107,7 +4418,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 15000.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 93 porównywalnych używanych ofert (DBA 23, OLX 19, Reverb 16, Blocket 9, Kleinanzeigen 7, Marktplaats 7, 2dehands 4, willhaben 4, Tori 2, Allegro Lokalnie 2), zakres 9760–40050 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 93 porównywalnych używanych ofert (DBA 23, OLX 19, Reverb 16, Blocket 9, Kleinanzeigen 7, Marktplaats 7, 2dehands 4, willhaben 4, Tori 2, Allegro Lokalnie 2), zakres 9760–40050 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "willhaben – podobne ogłoszenia",
@@ -4186,7 +4497,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 10970.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 21 porównywalnych używanych ofert (Reverb 6, Marktplaats 6, Kleinanzeigen 4, OLX 2, DBA 2, Blocket 1), zakres 2650–20470 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 21 porównywalnych używanych ofert (Reverb 6, Marktplaats 6, Kleinanzeigen 4, OLX 2, DBA 2, Blocket 1), zakres 2650–20470 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "willhaben – podobne ogłoszenia",
@@ -4422,7 +4733,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 8760.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 88 porównywalnych używanych ofert (Reverb 39, Kleinanzeigen 17, OLX 7, Tori 7, DBA 6, Marktplaats 4, 2dehands 4, Blocket 2, willhaben 1, Bazoš.sk 1), zakres 5490–13170 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 88 porównywalnych używanych ofert (Reverb 39, Kleinanzeigen 17, OLX 7, Tori 7, DBA 6, Marktplaats 4, 2dehands 4, Blocket 2, willhaben 1, Bazoš.sk 1), zakres 5490–13170 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "willhaben – podobne ogłoszenia",
@@ -4736,7 +5047,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 13900.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 8 porównywalnych używanych ofert (Reverb 2, Blocket 2, OLX 1, Marktplaats 1, 2dehands 1, Tori 1), zakres 8300–23060 zł; przeliczone 2026-11-09 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 8 porównywalnych używanych ofert (Reverb 2, Blocket 2, OLX 1, Marktplaats 1, 2dehands 1, Tori 1), zakres 8300–23060 zł; przeliczone 2026-11-10 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
