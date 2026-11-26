@@ -1,6 +1,6 @@
 {
  "meta": {
-  "updated": "2026-11-25T07:16+00:00",
+  "updated": "2026-11-26T07:18+00:00",
   "fx": {
    "EUR": 4.4026,
    "USD": 3.9293,
@@ -22,16 +22,16 @@
   "sources": {
    "OLX.pl": "OK (publiczne API ofert)",
    "Reverb": "OK (publiczne API, filtr: sprzedawcy z UE)",
-   "Kleinanzeigen": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami, sprawdzono 2026-11-25)",
-   "Allegro": "zablokowane (HTTP 403, sprawdzono 2026-11-25)",
-   "eBay": "wyłączone – brak kluczy eBay Browse API (EBAY_CLIENT_ID / EBAY_CLIENT_SECRET); strony eBay zwracają HTTP 403 (sprawdzono 2026-11-25)",
-   "Marktplaats.nl": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 675 ogłoszeń w puli wyceny), w zestawieniu: 0",
-   "2dehands.be": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 265 ogłoszeń w puli wyceny), w zestawieniu: 0",
-   "willhaben.at": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 924 ogłoszeń w puli wyceny), w zestawieniu: 5",
-   "Tori.fi": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 622 ogłoszeń w puli wyceny), w zestawieniu: 2",
-   "Bazoš.cz": "OK – publiczne strony wyszukiwania (23/33 zapytań z wynikami; pozostałe 10 – HTTP 404 = brak wyników; 97 ogłoszeń w puli wyceny), w zestawieniu: 0",
+   "Kleinanzeigen": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami, sprawdzono 2026-11-26)",
+   "Allegro": "zablokowane (HTTP 403, sprawdzono 2026-11-26)",
+   "eBay": "wyłączone – brak kluczy eBay Browse API (EBAY_CLIENT_ID / EBAY_CLIENT_SECRET); strony eBay zwracają HTTP 403 (sprawdzono 2026-11-26)",
+   "Marktplaats.nl": "OK – publiczne strony wyszukiwania (27/33 zapytań z wynikami; pozostałe 6 – HTTP 403; 536 ogłoszeń w puli wyceny), w zestawieniu: 0",
+   "2dehands.be": "OK – publiczne strony wyszukiwania (26/33 zapytań z wynikami; pozostałe 7 – HTTP 403; 206 ogłoszeń w puli wyceny), w zestawieniu: 0",
+   "willhaben.at": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 938 ogłoszeń w puli wyceny), w zestawieniu: 5",
+   "Tori.fi": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 617 ogłoszeń w puli wyceny), w zestawieniu: 3",
+   "Bazoš.cz": "OK – publiczne strony wyszukiwania (23/33 zapytań z wynikami; pozostałe 10 – HTTP 404 = brak wyników; 95 ogłoszeń w puli wyceny), w zestawieniu: 0",
    "Bazoš.sk": "OK – publiczne strony wyszukiwania (28/33 zapytań z wynikami; pozostałe 5 – HTTP 404 = brak wyników; 119 ogłoszeń w puli wyceny), w zestawieniu: 0",
-   "Allegro Lokalnie": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 202 ogłoszeń w puli wyceny), w zestawieniu: 0",
+   "Allegro Lokalnie": "OK – publiczne strony wyszukiwania (32/33 zapytań z wynikami; pozostałe 1 – HTTP 429 = limit zapytań, pominięte bez ponawiania; 204 ogłoszeń w puli wyceny), w zestawieniu: 0",
    "Sprzedajemy.pl": "OK – publiczne strony wyszukiwania (33/33 zapytań z wynikami; 26 ogłoszeń w puli wyceny), w zestawieniu: 0"
   },
   "skipped": [
@@ -180,7 +180,11 @@
    "Fender Custom Shop Stratocaster Relic (Kleinanzeigen 3581210585, 2 500 €) – oryginalna elektronika i futerał nie są dołączone (wymienione na EMG), brak rocznika/modelu – mediana kompletnych FCS Strat nieporównywalna (25.11)",
    "Gibson Les Paul Custom 1991 z wfrezowanym Floyd Rose (Reverb 104019696) – poważna modyfikacja korpusu, brak porównań dla zmodyfikowanych LP Custom (25.11)",
    "„Custom Shop Nachbau” 1x Strat + 2x Telecaster (willhaben 2094052564) – kopie, zestaw kilku gitar, nie Fender Custom Shop (25.11)",
-   "Blocket i DBA – HTTP 403 (25.11, kontrola strony głównej), pominięte bez ponawiania"
+   "Blocket i DBA – HTTP 403 (25.11, kontrola strony głównej), pominięte bez ponawiania",
+   "Fender American Vintage II 1957 Stratocaster Vintage Blonde (Tori 50410347, 1 450 €) – lakier i podstrunnica postarzane po zakupie w zewnętrznym warsztacie (aftermarket relic) – zwykła mediana AV II nieporównywalna, ok. 14% pod medianą tylko 5 ofert AV II '57 (26.11)",
+   "Gibson Les Paul Classic 2015 Graph Tech (Marktplaats m2470160201, 1 350 €) – ta sama gitara co Reverb 104735026; Marktplaats służy tylko do wyceny (26.11)",
+   "Blocket i DBA – HTTP 403 (26.11, kontrola strony głównej), pominięte bez ponawiania",
+   "Marktplaats (6 z 33 zapytań) i 2dehands (7 z 33) – HTTP 403 (26.11), pominięte bez ponawiania; Allegro Lokalnie 1 z 33 – HTTP 429"
   ],
   "removed": [
    {
@@ -718,14 +722,14 @@
    }
   ],
   "lifecycle": {
-   "checked": 73,
+   "checked": 75,
    "ended": 0,
    "outage": [
     "Blocket",
     "DBA",
     "OLX"
    ],
-   "at": "2026-11-25T07:16+00:00"
+   "at": "2026-11-26T07:18+00:00"
   }
  },
  "offers": [
@@ -795,7 +799,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: klasyczny Soloist USA z gryfem przez korpus i Floyd Rose – po ustawieniu może być świetnym instrumentem do ostrego grania, ale wymaga pracy (brak środkowego przetwornika, brakujące podkładki, zużyta główka pręta). Odsprzedaż: ok. 53% pod medianą 16 używanych Jackson USA Soloist/Dinky w Europie (premium – próg 10%), lecz wycena dotyczy egzemplarzy oryginalnych – modyfikacje i stan mocno obniżają realną wartość i płynność. Ryzyko: tylko odbiór daleko na północy Niemiec; sprawdzić pręt i progi na miejscu; liczyć się z kosztem lutnika i części.",
    "firstSeen": "2026-11-19T07:20+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Superstrat",
    "brand": "Jackson",
@@ -805,6 +809,83 @@
    "descOrig": "Ich biete hier eine Jackson SL1 USA aus dem Jahr 1997.\n\nDie Gitarre weist deutliche Gebrauchsspuren auf, die aber überwiegend optisch sind (siehe Bilder).\n\nDie Bundstäbchen dürften noch in Ordnung sein. Auf Anfrage, kann ich gerne genaue Messungen machen.\n\nDas Floyd Rose funktioniert gut. Die Stimmstabilität ist nicht perfekt, aber in Ordnung. Bei zwei Saitenreitern fehlen die Unterlegscheiben für die Klemmblöcke. Das wirkt sich bedingt auf die Besaitung aus. Die Klemmblöcke wurden von mir dieses Jahr komplett erneuert.\n\nDer Humbucker ist ein Seymour Duncan Trembucker TB-6 BK und der Single Coil ein Seymour Duncan SHR1N BLK. Der mittlere Single Coil ist nicht vorhanden. Ich musste das Elektronikfach und die PU Ausschneidungen im Rahmen des PU Austausch mit Kupferspray auskleiden, da es Probleme mit Störgeräuschen gab.\n\nDie Platte für das Tremolofach ist vorhanden. Leider sind mir die Schrauben dafür abhanden gekommen.\n\nDie Pins für den Gitarrengurt sind Schaller Security Locks. Die originalen Pins sind nicht mehr vorhanden.\n\nAuf der Rückseite vom Headstock, ist ein Halter für Inbusschlüssel, der schon vorhanden, als ich die Gitarre bekommen habe.\n\nDer Truss Rod Kopf ist sehr abgenutzt, sodass hierfür nur ein speziell geschliffener Inbusschlüssel benutzt werden kann, der der Gitarre beiliegt.\n\nDie tiefe E-Saite schnarrt leicht, was mit der tiefen Stimmung (C-Standard) zusammenhängen müsste und eine Einstellungssache sein sollte.\n\nIch habe die Gitarre vor ca. 6 Jahren zu Cyan Guitars in Hamburg gebracht, um sie durprüfen zu lassen. Dabei wurden keine weiteren Probleme gefunden worden. Hier wurde auch der erwähnte Inbusschlüssel angefertigt. Seitdem habe ich sie kaum benutzt und sie stand nur im Gitarrenständer.\n\nDie Gitarre kommt in in einem Hardcase Koffer von Charvel/Jackson.\n\nSie kann gerne bei mir ausführlich angespielt und angeguckt werden.\n\nBitte nur Selbstabholer\n\nBei weiteren Fragen schickt mir gerne eine Nachricht :)",
    "descLang": "de",
    "descPl": "Oferuję tu Jacksona SL1 USA z 1997 roku.\n\nGitara ma wyraźne ślady użytkowania, które są jednak przeważnie optyczne (patrz zdjęcia).\n\nProgi powinny być jeszcze w porządku. Na życzenie chętnie wykonam dokładne pomiary.\n\nFloyd Rose działa dobrze. Stabilność stroju nie jest idealna, ale w porządku. Przy dwóch siodełkach brakuje podkładek do klocków dociskowych. Ma to pewien wpływ na zakładanie strun. Klocki dociskowe całkowicie wymieniłem w tym roku.\n\nHumbucker to Seymour Duncan Trembucker TB-6 BK, a single coil to Seymour Duncan SHR1N BLK. Środkowego single coila nie ma. Przy wymianie przetworników musiałem wyłożyć komorę elektroniki i frezy pod przetworniki sprayem miedzianym, ponieważ były problemy z zakłóceniami.\n\nPokrywa komory tremolo jest. Niestety zgubiłem do niej śruby.\n\nZaczepy paska to Schaller Security Locks. Oryginalnych zaczepów już nie ma.\n\nZ tyłu główki jest uchwyt na klucz imbusowy, który był już, kiedy dostałem gitarę.\n\nGłówka pręta jest bardzo zużyta, więc można jej używać tylko ze specjalnie szlifowanym kluczem imbusowym, który jest dołączony do gitary.\n\nGruba struna E lekko brzęczy, co powinno mieć związek z niskim strojem (C-Standard) i powinno być kwestią ustawienia.\n\nOk. 6 lat temu oddałem gitarę do Cyan Guitars w Hamburgu, żeby ją sprawdzić. Nie znaleziono przy tym żadnych dalszych problemów. Tam też wykonano wspomniany klucz imbusowy. Od tego czasu prawie jej nie używałem i stała tylko na stojaku.\n\nGitara jest w twardym futerale Charvel/Jackson.\n\nMożna ją u mnie dokładnie wypróbować i obejrzeć.\n\nProszę tylko o odbiór osobisty\n\nW razie dalszych pytań chętnie odpowiem na wiadomość :)"
+  },
+  {
+   "id": "ka-3582014261",
+   "source": "Kleinanzeigen",
+   "url": "https://www.kleinanzeigen.de/s-anzeige/2013-music-man-axis-super-sport/3582014261-74-5566",
+   "title": "Music Man Axis Super Sport HH Tremolo (2013), oryginalny futerał",
+   "originalTitle": "2013 Music Man Axis Super Sport",
+   "description": "Music Man Axis Super Sport HH z tremolo z 2013 roku. Według sprzedawcy zawsze traktowana z największą starannością, nigdy nie była w sali prób ani na scenie – grana wyłącznie prywatnie w domu. Całe oryginalne wyposażenie jest kompletne i znajduje się w futerale. Stan widoczny na zdjęciach, przed zakupem można ją obejrzeć i wypróbować. Sprzedaż prywatna bez rękojmi, gwarancji, zwrotu i wymiany.",
+   "photo": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/d0/d040a9e0-cd47-4ba2-a6d3-ea5cbcd000b4?rule=$_59.JPG",
+   "condition": "Bardzo dobry (wg Kleinanzeigen), grana tylko w domu; oryginalny futerał Music Man i akcesoria",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Dießen am Ammersee, DE",
+   "currency": "EUR",
+   "priceOriginal": 1300,
+   "shippingOriginal": 50,
+   "price": {
+    "cena": 5723,
+    "wysylka": 220,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 5943
+   },
+   "shippingNote": "Założenie: ubezpieczona paczka DE→PL ok. 50 € (ogłoszenie z opcją wysyłki). Cena do negocjacji (VB).",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 11410.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 25 porównywalnych używanych ofert (Reverb 16, OLX 7, Kleinanzeigen 1, Allegro Lokalnie 1), zakres 6500–16460 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=music%20man%20axis&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-music-man-axis/"
+    },
+    {
+     "label": "Reverb: Ernie Ball Music Man Axis Roasted Amber Quilt 2021 (11414 zł)",
+     "url": "https://reverb.com/item/99333723-ernie-ball-music-man-axis-roasted-amber-quilt-2021"
+    },
+    {
+     "label": "Reverb: Music Man Axis 2011 - Translucent Orange (10935 zł)",
+     "url": "https://reverb.com/item/101866923-music-man-axis-2011-translucent-orange"
+    },
+    {
+     "label": "Reverb: Ernie Ball Music Man Axis Super Sport HH Tremolo 2006 (12077 zł)",
+     "url": "https://reverb.com/item/96165845-ernie-ball-music-man-axis-super-sport-hh-tremolo-2006"
+    }
+   ],
+   "dealPct": 47.9,
+   "validTo": null,
+   "postedOrSince": "2026-11-25",
+   "scores": {
+    "cena": 9,
+    "stan": 8,
+    "sprzedawca": 5,
+    "oryginalnosc": 7,
+    "grywalnosc": 8,
+    "plynnosc": 7,
+    "wysylka": 7
+   },
+   "overall": 7.5,
+   "verdict": "polecam",
+   "reasoning": "Gra: Axis Super Sport – wygodny korpus z kolcem z topem z klonu pikowanego, gryf z prostokątnym (4+2) układem kluczy, przetworniki HH i tremolo Music Man; egzemplarz grany tylko w domu. Odsprzedaż: ok. 48% pod medianą 25 używanych Music Man Axis w Europie (premium – próg 10%); Axis to poszukiwany model z linii EVH/Music Man. Ryzyko: cena wyraźnie niższa niż rynek – na rynku krążą podróbki Axis, więc przed zakupem poprosić o numer seryjny (weryfikacja w Ernie Ball Music Man), zdjęcia płytki z tyłu gryfu i elektroniki, a najlepiej obejrzeć osobiście; prywatny sprzedawca bez gwarancji, płacić tylko z ochroną kupującego.",
+   "firstSeen": "2026-11-26T07:18+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
+   "status": "aktywne",
+   "type": "Superstrat",
+   "brand": "Music Man",
+   "dealThreshold": 10,
+   "descFetched": "2026-11-26T07:21Z",
+   "descStatus": "OK",
+   "descOrig": "Music Man Axis Super Sport HH Tremolo\n\nDiese Gitarre ist ein außergewöhnliches Instrument. Sie wurde immer mit größter Sorgfalt behandelt und hat nie einen Proberaum oder eine Bühne gesehen. Sie wurde ausschließlich im privaten Umfeld zu Hause gespielt.\n\nDas gesamte Originalzubehör ist vollständig vorhanden und befindet sich im Koffer.\n\nDer Zustand des Instruments ist auf den Fotos ersichtlich und kann gerne vor dem Kauf besichtigt und getestet werden.\n\nPrivatverkauf unter Ausschluss jeglicher Sachmängelhaftung. Die Gitarre wird unter Ausschluss von Garantie, Gewährleistung, Rücknahme und Umtausch verkauft. Alle Angaben erfolgen nach bestem Wissen und Gewissen.",
+   "descLang": "de",
+   "descPl": "Music Man Axis Super Sport HH Tremolo\n\nTa gitara to wyjątkowy instrument. Zawsze traktowano ją z największą starannością i nigdy nie widziała sali prób ani sceny. Grano na niej wyłącznie prywatnie, w domu.\n\nCałe oryginalne wyposażenie jest kompletne i znajduje się w futerale.\n\nStan instrumentu widać na zdjęciach; przed zakupem chętnie można go obejrzeć i przetestować.\n\nSprzedaż prywatna z wyłączeniem wszelkiej odpowiedzialności za wady. Gitara jest sprzedawana z wyłączeniem gwarancji, rękojmi, zwrotu i wymiany. Wszystkie informacje podano zgodnie z najlepszą wiedzą i sumieniem."
   },
   {
    "id": "wh-1013087414",
@@ -872,7 +953,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: vintage'owy Schecter z USA, tele z humbuckerami. Odsprzedaż: ok. 47% pod medianą 18 używanych Schecterów USA, ale vintage z lat 80. sprzedaje się wolniej i ma szeroki rozrzut cen. To ten sam egzemplarz i ta sama cena co wcześniejsze ogłoszenie willhaben 1190964252 (zakończone 30.10, teraz wystawione ponownie 12.11). Najpierw numer seryjny i zdjęcia elektroniki; wysyłka z Wiednia do uzgodnienia.",
    "firstSeen": "2026-11-13T07:36+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Tele / T",
    "brand": "Schecter",
@@ -957,7 +1038,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: amerykański Charvel San Dimas – szybki gryf, dwa humbuckery z rozłączaniem cewek i mostek z mikrostroikami, gitara do rocka i metalu. Odsprzedaż: ok. 46% pod medianą 6 używanych Charveli USA (głównie USA Select) w Europie (premium – próg 10%); duży bufor. Ryzyko: mostek nieoryginalny (Floyd Rose wymieniony na Schaller Lockmeister, w opisie brak informacji o oryginalnym mostku), odpryski lakieru z tyłu, brak roku i serii w opisie – poprosić o numer seryjny i zdjęcia; prywatny sprzedawca, płacić tylko z ochroną kupującego.",
    "firstSeen": "2026-11-15T07:21+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Superstrat",
    "brand": "Charvel",
@@ -1073,7 +1154,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 8340.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 13 porównywalnych używanych ofert (Kleinanzeigen 5, Reverb 3, OLX 2, Marktplaats 1, willhaben 1, Blocket 1), zakres 6400–12640 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 13 porównywalnych używanych ofert (Kleinanzeigen 5, Reverb 3, OLX 2, Marktplaats 1, willhaben 1, Blocket 1), zakres 6400–12640 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
@@ -1236,7 +1317,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 8340.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 41 porównywalnych używanych ofert (Reverb 13, OLX 6, Blocket 6, Kleinanzeigen 5, Marktplaats 3, DBA 3, 2dehands 2, willhaben 2, Tori 1), zakres 3520–22140 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 41 porównywalnych używanych ofert (Reverb 13, OLX 6, Blocket 6, Kleinanzeigen 5, Marktplaats 3, DBA 3, 2dehands 2, willhaben 2, Tori 1), zakres 3520–22140 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Tori – podobne ogłoszenia",
@@ -1275,7 +1356,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: klasyczny V z gryfem z lat 60. – świetny do rocka i metalu. Odsprzedaż: ok. 36% pod medianą używanych Flying V (USA), ale kształt ma węższe grono kupców. Wysyłka z Finlandii do uzgodnienia.",
    "firstSeen": "2026-10-26T21:27+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Explorer / V / kształty",
    "brand": "Gibson",
@@ -1314,7 +1395,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 17610.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 55 porównywalnych używanych ofert (Reverb 12, OLX 10, Marktplaats 7, willhaben 7, Blocket 5, Kleinanzeigen 4, 2dehands 4, DBA 3, Bazoš.cz 1, Bazoš.sk 1, Allegro Lokalnie 1), zakres 2640–55000 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 55 porównywalnych używanych ofert (Reverb 12, OLX 10, Marktplaats 7, willhaben 7, Blocket 5, Kleinanzeigen 4, 2dehands 4, DBA 3, Bazoš.cz 1, Bazoš.sk 1, Allegro Lokalnie 1), zakres 2640–55000 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
@@ -1439,7 +1520,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: ta sama platforma co S2 McCarty 594 z OLX – menzura 24,594\", 58/15 S z rozłączaniem cewek, lekka (3,38 kg). Odsprzedaż: ok. 36% pod medianą używanych S2 594 w UE, a cena jest jeszcze do negocjacji. Ryzyko: prywatna sprzedaż przez granicę bez 'Sicher bezahlen' i tylko gigbag – płatność z ochroną lub odbiór osobisty, poprosić o numer seryjny.",
    "firstSeen": "2026-10-26T07:17+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Double-cut (PRS)",
    "brand": "PRS",
@@ -1563,7 +1644,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 15390.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 40 porównywalnych używanych ofert (OLX 9, Reverb 9, DBA 7, Marktplaats 5, Kleinanzeigen 3, willhaben 3, Blocket 2, 2dehands 1, Bazoš.sk 1), zakres 10870–42930 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 40 porównywalnych używanych ofert (OLX 9, Reverb 9, DBA 7, Marktplaats 5, Kleinanzeigen 3, willhaben 3, Blocket 2, 2dehands 1, Bazoš.sk 1), zakres 10870–42930 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "DBA – podobne ogłoszenia",
@@ -1732,7 +1813,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 8340.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 41 porównywalnych używanych ofert (Reverb 13, OLX 6, Blocket 6, Kleinanzeigen 5, Marktplaats 3, 2dehands 2, willhaben 2, Tori 2, DBA 2), zakres 3520–22140 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 41 porównywalnych używanych ofert (Reverb 13, OLX 6, Blocket 6, Kleinanzeigen 5, Marktplaats 3, 2dehands 2, willhaben 2, Tori 2, DBA 2), zakres 3520–22140 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "DBA – podobne ogłoszenia",
@@ -1810,7 +1891,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 8650,
    "valueVerified": true,
-   "valueMethod": "Mediana 19 porównywalnych używanych ofert (Reverb 10, Kleinanzeigen 4, Marktplaats 4, 2dehands 1), zakres 7040–11400 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 19 porównywalnych używanych ofert (Reverb 10, Kleinanzeigen 4, Marktplaats 4, 2dehands 1), zakres 7040–11400 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
@@ -2190,7 +2271,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: amerykański CE24 – 24 progi, tremolo PRS, wygodny gryf, przetworniki 57/08 z wyższej półki niż w seriach S2/SE. Odsprzedaż: ok. 29% pod medianą porównywalnych używanych CE24 w PL/UE, a cena właśnie spadła i nadal jest do negocjacji; CE24 sprzedaje się nieco wolniej niż Custom 24, stąd płynność 7. Ryzyko: prywatna sprzedaż przez granicę bez 'Sicher bezahlen' i bez rękojmi – poprosić o numer seryjny (weryfikacja roku i modelu), zdjęcia progów, płacić z ochroną lub odebrać osobiście.",
    "firstSeen": "2026-10-26T17:20+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Double-cut (PRS)",
    "brand": "PRS",
@@ -2268,7 +2349,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: współczesna Flying V z USA ze stosunkowo wąskim, nowoczesnym gryfem; elektronika sprawna, progi bardzo dobre. Odsprzedaż: ok. 29% pod medianą 46 używanych Gibson Flying V (bez Custom Shop, reedycji '58/'67 i sygnatur) w Europie (premium – próg 10%). Ryzyko: przetwornik przy mostku (Burstbucker 60s) może nie być fabryczny dla tego rocznika – zapytać o oryginalność elektroniki i numer seryjny; ślady na lakierze; płacić przez PayLivery.",
    "firstSeen": "2026-11-22T07:20+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Explorer / V / kształty",
    "brand": "Gibson",
@@ -2430,7 +2511,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: S2 Custom 24 to amerykański PRS z menzurą 25\", 24 progami i tremolo PRS – bardzo wygodny, uniwersalny. Odsprzedaż: ok. 28% pod medianą 9 używanych S2 Custom 24 (bez edycji rocznicowych), ale egzemplarz z 2013 ma starsze przetworniki S2 i obicia, a pojedyncze sztuki w Europie chodzą już po ok. 4,7–6,1 tys. zł – realny bufor jest mniejszy niż sama mediana. Konto prywatne od 2014 z dobrymi ocenami; sprzedaż bez gwarancji – najlepiej odbiór/test albo płatność z ochroną, poprosić o numer seryjny.",
    "firstSeen": "2026-10-27T07:31+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Double-cut (PRS)",
    "brand": "PRS",
@@ -2508,7 +2589,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: Explorer z mahoniu z aktywnymi EMG Hetfield i stałym mostkiem – mocne, metalowe brzmienie i stabilny strój. Odsprzedaż: ok. 28% pod medianą 81 używanych Gibsonów Explorer w Europie; limitowana seria GOTM, a oryginalne części (Kahler, przetworniki) są dołączone, co ułatwia odsprzedaż. Ryzyko: frezowania pod Kahlera i zmiany osprzętu (sprawdzić stan i otwory), tylko odbiór osobisty, cena VB – zweryfikować na miejscu przed zapłatą.",
    "firstSeen": "2026-11-01T17:35+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Explorer / V / kształty",
    "brand": "Gibson",
@@ -2585,7 +2666,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: American Professional II Telecaster z 2026 roku – nowoczesny gryf Deep C, przetworniki V-Mod II, technicznie bez zarzutu. Odsprzedaż: ok. 27% pod medianą 14 używanych AP II Telecaster w Europie (premium – próg 10%), ale amatorski aging (rysy zrobione przez właściciela, szlifowane okucia) wyraźnie obniża płynność i cenę odsprzedaży. Ryzyko: prywatny sprzedawca w zachodniej Austrii, preferuje odbiór – wysyłkę do PL trzeba uzgodnić; obejrzeć dokładnie zdjęcia lakieru.",
    "firstSeen": "2026-11-15T07:21+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Tele / T",
    "brand": "Fender",
@@ -2670,7 +2751,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: japoński Gretsch pro-line z TV Jones – topowe brzmienie rockabilly. Odsprzedaż: 6120 trzyma cenę, ok. 27% pod medianą ofert w UE. Plus: PayPal (ochrona kupującego) i wideorozmowa; minus: duży hollowbody to delikatna przesyłka.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Semi-hollow / hollow",
    "brand": "Gretsch",
@@ -2709,7 +2790,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 14050.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 23 porównywalnych używanych ofert (Marktplaats 7, Reverb 6, Kleinanzeigen 6, Blocket 3, DBA 1), zakres 10060–33370 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 23 porównywalnych używanych ofert (Marktplaats 7, Reverb 6, Kleinanzeigen 6, Blocket 3, DBA 1), zakres 10060–33370 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "willhaben – podobne ogłoszenia",
@@ -2748,7 +2829,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: nowoczesny superstrat do szybkiej gry – progi ze stali, compound radius, po serwisie. Odsprzedaż: ok. 27% pod medianą używanych Suhr Modern. Wysyłka GLS deklarowana w ogłoszeniu; płacić tylko PayPal z ochroną kupującego (nie 'friends').",
    "firstSeen": "2026-10-26T21:27+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Superstrat",
    "brand": "Suhr",
@@ -2827,7 +2908,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: SG Standard z 490R/490T, lekki i wygodny. Odsprzedaż: SG Standard sprzedaje się szybko, cena ok. 27% pod medianą zostawia zapas mimo odprysku. Ryzyko: prywatna sprzedaż przez granicę – tylko płatność z ochroną lub odbiór osobisty.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "SG",
    "brand": "Gibson",
@@ -2913,7 +2994,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: amerykański PRS CE 24 z klonowym topem, przykręcanym gryfem i 24 progami – uniwersalne brzmienie od clean po rock, oryginalne przetworniki Dragon I. Odsprzedaż: ok. 26% pod medianą 65 używanych PRS CE 24 w Europie (premium – próg 10%); rzadki kolor Emerald Green i stan bez przeróbek pomagają przy odsprzedaży. Ryzyko: prywatny sprzedawca, w opisie brak informacji o futerale; poprosić o zdjęcia numeru seryjnego i progów, płacić tylko z ochroną kupującego.",
    "firstSeen": "2026-11-14T07:32+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Double-cut (PRS)",
    "brand": "PRS",
@@ -2990,7 +3071,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: American Professional II po Pleku, z niską akcją i świeżymi progami – gotowa do grania od razu; locking tunery ułatwiają strojenie. Odsprzedaż: ok. 26% pod medianą 30 używanych AP II Stratocaster w Europie (premium – próg 10%); AP II Strat to jeden z najpłynniejszych modeli Fendera USA. Ryzyko: drobne odpryski lakieru; sprzedawca nie wspomina o oryginalnych kluczach – zapytać, czy są w zestawie; prywatny sprzedawca bez zwrotów – płacić PayPal z ochroną kupującego (nie „dla znajomych”).",
    "firstSeen": "2026-11-18T07:24+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Strat / ST",
    "brand": "Fender",
@@ -3144,7 +3225,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: G6120 Setzer Hot Rod to uproszczony (jeden przełącznik, Master Volume) hollowbody Gretscha z Bigsby, a TV Jones Classic to cenione przetworniki w stylu Filter'Tron. Odsprzedaż: ok. 26% pod medianą 9 używanych Gretschy Brian Setzer w Europie; rynek Gretscha jest węższy niż Gibsona/Fendera. Ryzyko: wymienione przetworniki i mechaniki (brak informacji o oryginałach), prywatny sprzedawca bez rękojmi – płacić tylko z ochroną kupującego.",
    "firstSeen": "2026-11-01T17:35+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Semi-hollow / hollow",
    "brand": "Gretsch",
@@ -3162,6 +3243,83 @@
      "dealPct": 24.4
     }
    ]
+  },
+  {
+   "id": "reverb-104599977",
+   "source": "Reverb",
+   "url": "https://reverb.com/item/104599977-prs-ce24-sunburst-174723-second-hand",
+   "title": "PRS CE 24 Sunburst (bolt-on, USA), sklep z gwarancją 1 rok",
+   "originalTitle": "PRS CE24 - Sunburst #174723 Second Hand",
+   "description": "Używana PRS CE24. Konstrukcja: solid body, korpus z jesionu, gryf klonowy przykręcany o profilu Wide Thin, podstrunnica palisandrowa, szerokość siodełka 1 11/16\", 24 progi, menzura 25\", klucze blokowane, wkładki – kropki z masy perłowej (abalone). Przetworniki: PRS HFS Treble (mostek) i PRS Vintage Bass (gryf). Sterowanie: 1 głośność, 1 ton, 5-pozycyjny przełącznik obrotowy. Mostek: PRS Tremolo. Waga 3,465 kg. Kolor Sunburst, wykończenie z połyskiem. W zestawie twardy futerał. Stan: dobry. 14 dni na zwrot, 1 rok gwarancji.",
+   "photo": "https://rvb-img.reverb.com/i/s--1yct8vRS--/quality=medium-low,height=800,width=800,fit=contain/8b30ad87-7372-4118-a300-4cc1681c93d1.jpg",
+   "condition": "Dobry (Good wg Reverb), twardy futerał; sklep: 14 dni na zwrot, 1 rok gwarancji",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Barcelona, Hiszpania (Reverb)",
+   "currency": "EUR",
+   "priceOriginal": 1475.0,
+   "shippingOriginal": 123,
+   "price": {
+    "cena": 6494,
+    "wysylka": 542,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 7036
+   },
+   "shippingNote": "Wysyłka do Polski 123 € wg ogłoszenia Reverb (z Hiszpanii, w obrębie UE – bez cła). Sklep Preferred Seller.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 9500.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 65 porównywalnych używanych ofert (Reverb 32, OLX 13, Kleinanzeigen 8, Marktplaats 7, 2dehands 1, willhaben 1, Tori 1, Bazoš.sk 1, Allegro Lokalnie 1), zakres 6380–15370 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=prs%20ce%2024&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-prs-ce-24/"
+    },
+    {
+     "label": "OLX: PRS CE-24, 1993, produkcja USA, gitara elektryczna (9499 zł)",
+     "url": "https://www.olx.pl/d/oferta/prs-ce-24-1993-produkcja-usa-gitara-elektryczna-CID751-ID1bNN3O.html"
+    },
+    {
+     "label": "Marktplaats: PRS CE 3 - Classic Electric - CE 24 (Pre-owned) (9461 zł)",
+     "url": "https://www.marktplaats.nl/v/muziek-en-instrumenten/snaarinstrumenten-gitaren-elektrisch/a1524413422-prs-ce-3-classic-electric-ce-24-pre-owned"
+    },
+    {
+     "label": "Marktplaats: PRS CE 24 Dustie Waring Signature Model (9245 zł)",
+     "url": "https://www.marktplaats.nl/v/muziek-en-instrumenten/snaarinstrumenten-gitaren-elektrisch/m2443022250-prs-ce-24-dustie-waring-signature-model"
+    }
+   ],
+   "dealPct": 25.9,
+   "validTo": null,
+   "postedOrSince": "2026-11-25",
+   "scores": {
+    "cena": 8,
+    "stan": 6,
+    "sprzedawca": 8,
+    "oryginalnosc": 8,
+    "grywalnosc": 8,
+    "plynnosc": 8,
+    "wysylka": 7
+   },
+   "overall": 7.7,
+   "verdict": "polecam",
+   "reasoning": "Gra: PRS CE 24 z USA z przykręcanym klonowym gryfem Wide Thin, 24 progami i menzurą 25\" – szybka, uniwersalna gitara; przetworniki HFS/Vintage Bass i przełącznik obrotowy to klasyczna konfiguracja PRS. Odsprzedaż: ok. 26% pod medianą 65 używanych PRS CE 24 (bez SE/S2) w Europie (premium – próg 10%); CE 24 sprzedaje się płynnie. Ryzyko: stan tylko „dobry” (ślady użycia), rocznik nie podany – zapytać o numer seryjny i zdjęcia progów; zakup od sklepu z gwarancją 1 rok i 14 dniami na zwrot ogranicza ryzyko.",
+   "firstSeen": "2026-11-26T07:18+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
+   "status": "aktywne",
+   "type": "Double-cut (PRS)",
+   "brand": "PRS",
+   "dealThreshold": 10,
+   "descFetched": "2026-11-26T07:21Z",
+   "descStatus": "OK",
+   "descOrig": "Second-handModel: CE24Construction: SolidBody: AshNeck: MapleNeck profile: Wide thinFingerboard: RosewoodNeck construction: Bolt-onNut width: 1 11/16\"Frets: 24Scale length: 25\"Tuners: LockingNeck inlays: Abalone dotsPickups: 1 x PRS HFS Treble (bridge), 1 x PRS Vintage Bass (neck)Controls: 1 x volume, 1 x tone, 5-position rotary selector switchBridge: PRS TremoloWeight: 3,465 kgColour: SunburstFinish: GlossIncludes hardcaseCondition: Good14-day returns policy, 1-year warranty",
+   "descLang": "en",
+   "descPl": "Używana\nModel: CE24\nKonstrukcja: solid body\nKorpus: jesion\nGryf: klon\nProfil gryfu: Wide thin\nPodstrunnica: palisander\nMocowanie gryfu: przykręcany (bolt-on)\nSzerokość siodełka: 1 11/16\"\nProgi: 24\nMenzura: 25\"\nKlucze: blokowane\nWkładki na gryfie: kropki z abalone\nPrzetworniki: 1 x PRS HFS Treble (mostek), 1 x PRS Vintage Bass (gryf)\nSterowanie: 1 x głośność, 1 x ton, 5-pozycyjny przełącznik obrotowy\nMostek: PRS Tremolo\nWaga: 3,465 kg\nKolor: Sunburst\nWykończenie: połysk\nW zestawie twardy futerał\nStan: dobry\n14 dni na zwrot, 1 rok gwarancji"
   },
   {
    "id": "reverb-103981352",
@@ -3229,7 +3387,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: japońska E-II Eclipse z mahoniowym korpusem, hebanową podstrunnicą i aktywnymi EMG 81/60 – klasyczny singlecut do rocka i metalu. Odsprzedaż: ok. 26% pod medianą 23 używanych ESP E-II Eclipse w Europie (premium – próg 10%); nowa E-II Eclipse BB kosztuje w niemieckich sklepach ok. 2 850 €. Ryzyko: zmodyfikowana elektronika (volume + killswitch zamiast fabrycznych dwóch volume) i widoczne ślady użycia obniżą cenę przy odsprzedaży – zapytać o możliwość przywrócenia oryginalnego okablowania; zakup z ochroną Reverb.",
    "firstSeen": "2026-11-11T07:37+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Les Paul / LP",
    "brand": "ESP",
@@ -3306,7 +3464,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: aktualna seria Original z wygodnym Slim Taper. Odsprzedaż: biały Explorer to mniej popularny kolor; ok. 25% pod medianą Explorerów (porównano z ogólną kategorią Explorer – mało ofert 70s). Wysyłka dużego futerału przez granicę to dodatkowy koszt i ryzyko.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Explorer / V / kształty",
    "brand": "Gibson",
@@ -3384,7 +3542,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: klasyczny SG Standard (mahoń, dwa humbuckery, lekki i szybki gryf). Odsprzedaż: ok. 24% pod medianą używanych SG Standard, a model jest bardzo płynny. Ryzyko: brak roku i numeru seryjnego w ogłoszeniu, młode konto prywatne, preferowany odbiór osobisty i brak gwarancji – trzeba poprosić o zdjęcie numeru seryjnego/główki i potwierdzić wysyłkę do PL; dopiero wtedy warto.",
    "firstSeen": "2026-10-26T17:20+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "SG",
    "brand": "Gibson",
@@ -3662,7 +3820,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 16000,
    "valueVerified": true,
-   "valueMethod": "Mediana 15 porównywalnych używanych ofert (Blocket 4, OLX 3, Reverb 2, Kleinanzeigen 2, DBA 2, Marktplaats 1, willhaben 1), zakres 12650–23720 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 15 porównywalnych używanych ofert (Blocket 4, OLX 3, Reverb 2, Kleinanzeigen 2, DBA 2, Marktplaats 1, willhaben 1), zakres 12650–23720 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Reverb – używane w UE",
@@ -3701,7 +3859,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: R8 (Custom Shop '58 Les Paul) to historyczna replika z masywnym gryfem i przetwornikami Custom Buckers – topowa klasa Les Paula. Odsprzedaż: ok. 23% pod medianą 15 używanych R8/'58 Reissue w Europie, model bardzo płynny. Ryzyko: cena wyraźnie niska jak na R8 z 2021, świeże ogłoszenie prywatne i tylko odbiór w Hamburgu – kupować wyłącznie po obejrzeniu na miejscu, sprawdzeniu numeru seryjnego z certyfikatem (Gibson Custom) i bez żadnej przedpłaty.",
    "firstSeen": "2026-10-28T07:30+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Les Paul / LP",
    "brand": "Gibson",
@@ -3869,7 +4027,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: Suhr Classic JM HH – butikowa jakość wykonania, progi stalowe, compound radius i klucze blokowane; stan prawie jak nowa. Odsprzedaż: ok. 23% pod medianą 28 używanych Suhr Classic (głównie Classic S/T) w Europie (premium – próg 10%); uwaga: 3 znalezione oferty samego Classic JM to ok. 11 000–11 900 zł, więc względem nich okazja wynosi tylko ok. 10% – JM jest mniej płynny niż Classic S. Ryzyko: wysyłka do PL do uzgodnienia; prywatny sprzedawca bez zwrotów – płacić z ochroną kupującego; cenę warto negocjować (VB).",
    "firstSeen": "2026-11-19T07:20+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Offset",
    "brand": "Suhr",
@@ -3954,7 +4112,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: PRS S2 Vela – amerykański (Maryland) offset z mahoniu, lekki i wygodny, przetworniki od czystych po rockowe brzmienia. Odsprzedaż: ok. 23% pod medianą 9 używanych PRS S2 Vela w Europie (premium – próg 10%); rynek Veli węższy niż Custom 24, ale PRS sprzedaje się dobrze. Ryzyko: brak rocznika i numeru seryjnego w opisie – poprosić o zdjęcia; prywatny sprzedawca, płacić tylko z ochroną kupującego.",
    "firstSeen": "2026-11-16T07:22+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Inne",
    "brand": "PRS",
@@ -4122,7 +4280,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: amerykański Dinky z serii USA Select – olcha z klonowym topem, hebanowa podstrunnica, EMG 81/85 i oryginalny Floyd Rose – szybki superstrat do rocka i metalu. Odsprzedaż: ok. 22% pod medianą 38 używanych Jacksonów USA w Europie (premium – próg 10%); Jacksony USA sprzedają się wolniej niż Fender czy Gibson. Ryzyko: ten sam egzemplarz był już wcześniej wystawiony (Kleinanzeigen, Reverb) i się nie sprzedał; sprzedawca chce gotówki, PayPal „dla znajomych” lub przelewu – czyli bez ochrony kupującego; najlepiej odbiór osobisty albo płatność z ochroną.",
    "firstSeen": "2026-11-13T07:36+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Superstrat",
    "brand": "Jackson",
@@ -4276,7 +4434,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: Les Paul Classic z gryfem Slim Taper i wieloma brzmieniami dzięki push-pull; automatyczne mechaniki G-Force i tytanowe siodełko HP 2017 nie każdemu odpowiadają. Odsprzedaż: ok. 22% pod medianą 104 używanych Les Paul Classic w Europie, ale wersje HP z G-Force sprzedają się wolniej niż klasyczne. Ryzyko: tylko odbiór osobisty – przed zapłatą sprawdzić działanie G-Force i elektroniki.",
    "firstSeen": "2026-11-01T17:35+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Les Paul / LP",
    "brand": "Gibson",
@@ -4507,7 +4665,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: aktualny amerykański Strat z V-Mod II, po Pleku i z niską akcją strun – bardzo wygodny. Odsprzedaż: ok. 21% pod medianą 30 używanych American Professional II Strat w Europie (premium – próg 10%); jeden z najpłynniejszych modeli Fendera. Ryzyko: wymienione klucze (zapytać o oryginalne), drobne odpryski lakieru, prywatny sprzedawca bez gwarancji – płacić PayPal z ochroną kupującego.",
    "firstSeen": "2026-11-14T07:32+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Strat / ST",
    "brand": "Fender",
@@ -4596,6 +4754,83 @@
    "descPl": "Jeszcze niższa cena!!!\n\nSprzedam świetną, bardzo zadbaną gitarę elektryczną-Gibson Les Paul Classic, rocznik 2014, w absolutnie zjawiskowym kolorze Seafoam Green, którego zdjęcia w żaden sposób nie są w stanie oddać! W zestawie oryginalny, śliczny, brązowy hardcase i wszystkie papiery. W ostatnim czasie gitara przeszła solidny set-up lutniczy (został wykonany szlif progów, odświeżona i wyczyszczona podstrunnica, założone zostało nowe siodełko (naturalna kość) i oczywiście nowiutki komplet strun -(ernie ball 10-46). Gitara jest zatem w pełni gotowa do działania!"
   },
   {
+   "id": "reverb-104735026",
+   "source": "Reverb",
+   "url": "https://reverb.com/item/104735026-gibson-les-paul-classic-2015-tobacco-burst-w-graph-tech-ratio-tuners",
+   "title": "Gibson Les Paul Classic 2015 Tobacco Burst (klucze Graph Tech Ratio), futerał",
+   "originalTitle": "Gibson Les Paul Classic 2015 – Tobacco Burst (w. Graph Tech Ratio Tuners)",
+   "description": "Gibson Les Paul Classic 2015 (edycja 100-lecia Les Paula, złote logo „Les Paul 100” na główce) w kolorze Tobacco Burst, lakier nitrocelulozowy, top z płomienistego klonu, korpus i gryf z mahoniu (profil SlimTaper), podstrunnica palisandrowa nieco szersza (43 mm przy siodełku). Przetworniki '57 Classic (gryf) i Super '57 (mostek), aktywny boost +15 dB, push/pull z rozdzielaniem cewek, regulowane mosiężne siodełko z progiem zerowym (nowe). Oryginalne automatyczne klucze Tronical G-Force wymieniono na blokowane Graph Tech Ratio (oryginalne dołączone osobno). Progi prawie bez zużycia. Według sprzedawcy stan ogólny doskonały z minimalnymi śladami użycia, poza jedną dość dużą rysą w lakierze z tyłu korpusu (widoczna na zdjęciach). Oryginalny futerał Gibsona, dokumenty i akcesoria; ustawiona, struny Elixir 10.",
+   "photo": "https://rvb-img.reverb.com/i/s--0swvqcK0--/quality=medium-low,height=800,width=800,fit=contain/09e6562f-e0a6-42db-ad3c-fe2fda3d740a.jpeg",
+   "condition": "Bardzo dobry (Very Good wg Reverb) – duża rysa w lakierze z tyłu korpusu; klucze Graph Tech (oryginalne Tronical w zestawie), oryginalny futerał",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "De Zilk, Holandia (Reverb)",
+   "currency": "EUR",
+   "priceOriginal": 1450.0,
+   "shippingOriginal": 135,
+   "price": {
+    "cena": 6384,
+    "wysylka": 594,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 6978
+   },
+   "shippingNote": "Wysyłka do UE 135 € wg ogłoszenia Reverb (z Holandii, bez cła). Możliwość składania ofert cenowych.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 8780.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 91 porównywalnych używanych ofert (Reverb 45, Kleinanzeigen 21, OLX 8, Marktplaats 7, Tori 6, 2dehands 2, willhaben 2), zakres 5490–13170 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=gibson%20les%20paul%20classic&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-gibson-les-paul-classic/"
+    },
+    {
+     "label": "Reverb: Gibson Les Paul Classic 2021 - Translucent Cherry (8783 zł)",
+     "url": "https://reverb.com/item/95317170-gibson-les-paul-classic-2021-translucent-cherry"
+    },
+    {
+     "label": "Kleinanzeigen: 2004 Gibson Les Paul Classic 1960 Reissue HCS USA Good Wood  (8779 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/2004-gibson-les-paul-classic-1960-reissue-hcs-usa-good-wood-aera/3478903120-74-12892"
+    },
+    {
+     "label": "Kleinanzeigen: Gibson Les Paul Classic neuwertige Gitarre (8775 zł)",
+     "url": "https://www.kleinanzeigen.de/s-anzeige/gibson-les-paul-classic-neuwertige-gitarre/3551132942-74-5373"
+    }
+   ],
+   "dealPct": 20.5,
+   "validTo": null,
+   "postedOrSince": "2026-11-25",
+   "scores": {
+    "cena": 7,
+    "stan": 7,
+    "sprzedawca": 6,
+    "oryginalnosc": 7,
+    "grywalnosc": 8,
+    "plynnosc": 6,
+    "wysylka": 6
+   },
+   "overall": 6.8,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: Les Paul Classic 2015 z cienkim gryfem SlimTaper, przetwornikami '57 Classic/Super '57, coil-split i boostem; problematyczne automatyczne klucze G-Force zastąpione blokowanymi Graph Tech Ratio, progi prawie nowe. Odsprzedaż: ok. 20% pod medianą 91 używanych Gibson Les Paul Classic (bez Custom Shop/Historic) w Europie (premium – próg 10%), ale rocznik 2015 (G-Force, próg zerowy, szersza podstrunnica) jest mniej poszukiwany i zwykle tańszy niż inne roczniki. Ryzyko: duża rysa z tyłu korpusu; sprzedawca bez statusu Preferred (29 opinii, 100%); ta sama gitara jest też w ogłoszeniu na Marktplaats – zakup przez Reverb z ochroną kupującego.",
+   "firstSeen": "2026-11-26T07:18+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
+   "status": "aktywne",
+   "type": "Les Paul / LP",
+   "brand": "Gibson",
+   "dealThreshold": 10,
+   "descFetched": "2026-11-26T07:21Z",
+   "descStatus": "OK",
+   "descOrig": "What makes this particular listing stand out\n-The replacement of the original Tronical G-Force Autotuners with Graph Tech Ratio locking tuners (€160,-) has retained the possibility of quick alternative tunings, yet without the tuning instability that made the original Autotuners so disliked. The Graph Tech Ratio locking tuners have unmatched stability and top notch mechanisms. Each tuner will quickly set to a half tone up or down when you turn it 180 degrees.\nOriginal Autotuners are included separately, in case you want to reinstall and try them out. You’ll soon be convinced the GTRL-tuners are far superior.\n-The Zero-Fret Adjustable Brass Nut is brand new on this one! No wear or tear, no cut outs under the strings as you often see.\n-Almost no fret wear (99% OK): this one has hardly had any play time. It has mainly been a decorative object for almost all of it’s life.\n\nDescription\nThe Gibson Les Paul Classic 2015 was a special Les Paul 100th Anniversary Edition, celebrating the 100th birthday of the legendary inventor. To commemorate this model features the exclusive gold \"Les Paul 100\" headstock logo and a unique Les Paul hologram on the back of the headstock.\nFeaturing a beautifully figured flame maple top finished in Tobacco Burst (a.k.a. ‘Vintage Sunburst’) nitrocellulose lacquer.\nThe solid mahogany body provides the legendary Les Paul sustain and rich tonal character. A Gibson '57 Classic neck humbucker and Super '57 bridge humbucker deliver warm vintage PAF-inspired tones with plenty of clarity, dynamics, and punch.\nThe built-in active +15dB Turbo Boost is a unique feature that can be engaged via the mini-toggle switch, instantly pushing your amplifier into natural overdrive.\nThe push/pull volume controls offer coil-splitting for convincing single-coil tones, making this one of the most versatile Les Paul models Gibson has ever produced. Yes, it can sound like a Stratocaster if you you want.\nThe comfortable SlimTaper™ mahogany neck is paired with a slightly wider rosewood fingerboard (43” at the nut), offering excellent playability and just a little extra room for bends and fast passages.\nThe innovative Zero-Fret Adjustable Brass Nut improves intonation and enhances the clarity and consistency of open strings. The hight of the nut is easily adjustable. A unique feature that helps to get a perfect setup with ultra low action that won't affect sustain.\n\nSpecifications:Model: Gibson Les Paul Classic.Year: 2015 – Les Paul 100th Anniversary Edition.Finish: Tobacco Burst / Vintage Sunburst (Nitrocellulose Lacquer).Body: Solid Mahogany.Top: Figured Flame Maple.Neck: Mahogany.Neck Profile: SlimTaper™.Fingerboard: Rosewood with Trapezoid Inlays.Pickups: Gibson '57 Classic (Neck) & Super '57 (Bridge) Humbuckers.Controls: 2 Volume (Push/Pull Coil Split), Master Tone, 3-Way Toggle Switch.Additional Electronics: Active +15dB Turbo Boost.Nut: Zero-Fret Adjustable Brass Nut.Serial Number: [imię usunięte]: Original Gold/Bronze Gibson Hardshell Case and original documentation and case candy.Set up to perfection with 0.10 Elixirs and ready to rock!Condition:\nThis guitar is in overall excellent condition with only minimal signs of use, except for one rather large scratch in the lacquer on the back of the body, clearly depictured on the photos.",
+   "descLang": "en",
+   "descPl": "Co wyróżnia to konkretne ogłoszenie\n- Wymiana oryginalnych automatycznych kluczy Tronical G-Force na blokowane klucze Graph Tech Ratio (o wartości 160 €) zachowała możliwość szybkiego przestrajania na alternatywne stroje, ale bez niestabilności stroju, przez którą oryginalne automatyczne klucze były tak nielubiane. Blokowane klucze Graph Tech Ratio mają niezrównaną stabilność i najwyższej klasy mechanizmy. Każdy klucz szybko ustawia strunę o pół tonu wyżej lub niżej po obróceniu o 180 stopni.\nOryginalne automatyczne klucze są dołączone osobno, na wypadek gdybyś chciał je ponownie zamontować i wypróbować. Szybko przekonasz się, że klucze GTRL są zdecydowanie lepsze.\n- Regulowane mosiężne siodełko z progiem zerowym jest w tym egzemplarzu zupełnie nowe! Bez zużycia, bez wycięć pod strunami, które często się widuje.\n- Progi prawie bez zużycia (99% OK): na tej gitarze prawie nie grano. Przez niemal całe swoje życie była głównie przedmiotem dekoracyjnym.\n\nOpis\nGibson Les Paul Classic 2015 był specjalną edycją na 100-lecie Les Paula, upamiętniającą setne urodziny legendarnego wynalazcy. Dla upamiętnienia model ma ekskluzywne złote logo „Les Paul 100” na główce i unikalny hologram Les Paula z tyłu główki.\nMa pięknie wzorzysty top z płomienistego klonu wykończony lakierem nitrocelulozowym w kolorze Tobacco Burst (inaczej „Vintage Sunburst”).\nKorpus z litego mahoniu zapewnia legendarny sustain Les Paula i bogaty charakter brzmienia. Humbuckery Gibson '57 Classic przy gryfie i Super '57 przy mostku dają ciepłe, vintage'owe brzmienia inspirowane PAF z dużą klarownością, dynamiką i siłą.\nWbudowany aktywny Turbo Boost +15 dB to unikalna funkcja włączana mini-przełącznikiem, która natychmiast wprowadza wzmacniacz w naturalny przester.\nPotencjometry głośności push/pull umożliwiają rozdzielanie cewek dla przekonujących brzmień single coil, co czyni ten model jednym z najbardziej uniwersalnych Les Pauli, jakie Gibson kiedykolwiek wyprodukował. Tak, jeśli chcesz, może brzmieć jak Stratocaster.\nWygodny mahoniowy gryf SlimTaper™ połączono z nieco szerszą palisandrową podstrunnicą (43” przy siodełku), co zapewnia świetną grywalność i trochę więcej miejsca na podciągnięcia i szybkie pasaże.\nInnowacyjne regulowane mosiężne siodełko z progiem zerowym poprawia intonację oraz zwiększa klarowność i równość pustych strun. Wysokość siodełka łatwo się reguluje. To unikalne rozwiązanie pomaga uzyskać idealne ustawienie z bardzo niską akcją strun, która nie wpływa na sustain.\n\nSpecyfikacja:\nModel: Gibson Les Paul Classic.\nRok: 2015 – Les Paul 100th Anniversary Edition.\nWykończenie: Tobacco Burst / Vintage Sunburst (lakier nitrocelulozowy).\nKorpus: lity mahoń.\nTop: wzorzysty płomienisty klon.\nGryf: mahoń.\nProfil gryfu: SlimTaper™.\nPodstrunnica: palisander z wkładkami trapezowymi.\nPrzetworniki: humbuckery Gibson '57 Classic (gryf) i Super '57 (mostek).\nSterowanie: 2 x głośność (push/pull, rozdzielanie cewek), główny ton, 3-pozycyjny przełącznik.\nDodatkowa elektronika: aktywny Turbo Boost +15 dB.\nSiodełko: regulowane mosiężne siodełko z progiem zerowym.\nNumer seryjny: [usunięty]\nW zestawie: oryginalny złoto-brązowy twardy futerał Gibsona oraz oryginalna dokumentacja i akcesoria.\nUstawiona perfekcyjnie, ze strunami Elixir 0.10, gotowa do grania!\nStan:\nGitara jest ogólnie w doskonałym stanie, z jedynie minimalnymi śladami użytkowania, z wyjątkiem jednej dość dużej rysy w lakierze z tyłu korpusu, wyraźnie pokazanej na zdjęciach."
+  },
+  {
    "id": "bl-27441434",
    "source": "Blocket",
    "url": "https://www.blocket.se/recommerce/forsale/item/27441434",
@@ -4622,7 +4857,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 7230.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 32 porównywalnych używanych ofert (Reverb 13, Kleinanzeigen 8, OLX 4, Marktplaats 3, DBA 2, willhaben 1, Blocket 1), zakres 5840–8780 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 32 porównywalnych używanych ofert (Reverb 13, Kleinanzeigen 8, OLX 4, Marktplaats 3, DBA 2, willhaben 1, Blocket 1), zakres 5840–8780 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
@@ -4739,7 +4974,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: praktycznie nowa ES-335. Odsprzedaż: płynny model, a ok. 20% pod medianą satynowych ES-335 to solidny, choć nie wyjątkowy bufor. Przedpłata przelewem do prywatnej osoby za granicą bez ochrony – tylko z odbiorem osobistym.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Semi-hollow / hollow",
    "brand": "Gibson",
@@ -4817,7 +5052,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: American Ultra – nowoczesny profil Modern D, compound radius 10–14\", przetworniki Ultra Noiseless z S-1 i klucze blokowane; egzemplarz praktycznie nowy. Odsprzedaż: ok. 20% pod medianą 14 używanych American Ultra Stratocaster (I generacji, bez Luxe/HSS) w Europie, z doliczonym kosztem dojazdu (premium – próg 10%). Ryzyko: wyłącznie odbiór osobisty w Hamburgu (sprzedawca kategorycznie nie wysyła) – koszt i czas dojazdu; przed zapłatą sprawdzić numer seryjny i ograć na miejscu.",
    "firstSeen": "2026-11-22T07:20+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Strat / ST",
    "brand": "Fender",
@@ -4987,7 +5222,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: American Ultra – nowoczesny profil Modern D, compound radius 10–14\" i przetworniki Ultra Noiseless; progi bez zużycia, dobra akcja. Odsprzedaż: ok. 20% pod medianą 13 używanych American Ultra Stratocaster (I generacji) w Europie – ostrożna wycena (premium – próg 10%); jeśli to faktycznie Ultra II, okazja jest większa. Ryzyko: niejasna generacja (tytuł „Ultra II”, opis „American Ultra”) – poprosić o zdjęcie numeru seryjnego i główki; krótki opis; prywatny sprzedawca – płacić tylko z ochroną kupującego.",
    "firstSeen": "2026-11-18T07:24+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Strat / ST",
    "brand": "Fender",
@@ -5064,7 +5299,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: aktualna seria American Professional II – gryf Deep C z zaokrąglonymi krawędziami, V-Mod II i przełącznik push-push, uniwersalny Strat. Odsprzedaż: ok. 19% pod medianą 30 używanych AP II Stratocaster w Europie (premium – próg 10%); jeden z najłatwiej sprzedawalnych modeli Fendera. Ryzyko: prywatny sprzedawca bez rękojmi; sprzedawca woli odbiór – wysyłkę uzgodnić, płacić tylko z ochroną kupującego. To samo ogłoszenie jest wystawione dwa razy (Kleinanzeigen 3571831727).",
    "firstSeen": "2026-11-16T07:22+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Strat / ST",
    "brand": "Fender",
@@ -5074,6 +5309,83 @@
    "descOrig": "Verkaufe meine Fender American Professional II Stratocaster in Miami Blue mit Ahornhals/Ahorngriffbrett.\nDie Gitarre wurde erst am 18.05.2026 neu gekauft und befindet sich in neuwertigem / Mint-Zustand. Sie wurde nur wenig zuhause gespielt und hat keine mir bekannten Macken, Kratzer oder sonstigen Beschädigungen.\nTechnisch selbstverständlich ebenfalls einwandfrei.\nDetails:\nFender American Professional II Stratocaster\nMade in USA\nFarbe: Miami Blue\nAhornhals und Ahorngriffbrett\nV-Mod II Single-Coil Pickups\nOriginal Fender Deluxe Molded Hard Case inklusive\nKaufbeleg vom 18.05.2026 vorhanden\nIch verkaufe sie lediglich, weil ich momentan deutlich mehr Akustikgitarre spiele und die Strat daher kaum genutzt wird.\n\nOptional kann ich auch einen Positive Grid Spark NEO Core Gitarrenkopfhörer dazu verkaufen. Dieser kann entweder separat oder zusammen mit der Gitarre erworben werden.\nBesichtigung und Anspielen gerne nach Absprache. Abholung bevorzugt. Versand wäre bei Kostenübernahme und entsprechender Absprache ebenfalls möglich.\nPrivatverkauf unter Ausschluss der Sachmängelhaftung. Keine Rücknahme oder Garantie meinerseits.",
    "descLang": "de",
    "descPl": "Sprzedam mojego Fendera American Professional II Stratocaster w kolorze Miami Blue z klonowym gryfem/klonową podstrunnicą.\nGitara została kupiona jako nowa dopiero 18.05.2026 i jest w stanie jak nowa / mint. Była tylko trochę grana w domu i nie ma żadnych znanych mi wad, rys ani innych uszkodzeń.\nTechnicznie oczywiście również bez zarzutu.\nSzczegóły:\nFender American Professional II Stratocaster\nMade in USA\nKolor: Miami Blue\nKlonowy gryf i klonowa podstrunnica\nPrzetworniki single-coil V-Mod II\nOryginalny futerał Fender Deluxe Molded Hard Case w zestawie\nDowód zakupu z 18.05.2026 dostępny\nSprzedaję ją wyłącznie dlatego, że obecnie gram znacznie więcej na gitarze akustycznej i Strat jest przez to prawie nieużywany.\n\nOpcjonalnie mogę też sprzedać słuchawki gitarowe Positive Grid Spark NEO Core. Można je kupić osobno albo razem z gitarą.\nOglądanie i wypróbowanie chętnie po uzgodnieniu. Preferowany odbiór osobisty. Wysyłka byłaby również możliwa po pokryciu kosztów i odpowiednim uzgodnieniu.\nSprzedaż prywatna z wyłączeniem rękojmi. Bez zwrotów i gwarancji z mojej strony."
+  },
+  {
+   "id": "tori-32656226",
+   "source": "Tori",
+   "url": "https://www.tori.fi/recommerce/forsale/item/32656226",
+   "title": "ESP E-II Eclipse Vintage Honey Burst (2016), futerał ESP",
+   "originalTitle": "ESP E-II Eclipse Vintage Honey Burst",
+   "description": "ESP E-II Eclipse z 2016 roku w rzadszym kolorze Vintage Honey Burst, według sprzedawcy w bezbłędnym, bardzo zadbanym stanie. Top z płomienistego klonu, podstrunnica palisandrowa. Przetworniki wymienione na Seymour Duncan SH18N Whole Lotta (gryf) i SH18B (mostek). Gryf naoliwiony, gitara ustawiona pod struny 10-52. W komplecie solidny twardy futerał ESP. Możliwość wypróbowania w okolicach Oulu; koszty wysyłki po stronie kupującego. Cena 1 700 € lub oferta; sprzedawca przyjmie w rozliczeniu Taylor mini.",
+   "photo": "https://img.tori.net/dynamic/default/item/32656226/186e5aa2-6076-48cc-a3c9-7be9edc73a3c",
+   "condition": "Jak nowa (wg kategorii Tori), przetworniki wymienione na Seymour Duncan, twardy futerał ESP",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Oulu, Finlandia",
+   "currency": "EUR",
+   "priceOriginal": 1700.0,
+   "shippingOriginal": 60,
+   "price": {
+    "cena": 7484,
+    "wysylka": 264,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 7748
+   },
+   "shippingNote": "Założenie: ubezpieczona paczka Finlandia→PL ok. 60 € (sprzedawca: koszty wysyłki ponosi kupujący). Ogłoszenie prywatne – płatność z ochroną trzeba uzgodnić ze sprzedawcą.",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 9440.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 15 porównywalnych używanych ofert (Reverb 7, OLX 3, Kleinanzeigen 3, willhaben 1, Bazoš.sk 1), zakres 6700–16950 zł",
+   "valueSources": [
+    {
+     "label": "Tori – podobne ogłoszenia",
+     "url": "https://www.tori.fi/recommerce/forsale/search?q=esp+e-ii"
+    },
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=esp%20e-ii&condition=used"
+    },
+    {
+     "label": "Reverb: ESP E-II Eclipse Full Thickness 2022 - Black Natural Burst (9442 zł)",
+     "url": "https://reverb.com/item/102693412-esp-e-ii-eclipse-full-thickness-2022-black-natural-burst"
+    },
+    {
+     "label": "Reverb: ESP E-II Eclipse 2019 - Lemon Burst (9662 zł)",
+     "url": "https://reverb.com/item/102309986-esp-e-ii-eclipse-2019-lemon-burst"
+    },
+    {
+     "label": "Bazoš.sk: esp e-ii eclipse full thickness tobacco sunburst (8805 zł)",
+     "url": "https://hudba.bazos.sk/inzerat/197164634/esp-e-ii-eclipse-full-thickness-tobacco-sunburst.php"
+    }
+   ],
+   "dealPct": 17.9,
+   "validTo": null,
+   "postedOrSince": null,
+   "scores": {
+    "cena": 7,
+    "stan": 8,
+    "sprzedawca": 5,
+    "oryginalnosc": 5,
+    "grywalnosc": 8,
+    "plynnosc": 6,
+    "wysylka": 5
+   },
+   "overall": 6.5,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: E-II Eclipse z Japonii – singlecut z mahoniu z klonowym topem, bardzo dobre wykonanie, świeżo ustawiona; przetworniki Seymour Duncan Whole Lotta Humbucker dają klasyczne rockowe brzmienie. Odsprzedaż: ok. 18% pod medianą 15 używanych ESP E-II Eclipse w Europie (premium – próg 10%), ale wymienione przetworniki (sprzedawca nie wspomina o oryginalnych EMG/Seymour Duncan w zestawie) i rzadszy kolor zawężają grono kupujących. Ryzyko: prywatny sprzedawca w północnej Finlandii, daleka wysyłka – zapytać o oryginalne przetworniki, numer seryjny i ubezpieczoną przesyłkę.",
+   "firstSeen": "2026-11-26T07:18+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
+   "status": "aktywne",
+   "type": "Les Paul / LP",
+   "brand": "ESP",
+   "dealThreshold": 10,
+   "descFetched": "2026-11-26T07:21Z",
+   "descStatus": "OK",
+   "descOrig": "Nyt tilaisuus harvinaisempaan väriin 2016 vuodelta virheettömässä kunnossa oleva ESP. Liekkivaahterakansi. Otelauta ruusupuuta. Super siistissä kunnossa.\nTukeva ESP:n kova laukku.\nMikrofonit vaihdettu Seymour Duncan SH18N Whole Lotta Neck ja SH18B Bridge.\nTällä hetkellä kaula öljytty ja säädetty 10-52 kielille.\nMukaan kova ESP laukku.\nKulkeutuu kokeiltavaksi viikottain Oulu - Himanka - Ylivieska välillä ja tietysti Oulussa.\nLähetyskulut ostajalle.\n\nhinta 1700€ /tarjous muiden ostosten rahoittamiseksi.\n\nVaihdossa menee Taylor mini.",
+   "descLang": "fi",
+   "descPl": "Teraz okazja na rzadszy kolor: ESP z 2016 roku w bezbłędnym stanie. Top z płomienistego klonu. Podstrunnica z palisandru. W super zadbanym stanie.\nSolidny twardy futerał ESP.\nPrzetworniki wymienione na Seymour Duncan SH18N Whole Lotta Neck i SH18B Bridge.\nObecnie gryf naoliwiony i ustawiony pod struny 10-52.\nW komplecie twardy futerał ESP.\nCo tydzień jeżdżę na trasie Oulu - Himanka - Ylivieska, więc można ją wypróbować, i oczywiście w Oulu.\nKoszty wysyłki ponosi kupujący.\n\ncena 1700€ / oferta, na sfinansowanie innych zakupów.\n\nW rozliczeniu przyjmę Taylor mini."
   },
   {
    "id": "olx-1107293963",
@@ -5329,7 +5641,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: Suhr Modern – butikowy superstrat z progami ze stali nierdzewnej, płaskim radiusem 14″ i kluczami blokowanymi; świetna grywalność. Odsprzedaż: ok. 17% pod medianą 10 używanych Suhr Modern (bez Custom/Antique/edycji limitowanych i sygnatur) w Europie (premium – próg 10%); uwaga: Modern Satin to tańsza odmiana – 3 znalezione oferty Modern Satin Pro to ok. 10 000–12 300 zł (mediana ok. 10 900 zł), więc względem nich okazja wynosi tylko ok. 9%. Ryzyko: opis sklepu ogólny (warianty „zależnie od wersji”) – poprosić o dokładną konfigurację (HSS/HSH, mostek), rocznik i zdjęcia progów; Reverb pokazuje cenę bez informacji o podatku – sprawdzić sumę w koszyku; płacić przez Reverb (ochrona kupującego).",
    "firstSeen": "2026-11-20T07:17+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Inne",
    "brand": "Suhr",
@@ -5483,7 +5795,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: Les Paul Classic ze smukłym gryfem 60s i gorącymi przetwornikami 496R/500T – mocne, rockowe brzmienie; ciężka (4,5 kg). Odsprzedaż: ok. 17% pod medianą 90 używanych Les Paul Classic w Europie (premium – próg 10%); LP Classic to płynny model. Ryzyko: tylko odbiór i gotówka w Pfullingen (daleko od Polski, doliczono dojazd ok. 100 €) – brak ochrony kupującego; przed wyjazdem poprosić o zdjęcia numeru seryjnego, główki i progów; możliwość wypróbowania na miejscu.",
    "firstSeen": "2026-11-18T07:24+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Les Paul / LP",
    "brand": "Gibson",
@@ -5560,7 +5872,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: American Professional II Telecaster z gryfem Deep C i przetwornikami V-Mod II, dodatkowo locking tunery – według sprzedawcy dobrze ustawiona. Odsprzedaż: ok. 16% pod medianą 15 używanych AP II Telecaster w Europie (premium – próg 10%); AP II Tele to płynny model, a futerał Fender w zestawie pomaga przy odsprzedaży. Ryzyko: brak opisu stanu wizualnego – poprosić o zdjęcia progów i ewentualnych obić; zapytać o oryginalne klucze i koszt wysyłki do PL; prywatny sprzedawca bez zwrotów – płacić z ochroną kupującego.",
    "firstSeen": "2026-11-19T07:20+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Tele / T",
    "brand": "Fender",
@@ -5637,7 +5949,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: American Professional II w konfiguracji HSS – humbucker przy mostku daje więcej przesteru niż klasyczny Strat. Odsprzedaż: ok. 16% pod medianą 8 używanych AP II Strat HSS w Europie (premium – próg 10%); pula porównań jest mała, więc wycena mniej pewna. Ryzyko: tylko pokrowiec zamiast futerału, prywatny sprzedawca bez gwarancji; cena do negocjacji – Drezno jest blisko granicy, możliwy odbiór osobisty.",
    "firstSeen": "2026-11-14T07:32+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Strat / ST",
    "brand": "Fender",
@@ -5722,7 +6034,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: japońska E-II Eclipse – singlecut z mahoniu z hebanową podstrunnicą; zestaw EMG Marty Friedman i stroikowy mostek Gotoh 510FA, wg sprzedawcy świetnie gra, progi w dobrym stanie. Odsprzedaż: ok. 16% pod medianą 16 używanych ESP E-II Eclipse w Europie (premium – próg 10%); rzadszy kolor Blue Natural Fade pomaga. Ryzyko: widoczne obicia i rysy oraz wymienione przetworniki/mostek obniżają oryginalność (oryginalny mostek w komplecie, brak informacji o oryginalnych przetwornikach), brak twardego futerału – zapytać o oryginalne przetworniki; zakup z ochroną Reverb.",
    "firstSeen": "2026-11-24T07:14+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Les Paul / LP",
    "brand": "ESP",
@@ -5799,7 +6111,7 @@
    "verdict": "polecam",
    "reasoning": "Gra: Gibson Explorer z mocnymi przetwornikami Dirty Fingers – agresywne, rockowo-metalowe brzmienie; egzemplarz nowy, w kartonie. Odsprzedaż: ok. 16% pod medianą 57 używanych Gibson Explorer USA (bez Custom Shop, B-2 i sygnatur) w Europie (premium – próg 10%); Explorer z Dirty Fingers (seria 80s) ma dobry popyt. Ryzyko: bardzo krótki opis bez rocznika i wersji – poprosić o numer seryjny, zdjęcie główki i dowód zakupu (gwarancja Gibsona); prywatny sprzedawca – płacić tylko z ochroną kupującego.",
    "firstSeen": "2026-11-22T07:20+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Explorer / V / kształty",
    "brand": "Gibson",
@@ -5876,7 +6188,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: Paloma to Duesenberg z humbuckerem Grand Vintage i single coilem Domino P90, niemiecka jakość wykonania. Odsprzedaż: ok. 15% pod medianą 10 używanych Paloma w Europie (premium – próg 10%); rynek Duesenberga jest węższy niż Fendera czy Gibsona. Ryzyko: brak lokalizacji i sposobu wysyłki w ogłoszeniu, prywatny sprzedawca w Finlandii – płacić tylko z ochroną kupującego.",
    "firstSeen": "2026-11-09T11:35+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Inne",
    "brand": "Duesenberg",
@@ -5886,6 +6198,83 @@
    "descOrig": "Myydään vähän soitettu Duesenberg sähkökitara. Kitara on uudenveroisen siisti, ilman mitään naarmuja tai kolhuja.\n\nVaihdossa kiinnostaa hyvä Telecaster, Gibson SG '61 tai Gibson Les Paul Standard 50s",
    "descLang": "fi",
    "descPl": "Sprzedam mało graną gitarę elektryczną Duesenberg. Gitara jest zadbana jak nowa, bez żadnych rys ani obić.\n\nW ramach wymiany interesuje mnie dobry Telecaster, Gibson SG '61 albo Gibson Les Paul Standard 50s."
+  },
+  {
+   "id": "ka-3581937593",
+   "source": "Kleinanzeigen",
+   "url": "https://www.kleinanzeigen.de/s-anzeige/rickenbacker-330/3581937593-74-9495",
+   "title": "Rickenbacker 330 Jetglo (2023), oryginalny futerał",
+   "originalTitle": "Rickenbacker 330",
+   "description": "Rickenbacker 330 w kolorze Jetglo, rok produkcji 2023, z oryginalnym futerałem. Gitara używana i grana, ma kilka lekkich rys, technicznie bez zarzutu. Sprzedaż z powodu zmiany instrumentu. Wysyłka tylko po uzgodnieniu, koszty wysyłki ponosi kupujący. Sprzedaż prywatna bez rękojmi, bez zwrotu.",
+   "photo": "https://img.kleinanzeigen.de/api/v1/prod-ads/images/9f/9f8866a6-b9e3-444e-b4ba-f33f4eec05d5?rule=$_59.JPG",
+   "condition": "Dobry (wg Kleinanzeigen) – lekkie rysy, technicznie sprawna; oryginalny futerał",
+   "listingType": "kup teraz / ogłoszenie",
+   "auctionEnd": null,
+   "location": "Hamburg, DE",
+   "currency": "EUR",
+   "priceOriginal": 2050,
+   "shippingOriginal": 50,
+   "price": {
+    "cena": 9025,
+    "wysylka": 220,
+    "clo": 0,
+    "vat": 0,
+    "oplaty": 0,
+    "razem": 9245
+   },
+   "shippingNote": "Założenie: ubezpieczona paczka DE→PL ok. 50 € (wysyłka tylko po uzgodnieniu, koszt po stronie kupującego). Cena do negocjacji (VB).",
+   "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
+   "marketValue": 10760.0,
+   "valueVerified": true,
+   "valueMethod": "Mediana 13 porównywalnych używanych ofert (Reverb 7, Kleinanzeigen 4, Marktplaats 1, willhaben 1), zakres 7910–15330 zł",
+   "valueSources": [
+    {
+     "label": "Reverb – używane w UE",
+     "url": "https://reverb.com/marketplace?item_region=EUR_EU&product_type=electric-guitars&query=rickenbacker%20330&condition=used"
+    },
+    {
+     "label": "OLX – podobne ogłoszenia",
+     "url": "https://www.olx.pl/muzyka-edukacja/instrumenty/q-rickenbacker-330/"
+    },
+    {
+     "label": "Reverb: Rickenbacker Rickenbacker 330 E-Gitarre Baujahr 1991 Fire Gl (10764 zł)",
+     "url": "https://reverb.com/item/97129253-rickenbacker-rickenbacker-330-e-gitarre-baujahr-1991-fire-glow-1991-fire-glow"
+    },
+    {
+     "label": "Reverb: Rickenbacker 330 fire glo 2010 (10843 zł)",
+     "url": "https://reverb.com/item/95079742-rickenbacker-330-fire-glo-2010"
+    },
+    {
+     "label": "Reverb: Rickenbacker 330 FG 2006 (10935 zł)",
+     "url": "https://reverb.com/item/91503394-rickenbacker-330-fg-2006"
+    }
+   ],
+   "dealPct": 14.1,
+   "validTo": null,
+   "postedOrSince": "2026-11-25",
+   "scores": {
+    "cena": 6,
+    "stan": 7,
+    "sprzedawca": 5,
+    "oryginalnosc": 8,
+    "grywalnosc": 7,
+    "plynnosc": 7,
+    "wysylka": 5
+   },
+   "overall": 6.5,
+   "verdict": "do rozważenia",
+   "reasoning": "Gra: Rickenbacker 330 – półpudło z charakterystycznym, dzwoniącym brzmieniem (Beatles, Byrds, Jam), egzemplarz z 2023 roku, technicznie sprawny. Odsprzedaż: ok. 14% pod medianą 13 używanych Rickenbacker 330 (bez 12-strunowych) w Europie (premium – próg 10%); Jetglo to klasyczny, łatwo sprzedawalny kolor. Ryzyko: gryf Rickenbackera jest specyficzny (wąski, płaski) – warto wcześniej wypróbować podobny; prywatny sprzedawca, wysyłka tylko po uzgodnieniu, bez gwarancji – płacić z ochroną kupującego.",
+   "firstSeen": "2026-11-26T07:18+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
+   "status": "aktywne",
+   "type": "Semi-hollow / hollow",
+   "brand": "Rickenbacker",
+   "dealThreshold": 10,
+   "descFetched": "2026-11-26T07:21Z",
+   "descStatus": "OK",
+   "descOrig": "Rickenbacker 330 Jetglo, Baujahr 2023, mit originalem Koffer. Die Gitarre ist gebraucht und gespielt, hat ein paar leichte Kratzer, technisch aber top. Verkauf wegen Umstieg.\n\nVersand nur nach Absprache. Der Käufer trägt die Versandkosten. Bei Fragen einfach melden.\n\nPrivatverkauf unter Ausschluss der Sachmängelhaftung. Keine Rücknahme.",
+   "descLang": "de",
+   "descPl": "Rickenbacker 330 Jetglo, rok produkcji 2023, z oryginalnym futerałem. Gitara jest używana i grana, ma kilka lekkich rys, ale technicznie jest w świetnym stanie. Sprzedaż z powodu zmiany sprzętu.\n\nWysyłka tylko po uzgodnieniu. Koszty wysyłki ponosi kupujący. W razie pytań po prostu pisz.\n\nSprzedaż prywatna z wyłączeniem odpowiedzialności za wady. Bez zwrotu."
   },
   {
    "id": "ka-3574083092",
@@ -5953,7 +6342,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: Les Paul Custom z lat 90. (Nashville) – masywny mahoń, heban i dwa humbuckery, klasyczne „tłuste” brzmienie; sprzedawca grał na niej na setkach koncertów. Odsprzedaż: ok. 14% pod medianą 49 używanych Les Paul Custom w Europie (premium – próg 10%); LP Custom w czerni to bardzo rozpoznawalny i płynny model. Ryzyko: wyraźne ślady użytkowania (30 lat grania na scenie); część specyfikacji w ogłoszeniu (profil 70s z volutą, siodełko Graph Tech) wygląda na opis katalogowy – poprosić o zdjęcia numeru seryjnego, główki i progów; sprzedawca woli odbiór, wysyłkę uzgodnić; prywatny sprzedawca bez zwrotów – płacić tylko z ochroną kupującego.",
    "firstSeen": "2026-11-17T07:16+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Les Paul / LP",
    "brand": "Gibson",
@@ -6030,7 +6419,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: japońska E-II Eclipse z mostkiem Floyd Rose, prawie nowa (zakup 03.2026, set-up Thomann). Odsprzedaż: ok. 13% pod medianą 19 używanych ESP E-II Eclipse w Europie (premium – próg 10%); ESP sprzedaje się wolniej niż Gibson czy Fender. Ryzyko: B-Stock (zapytać o powód przeceny w Thomannie i o przeniesienie gwarancji), sprzedawca nie chce płatności przez system Kleinanzeigen – płacić tylko z ochroną kupującego.",
    "firstSeen": "2026-11-14T07:32+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Les Paul / LP",
    "brand": "ESP",
@@ -6107,7 +6496,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: American Professional II Stratocaster – nowoczesny, wygodny Strat z gryfem Deep C i przetwornikami V-Mod II. Odsprzedaż: ok. 13% pod medianą 30 używanych AP II Stratocaster w Europie (premium – próg 10%); model bardzo płynny. Ryzyko: opis ogranicza się do jednego zdania – brak rocznika, stanu i informacji o futerale; poprosić o zdjęcia numeru seryjnego, progów i ewentualnych uszkodzeń; prywatny sprzedawca bez zwrotów – płacić tylko z ochroną kupującego.",
    "firstSeen": "2026-11-16T07:22+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Strat / ST",
    "brand": "Fender",
@@ -6184,7 +6573,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: Les Paul Classic 2016 z klasyczną szerokością gryfu ok. 43 mm (bez szerokiego mosiężnego siodełka z lat 2014/2015), lakier nitro, świeżo wypolerowane progi i ustawienie. Odsprzedaż: ok. 13% pod medianą 91 używanych Gibson Les Paul Classic (bez Custom Shop/Historic) w Europie (premium – próg 10%); komplet z oryginalnym futerałem i dokumentami, cena do negocjacji. Ryzyko: prywatny sprzedawca bez gwarancji – poprosić o numer seryjny i zdjęcia główki/elektroniki, płacić tylko z ochroną kupującego.",
    "firstSeen": "2026-11-25T07:16+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Les Paul / LP",
    "brand": "Gibson",
@@ -6338,7 +6727,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: American Original '60s – vintage'owy Strat z USA w nitro, gryf Full C i radius 9,5\", lekki egzemplarz (3,54 kg), progi w bardzo dobrym stanie i świeże ustawienie (10.2026). Odsprzedaż: ok. 12% pod medianą 13 używanych American Original '60s Stratocaster w Europie (premium – próg 10%); popularny model 3-Color Sunburst z oryginalnym futerałem. Ryzyko: nieoryginalna maskownica (część Fendera) i ślady gry nieco obniżają wartość kolekcjonerską; sprzedawca bez statusu Preferred (132 opinie, 100%) – zakup z ochroną Reverb.",
    "firstSeen": "2026-11-25T07:16+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Strat / ST",
    "brand": "Fender",
@@ -6415,7 +6804,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: JP6 to sygnowany model Petrucciego – bardzo szybki, ergonomiczny gryf, DiMarzio, tremolo Music Man i piezo do brzmień akustycznych. Odsprzedaż: ok. 12% pod medianą 10 używanych JP6 w Europie (premium – próg 10%); rynek sygnatur węższy, ale JP6 ma stałych kupców. Ryzyko: brak rocznika (Reverb: 2001–2021) – poprosić o numer seryjny i zdjęcia progów; prywatny sprzedawca bez historii – płacić wyłącznie przez Reverb (ochrona kupującego).",
    "firstSeen": "2026-11-16T07:22+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Superstrat",
    "brand": "Music Man",
@@ -6646,7 +7035,7 @@
    "verdict": "do rozważenia",
    "reasoning": "Gra: współczesny Les Paul Classic z cieńszym gryfem i czterema push-pull – bardzo dużo brzmień jak na Les Paula. Odsprzedaż: ok. 9% pod medianą 89 używanych Les Paul Classic w Europie (premium – próg 10%); LP Classic to jeden z najpłynniejszych Gibsonów. Ryzyko: tylko odbiór w Wiedniu (koszt i czas dojazdu) – przed zapłatą sprawdzić numer seryjny i elektronikę.",
    "firstSeen": "2026-11-09T11:35+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Les Paul / LP",
    "brand": "Gibson",
@@ -6731,7 +7120,7 @@
    "verdict": "nie polecam",
    "reasoning": "Gra: świetny JP6 z gwarancją sklepu. Odsprzedaż: cena praktycznie równa medianie (ok. 1% poniżej), więc to uczciwa cena rynkowa, a nie okazja. Ma sens tylko do grania.",
    "firstSeen": "2026-10-25T22:36+00:00",
-   "lastChecked": "2026-11-25T07:16+00:00",
+   "lastChecked": "2026-11-26T07:18+00:00",
    "status": "aktywne",
    "type": "Superstrat",
    "brand": "Music Man",
@@ -6847,7 +7236,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 15370.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 41 porównywalnych używanych ofert (OLX 9, Reverb 9, DBA 8, Marktplaats 5, Kleinanzeigen 3, willhaben 3, Blocket 2, 2dehands 1, Bazoš.sk 1), zakres 10870–42930 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 41 porównywalnych używanych ofert (OLX 9, Reverb 9, DBA 8, Marktplaats 5, Kleinanzeigen 3, willhaben 3, Blocket 2, 2dehands 1, Bazoš.sk 1), zakres 10870–42930 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
@@ -6926,7 +7315,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 13900.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 8 porównywalnych używanych ofert (Reverb 2, Blocket 2, OLX 1, Marktplaats 1, 2dehands 1, Tori 1), zakres 7710–23060 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 8 porównywalnych używanych ofert (Reverb 2, Blocket 2, OLX 1, Marktplaats 1, 2dehands 1, Tori 1), zakres 7710–23060 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
@@ -7006,7 +7395,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 15000.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 93 porównywalnych używanych ofert (DBA 23, OLX 19, Reverb 16, Blocket 9, Kleinanzeigen 7, Marktplaats 7, 2dehands 4, willhaben 4, Tori 2, Allegro Lokalnie 2), zakres 9760–40050 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 93 porównywalnych używanych ofert (DBA 23, OLX 19, Reverb 16, Blocket 9, Kleinanzeigen 7, Marktplaats 7, 2dehands 4, willhaben 4, Tori 2, Allegro Lokalnie 2), zakres 9760–40050 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "willhaben – podobne ogłoszenia",
@@ -7085,7 +7474,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 10970.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 21 porównywalnych używanych ofert (Reverb 6, Marktplaats 6, Kleinanzeigen 4, OLX 2, DBA 2, Blocket 1), zakres 2650–20470 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 21 porównywalnych używanych ofert (Reverb 6, Marktplaats 6, Kleinanzeigen 4, OLX 2, DBA 2, Blocket 1), zakres 2650–20470 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "willhaben – podobne ogłoszenia",
@@ -7321,7 +7710,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 8760.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 88 porównywalnych używanych ofert (Reverb 39, Kleinanzeigen 17, OLX 7, Tori 7, DBA 6, Marktplaats 4, 2dehands 4, Blocket 2, willhaben 1, Bazoš.sk 1), zakres 5490–13170 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 88 porównywalnych używanych ofert (Reverb 39, Kleinanzeigen 17, OLX 7, Tori 7, DBA 6, Marktplaats 4, 2dehands 4, Blocket 2, willhaben 1, Bazoš.sk 1), zakres 5490–13170 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "willhaben – podobne ogłoszenia",
@@ -7635,7 +8024,7 @@
    "customsNote": "Wysyłka w obrębie UE – brak cła i importowego VAT.",
    "marketValue": 13900.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 8 porównywalnych używanych ofert (Reverb 2, Blocket 2, OLX 1, Marktplaats 1, 2dehands 1, Tori 1), zakres 8300–23060 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 8 porównywalnych używanych ofert (Reverb 2, Blocket 2, OLX 1, Marktplaats 1, 2dehands 1, Tori 1), zakres 8300–23060 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Blocket – podobne ogłoszenia",
@@ -8366,7 +8755,7 @@
    "customsNote": "Zakup w Polsce – brak cła i VAT importowego.",
    "marketValue": 9580.0,
    "valueVerified": true,
-   "valueMethod": "Mediana 10 porównywalnych używanych ofert (Reverb 5, OLX 2, Kleinanzeigen 1, Marktplaats 1, Allegro Lokalnie 1), zakres 7800–12550 zł; przeliczone 2026-11-25 bez ogłoszeń FINN.no",
+   "valueMethod": "Mediana 10 porównywalnych używanych ofert (Reverb 5, OLX 2, Kleinanzeigen 1, Marktplaats 1, Allegro Lokalnie 1), zakres 7800–12550 zł; przeliczone 2026-11-26 bez ogłoszeń FINN.no",
    "valueSources": [
     {
      "label": "Allegro Lokalnie – podobne ogłoszenia",

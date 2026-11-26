@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T08:11",
+ "updated": "2026-11-26T08:03",
  "tz": "Europe/Warsaw",
  "taste": [
   "Lady Pank",
@@ -42,111 +42,6 @@
  ],
  "concerts": [
   {
-   "id": "eb-732a259092",
-   "artist": "Kasia Kowalska Akustycznie",
-   "title": "Kasia Kowalska Akustycznie",
-   "date": "2026-11-23",
-   "time": "19:00",
-   "city": "Tarnów",
-   "venue": "Centrum Sztuki Mościce",
-   "url": "https://www.ebilet.pl/muzyka/pop/kasia-kowalska-koncert?city=Tarnów",
-   "priceFrom": 154.1,
-   "currency": "PLN",
-   "soldOut": false,
-   "image": "https://www.ebilet.pl/media/cms/media/heflh2yk/ebilet_656x369_kasia-kowalska_akustycznie-61253c64-73c5-4227-91dd-8bcf9153c0f4.webp",
-   "source": "eBilet.pl",
-   "score": 7,
-   "group": "podobne",
-   "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
-   "status": "",
-   "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
-  },
-  {
-   "id": "eb-b2ff602c3a",
-   "artist": "Patrycja Markowska: 25 lat na scenie",
-   "title": "Patrycja Markowska: 25 lat na scenie",
-   "date": "2026-11-23",
-   "time": "19:00",
-   "city": "Kraków",
-   "venue": "Kino Kijów Centrum",
-   "url": "https://www.ebilet.pl/muzyka/pop/patrycja-markowska?city=Kraków",
-   "priceFrom": 234.9,
-   "currency": "PLN",
-   "soldOut": false,
-   "image": "https://www.ebilet.pl/media/cms/media/cachswok/656x369_eb_patrycja-markowska-25-lat-na-scenie-a20944bf-d167-43e5-817d-1f0504ecb365.webp",
-   "source": "eBilet.pl",
-   "score": 7,
-   "group": "podobne",
-   "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
-   "status": "",
-   "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
-  },
-  {
-   "id": "eb-72a35dac57",
-   "artist": "Raz Dwa Trzy - Ważne Piosenki",
-   "title": "Raz Dwa Trzy - Ważne Piosenki",
-   "date": "2026-11-23",
-   "time": "19:00",
-   "city": "Poznań",
-   "venue": "Teatr Wielki im. Stanisława Moniuszki w Poznaniu",
-   "url": "https://www.ebilet.pl/muzyka/rock/koncert-raz-dwa-trzy?city=Poznań",
-   "priceFrom": 191.9,
-   "currency": "PLN",
-   "soldOut": false,
-   "image": "https://www.ebilet.pl/media/cms/media/3hfb3omo/rdt_wp_656x369-40d9bccc-e59a-4b3a-86f6-2feb12995830.webp",
-   "source": "eBilet.pl",
-   "score": 6,
-   "group": "podobne",
-   "reason": "bo lubisz polski rock z gitarą",
-   "status": "",
-   "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
-  },
-  {
-   "id": "eb-f233504441",
-   "artist": "Małgorzata Ostrowska - 45 lat: koncert jubileuszowy",
-   "title": "Małgorzata Ostrowska - 45 lat: koncert jubileuszowy",
-   "date": "2026-11-25",
-   "time": "19:00",
-   "city": "Lublin",
-   "venue": "Centrum Spotkania Kultur",
-   "url": "https://www.ebilet.pl/muzyka/rock/malgorzata-ostrowska?city=Lublin",
-   "priceFrom": 159.9,
-   "currency": "PLN",
-   "soldOut": false,
-   "image": "https://www.ebilet.pl/media/cms/media/qgtakynn/ostrowska_-eb_656x369.webp",
-   "source": "eBilet.pl",
-   "score": 7,
-   "group": "podobne",
-   "reason": "bo lubisz Perfect – klasyka polskiego rocka lat 80.",
-   "status": "",
-   "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
-  },
-  {
-   "id": "eb-174c3ea009",
-   "artist": "Anita Lipnicka | Trasa jubileuszowa: 30 lat \"Wszystko się może zdarzyć\"",
-   "title": "Anita Lipnicka | Trasa jubileuszowa: 30 lat \"Wszystko się może zdarzyć\"",
-   "date": "2026-11-25",
-   "time": "19:00",
-   "city": "Gdynia",
-   "venue": "Teatr Muzyczny w Gdyni",
-   "url": "https://www.ebilet.pl/muzyka/pop/anita-lipnicka?city=Gdynia",
-   "priceFrom": 277.9,
-   "currency": "PLN",
-   "soldOut": false,
-   "image": "https://www.ebilet.pl/media/cms/media/i31jwyhr/bilet_656x369px.webp",
-   "source": "eBilet.pl",
-   "score": 7,
-   "group": "podobne",
-   "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
-   "status": "",
-   "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
-  },
-  {
    "id": "eb-7b7d35d81a",
    "artist": "Małgorzata Ostrowska - 45 lat: koncert jubileuszowy",
    "title": "Małgorzata Ostrowska - 45 lat: koncert jubileuszowy",
@@ -165,7 +60,7 @@
    "reason": "bo lubisz Perfect – klasyka polskiego rocka lat 80.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-fb89fae275",
@@ -186,7 +81,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-e29b3e494b",
@@ -207,7 +102,7 @@
    "reason": "bo lubisz Adele – ale to tribute, nie oryginalny wykonawca",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-4cdd3df982",
@@ -228,7 +123,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-c2f6acc507",
@@ -249,7 +144,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-b15c6992a1",
@@ -260,7 +155,7 @@
    "city": "Kraków",
    "venue": "Klub Studio",
    "url": "https://www.ebilet.pl/muzyka/rock/myslovitz-dla-ciebie?city=Kraków",
-   "priceFrom": 170.9,
+   "priceFrom": null,
    "currency": "PLN",
    "soldOut": false,
    "image": "https://www.ebilet.pl/media/cms/media/2i4llzmx/st-myslovitz-27-11_ebilet-656x369.webp",
@@ -270,7 +165,7 @@
    "reason": "bo lubisz Lady Pank i Varius Manx – polski rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-1990b284d4",
@@ -291,7 +186,7 @@
    "reason": "bo lubisz Varius Manx i Adele – mocny kobiecy wokal",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-e8719d772b",
@@ -312,7 +207,7 @@
    "reason": "bo lubisz gitarowe granie – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-28a796bf7a",
@@ -333,7 +228,7 @@
    "reason": "bo lubisz Lady Pank i Perfect – klasyka polskiego rocka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-8aa8a79146",
@@ -354,7 +249,7 @@
    "reason": "bo lubisz Adele – ale to tribute, nie oryginalny wykonawca",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-b86838b877",
@@ -375,7 +270,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-49f030663e",
@@ -396,7 +291,7 @@
    "reason": "bo lubisz polski rock z gitarą",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-698172b4de",
@@ -417,7 +312,7 @@
    "reason": "bo lubisz Adele – ale to tribute, nie oryginalny wykonawca",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-21cfb0757d",
@@ -438,7 +333,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-b752ed7970",
@@ -459,7 +354,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-62fae07fa2",
@@ -480,7 +375,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-45d8f98c84",
@@ -491,7 +386,7 @@
    "city": "Zabrze",
    "venue": "Dom Muzyki i Tańca",
    "url": "https://www.ebilet.pl/muzyka/rock/jethro-tull?city=Zabrze",
-   "priceFrom": 203.45,
+   "priceFrom": 230.95,
    "currency": "PLN",
    "soldOut": false,
    "image": "https://www.ebilet.pl/media/cms/media/42lpjfhs/jt-2026-baner-eb-656x369-c6b68ea6-1cda-410b-bf3d-5cdd764ebefe.webp",
@@ -501,7 +396,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-e97548940a",
@@ -522,7 +417,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-ed90a59c35",
@@ -549,7 +444,7 @@
     }
    ],
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-43f7bcdd0a",
@@ -570,7 +465,7 @@
    "reason": "bo lubisz Varius Manx i Adele – mocny kobiecy wokal",
    "status": "",
    "firstSeen": "2026-11-05T08:20",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-20c82f93a3",
@@ -591,7 +486,7 @@
    "reason": "bo lubisz Adele – ale to tribute, nie oryginalny wykonawca",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-85b45f5143",
@@ -612,7 +507,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "tm-184058239",
@@ -633,7 +528,7 @@
    "reason": "bo lubisz Lady Pank i Claptona – polska legenda bluesa",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-31512872d0",
@@ -654,7 +549,7 @@
    "reason": "bo lubisz Adele – wielki wokal",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-1adfe75d83",
@@ -675,7 +570,7 @@
    "reason": "bo lubisz Adele – ale to tribute, nie oryginalny wykonawca",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-144e252429",
@@ -696,7 +591,7 @@
    "reason": "bo lubisz Adele – ale to tribute, nie oryginalny wykonawca",
    "status": "",
    "firstSeen": "2026-11-16T08:05",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-267a4a4f9c",
@@ -717,7 +612,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-3efc2845bc",
@@ -744,7 +639,7 @@
     }
    ],
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-3c6b2a7ba2",
@@ -765,7 +660,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-a2f3414f24",
@@ -786,7 +681,7 @@
    "reason": "bo lubisz Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-c8dd5eac0a",
@@ -807,7 +702,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 80.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-7bb4e4be53",
@@ -828,7 +723,7 @@
    "reason": "bo lubisz Adele – ale to tribute, nie oryginalny wykonawca",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-fb9329ed3a",
@@ -839,9 +734,9 @@
    "city": "Kraków",
    "venue": "Klub Studio",
    "url": "https://www.ebilet.pl/muzyka/rock/nosowska?city=Kraków",
-   "priceFrom": 159.9,
+   "priceFrom": null,
    "currency": "PLN",
-   "soldOut": false,
+   "soldOut": true,
    "image": "https://www.ebilet.pl/media/cms/media/hx2lbd5h/nososka-ogolna.webp",
    "source": "eBilet.pl",
    "score": 6,
@@ -849,7 +744,7 @@
    "reason": "bo lubisz Varius Manx i Adele – mocny kobiecy wokal",
    "status": "",
    "firstSeen": "2026-11-19T08:04",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-ce7283c24f",
@@ -870,7 +765,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-12T08:21",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-3b5840744e",
@@ -891,7 +786,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-db884ad9dd",
@@ -912,7 +807,7 @@
    "reason": "bo lubisz klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-c55f003f52",
@@ -933,7 +828,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-804a90bbc2",
@@ -954,7 +849,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-f129b9c4c6",
@@ -975,7 +870,7 @@
    "reason": "bo lubisz Scorpions – niemiecki klasyczny hard rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-a9400a52d7",
@@ -996,7 +891,7 @@
    "reason": "bo lubisz Varius Manx – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-236920e42d",
@@ -1017,7 +912,7 @@
    "reason": "bo lubisz Lady Pank i Varius Manx – polski rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-168b1d1cd4",
@@ -1038,7 +933,7 @@
    "reason": "bo lubisz Varius Manx i Adele – mocny kobiecy wokal",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "tm-1406942121",
@@ -1059,7 +954,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 80.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-cfebf58028",
@@ -1080,7 +975,7 @@
    "reason": "bo lubisz Bryana Adamsa i Claptona – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-05T08:20",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-fcf6962dde",
@@ -1091,9 +986,9 @@
    "city": "Poznań",
    "venue": "Pałac Działyńskich",
    "url": "https://www.ebilet.pl/muzyka/pop/sting-phil-collins?city=Poznań",
-   "priceFrom": 109.9,
+   "priceFrom": null,
    "currency": "PLN",
-   "soldOut": false,
+   "soldOut": true,
    "image": "https://www.ebilet.pl/media/cms/media/mqnpdfuo/kopia-sting-phil-collins-656-x-369-px-e5ca4d21-ab91-4726-8bc6-af9e1a006335.webp",
    "source": "eBilet.pl",
    "score": 4,
@@ -1101,7 +996,7 @@
    "reason": "bo lubisz Bryana Adamsa i Claptona – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-8105e69aa0",
@@ -1122,7 +1017,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-12T08:21",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-6efa669d96",
@@ -1143,7 +1038,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-71f4624553",
@@ -1164,7 +1059,7 @@
    "reason": "bo lubisz Perfect i Lady Pank – muzyka Republiki",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-cf1571f476",
@@ -1185,7 +1080,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "tm-720631549",
@@ -1206,7 +1101,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 80.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-1ff52725c5",
@@ -1217,7 +1112,7 @@
    "city": "Kraków",
    "venue": "TAURON Arena Kraków",
    "url": "https://www.ebilet.pl/muzyka/pop/gipsy-kings?city=Kraków",
-   "priceFrom": 373.9,
+   "priceFrom": 262.2,
    "currency": "PLN",
    "soldOut": false,
    "image": "https://www.ebilet.pl/media/cms/media/5h3i5bhq/2-53dbfd76-4128-4eab-b23d-26acea6ee924.webp",
@@ -1227,7 +1122,7 @@
    "reason": "bo lubisz Santanę – latynoska gitara",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-867da3b459",
@@ -1248,7 +1143,7 @@
    "reason": "bo lubisz Perfect i Lady Pank – muzyka Republiki",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-3b5b3b6a1f",
@@ -1269,7 +1164,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-e9b9a0ad92",
@@ -1290,7 +1185,7 @@
    "reason": "bo lubisz Varius Manx i Adele – mocny kobiecy wokal",
    "status": "",
    "firstSeen": "2026-11-16T08:05",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-160eae1807",
@@ -1311,7 +1206,7 @@
    "reason": "bo lubisz gitarowe granie – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-4f93e786d7",
@@ -1332,7 +1227,7 @@
    "reason": "bo lubisz Bryana Adamsa i Claptona – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-05T08:20",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-729da903e1",
@@ -1353,7 +1248,7 @@
    "reason": "bo lubisz Lady Pank i Claptona – polska legenda bluesa",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-f5edd6ad44",
@@ -1374,7 +1269,7 @@
    "reason": "bo lubisz Perfect i Lady Pank – muzyka Republiki",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-3e4f5c2a15",
@@ -1395,7 +1290,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-1574c8eaba",
@@ -1416,7 +1311,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-8d6e5eae54",
@@ -1437,7 +1332,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-ecb9e4b117",
@@ -1458,7 +1353,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-a2980c8ff2",
@@ -1479,7 +1374,7 @@
    "reason": "bo lubisz Perfect – klasyka polskiego rocka lat 80.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-04fb0b9d40",
@@ -1500,7 +1395,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-27cf0366cc",
@@ -1521,7 +1416,7 @@
    "reason": "bo lubisz polski rock z gitarą",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-c0d08bd923",
@@ -1548,7 +1443,7 @@
     }
    ],
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-86ead0d945",
@@ -1569,7 +1464,7 @@
    "reason": "bo lubisz Scorpions – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-776cab5d77",
@@ -1596,7 +1491,7 @@
     }
    ],
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-c9b760de57",
@@ -1617,7 +1512,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-9d5c546721",
@@ -1638,7 +1533,7 @@
    "reason": "bo lubisz polski rock z gitarą",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-0a26056397",
@@ -1659,7 +1554,7 @@
    "reason": "bo lubisz gitarowe granie – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-47b4f79e4b",
@@ -1680,7 +1575,7 @@
    "reason": "bo lubisz Varius Manx – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-f1e4baa40d",
@@ -1701,7 +1596,7 @@
    "reason": "bo lubisz Perfect – klasyka polskiego rocka lat 80.",
    "status": "",
    "firstSeen": "2026-11-09T08:32",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-8c272677f3",
@@ -1722,7 +1617,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-d32346cbd6",
@@ -1733,9 +1628,9 @@
    "city": "Bydgoszcz",
    "venue": "HSW Immobile Łuczniczka",
    "url": "https://www.ebilet.pl/muzyka/rock/lady-pank?city=Bydgoszcz",
-   "priceFrom": 191.9,
+   "priceFrom": null,
    "currency": "PLN",
-   "soldOut": false,
+   "soldOut": true,
    "image": "https://www.ebilet.pl/media/cms/media/kremwl5c/656-x-369-px-9.webp",
    "source": "eBilet.pl",
    "score": 10,
@@ -1743,7 +1638,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-03d1de208d",
@@ -1764,7 +1659,28 @@
    "reason": "bo lubisz Perfect i Lady Pank – muzyka Republiki",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
+  },
+  {
+   "id": "eb-7a59c5215b",
+   "artist": "Bałkański Sylwester: The Best Of Kayah & Bregović & More Balkan Hits",
+   "title": "Bałkański Sylwester: The Best Of Kayah & Bregović & More Balkan Hits",
+   "date": "2027-01-15",
+   "time": "19:00",
+   "city": "Wrocław",
+   "venue": "Stary Klasztor",
+   "url": "https://www.ebilet.pl/muzyka/pop/prawy-do-lewego?city=Wrocław",
+   "priceFrom": 75.9,
+   "currency": "PLN",
+   "soldOut": false,
+   "image": "https://www.ebilet.pl/media/cms/media/11pbbxgn/wydarzenie-15-66b9b055-e52f-4518-a1e4-855d1f2f6995.webp",
+   "source": "eBilet.pl",
+   "score": 6,
+   "group": "podobne",
+   "reason": "bo lubisz Varius Manx i Adele – mocny kobiecy wokal",
+   "status": "",
+   "firstSeen": "2026-11-26T08:03",
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-5f208e209e",
@@ -1785,7 +1701,7 @@
    "reason": "bo lubisz Perfect – klasyka polskiego rocka lat 80.",
    "status": "",
    "firstSeen": "2026-11-16T08:05",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-6d01eed4df",
@@ -1806,7 +1722,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-9d77fa9bb2",
@@ -1827,7 +1743,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-12T08:21",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-642aed43a0",
@@ -1848,7 +1764,7 @@
    "reason": "bo lubisz Perfect – klasyka polskiego rocka lat 80.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-a410a12eea",
@@ -1859,7 +1775,7 @@
    "city": "Lublin",
    "venue": "Centrum Spotkania Kultur",
    "url": "https://www.ebilet.pl/muzyka/rock/obywatele-republiki?city=Lublin",
-   "priceFrom": 235.9,
+   "priceFrom": 267.9,
    "currency": "PLN",
    "soldOut": false,
    "image": "https://www.ebilet.pl/media/cms/media/mshjwa23/656x369-3-0155e8e2-d0a2-4e98-b78b-084ab06c3ee9.webp",
@@ -1869,7 +1785,7 @@
    "reason": "bo lubisz Perfect i Lady Pank – muzyka Republiki",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-649f41c08f",
@@ -1890,7 +1806,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-e4e7d71d4f",
@@ -1911,7 +1827,7 @@
    "reason": "bo lubisz Perfect – klasyka polskiego rocka lat 80.",
    "status": "",
    "firstSeen": "2026-11-16T08:05",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-e92fff0ea8",
@@ -1932,7 +1848,7 @@
    "reason": "bo lubisz Perfect i Lady Pank – muzyka Republiki",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-6fe19c9453",
@@ -1953,7 +1869,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-62491da98d",
@@ -1974,7 +1890,7 @@
    "reason": "bo lubisz Adele – ale to tribute, nie oryginalny wykonawca",
    "status": "",
    "firstSeen": "2026-11-23T08:11",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-273708d0f6",
@@ -1995,7 +1911,7 @@
    "reason": "bo lubisz Perfect i Lady Pank – muzyka Republiki",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-8856751163",
@@ -2016,7 +1932,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-224ccd98ab",
@@ -2037,7 +1953,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-edb3900554",
@@ -2058,7 +1974,7 @@
    "reason": "bo lubisz Claptona i Larkin Poe – blues",
    "status": "",
    "firstSeen": "2026-11-12T08:21",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-4e1e6a83ac",
@@ -2079,7 +1995,7 @@
    "reason": "bo lubisz Perfect – klasyka polskiego rocka lat 80.",
    "status": "",
    "firstSeen": "2026-11-12T08:21",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-c00e1e9a26",
@@ -2100,7 +2016,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-0571d2113e",
@@ -2121,7 +2037,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-b4a780d66f",
@@ -2142,7 +2058,7 @@
    "reason": "bo lubisz Adele – ale to tribute, nie oryginalny wykonawca",
    "status": "",
    "firstSeen": "2026-11-12T08:21",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-374c140333",
@@ -2163,7 +2079,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-7b13f07d88",
@@ -2184,7 +2100,7 @@
    "reason": "bo lubisz Lady Pank i Perfect – klasyka polskiego rocka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-88c530235e",
@@ -2205,7 +2121,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-4131f96fe7",
@@ -2226,7 +2142,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-f728d4c16f",
@@ -2247,7 +2163,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-19T08:04",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-b07a0578db",
@@ -2268,7 +2184,7 @@
    "reason": "bo lubisz Lady Pank i Claptona – polska legenda bluesa",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-e70334c878",
@@ -2289,7 +2205,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-19T08:04",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-37c8d5e34a",
@@ -2310,7 +2226,7 @@
    "reason": "bo lubisz Lady Pank i Perfect – klasyka polskiego rocka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-a300d08585",
@@ -2331,7 +2247,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-bc613486f3",
@@ -2352,7 +2268,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-9eddbde1f7",
@@ -2373,7 +2289,7 @@
    "reason": "bo lubisz Lady Pank i Perfect – klasyka polskiego rocka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-d6352879e9",
@@ -2394,7 +2310,7 @@
    "reason": "bo lubisz Bryana Adamsa i Claptona – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-12T08:21",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-d4a27505d3",
@@ -2415,7 +2331,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-0afb608d29",
@@ -2436,7 +2352,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-3f0cf80c07",
@@ -2457,7 +2373,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-bf6a96ff4f",
@@ -2478,7 +2394,7 @@
    "reason": "bo lubisz Lady Pank i Perfect – klasyka polskiego rocka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-95dcc563e9",
@@ -2499,7 +2415,7 @@
    "reason": "bo lubisz Varius Manx – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-f02751dfe5",
@@ -2520,7 +2436,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-489825f52a",
@@ -2541,7 +2457,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-11c36e774e",
@@ -2562,7 +2478,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-de005b2fa4",
@@ -2583,7 +2499,7 @@
    "reason": "bo lubisz Varius Manx – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-d843917aa7",
@@ -2604,7 +2520,7 @@
    "reason": "bo lubisz Varius Manx – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-cdb1489196",
@@ -2625,7 +2541,7 @@
    "reason": "bo lubisz polski rock z gitarą",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-3370c263d6",
@@ -2646,7 +2562,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 80.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-6425f50a9e",
@@ -2667,7 +2583,7 @@
    "reason": "bo lubisz polski rock z gitarą",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-8cc22ccf39",
@@ -2688,7 +2604,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-7c102fad2e",
@@ -2709,7 +2625,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-bf4b026c04",
@@ -2730,7 +2646,7 @@
    "reason": "bo lubisz Lady Pank i Perfect – polski rock lat 80.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-ccbae4d3a2",
@@ -2751,7 +2667,7 @@
    "reason": "bo lubisz Larkin Poe – rock z kobiecym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-772661f2a0",
@@ -2772,7 +2688,7 @@
    "reason": "bo lubisz gitarowe granie – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-19T08:04",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-97f697115c",
@@ -2793,7 +2709,7 @@
    "reason": "bo lubisz Varius Manx – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-3c40aa1c61",
@@ -2814,7 +2730,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-7862641556",
@@ -2835,7 +2751,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-61cd868598",
@@ -2856,7 +2772,7 @@
    "reason": "bo lubisz Varius Manx – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-9f9dc01042",
@@ -2877,7 +2793,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-05T08:20",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-f61421e85f",
@@ -2898,7 +2814,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-e243a23034",
@@ -2919,7 +2835,7 @@
    "reason": "bo lubisz Lady Pank i Perfect – polski rock lat 80.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-f9860cbe02",
@@ -2940,7 +2856,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-a91be95f87",
@@ -2951,7 +2867,7 @@
    "city": "Kalisz",
    "venue": "Arena Kalisz",
    "url": "https://www.ebilet.pl/muzyka/rock/lady-pank?city=Kalisz",
-   "priceFrom": 170.9,
+   "priceFrom": 213.9,
    "currency": "PLN",
    "soldOut": false,
    "image": "https://www.ebilet.pl/media/cms/media/kremwl5c/656-x-369-px-9.webp",
@@ -2961,7 +2877,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-1a6a66593c",
@@ -2982,7 +2898,7 @@
    "reason": "bo lubisz Lady Pank i Perfect – polski rock lat 80.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-83a5b14e7f",
@@ -3003,7 +2919,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-081150fac0",
@@ -3024,7 +2940,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-32363b48db",
@@ -3045,7 +2961,7 @@
    "reason": "bo lubisz Claptona i Larkin Poe – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-05T08:20",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-c1f3baf5e8",
@@ -3066,7 +2982,7 @@
    "reason": "bo lubisz Claptona i Larkin Poe – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-ce2fe8180b",
@@ -3087,7 +3003,7 @@
    "reason": "bo lubisz Lady Pank i Perfect – polski rock lat 80.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-5a1aa39418",
@@ -3108,7 +3024,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-21213c1c82",
@@ -3129,7 +3045,7 @@
    "reason": "bo lubisz Lady Pank i Perfect – polski rock lat 80.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-11424cae47",
@@ -3150,7 +3066,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-12T08:21",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-7a69ff538d",
@@ -3171,7 +3087,7 @@
    "reason": "bo lubisz Lady Pank – polski rock lat 90.",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-d595b93bae",
@@ -3192,7 +3108,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-d212a70b98",
@@ -3219,7 +3135,7 @@
     }
    ],
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-3564433348",
@@ -3246,7 +3162,7 @@
     }
    ],
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-3203ce2783",
@@ -3267,7 +3183,7 @@
    "reason": "bo lubisz Adele – wielki wokal",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-9ce901bcd1",
@@ -3288,7 +3204,7 @@
    "reason": "bo lubisz Claptona i Larkin Poe – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-467fd3ffd0",
@@ -3309,7 +3225,7 @@
    "reason": "bo lubisz Larkin Poe – rock z kobiecym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-fdf5e928bd",
@@ -3330,7 +3246,7 @@
    "reason": "bo lubisz Claptona i Larkin Poe – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-2d58595626",
@@ -3351,7 +3267,7 @@
    "reason": "bo lubisz Perfect i Budkę – rockowy wokal",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-1b32d5a021",
@@ -3372,7 +3288,7 @@
    "reason": "bo lubisz gitarowe granie – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-16T08:05",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-46d0db4406",
@@ -3393,7 +3309,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-fdb3631a0c",
@@ -3414,7 +3330,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-05cdb4258b",
@@ -3435,7 +3351,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-01c39b0b3e",
@@ -3456,7 +3372,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-de5356249f",
@@ -3477,7 +3393,7 @@
    "reason": "bo lubisz Perfect i Budkę – rockowy wokal",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-3b0451d289",
@@ -3498,7 +3414,7 @@
    "reason": "bo lubisz gitarowe granie – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-16T08:05",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-d504d9bbb8",
@@ -3519,7 +3435,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-89c5f12fc1",
@@ -3540,7 +3456,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-7e3cd64bc9",
@@ -3561,7 +3477,7 @@
    "reason": "bo lubisz gitarowe granie – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-16T08:05",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-ff472205af",
@@ -3582,7 +3498,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-594eeb5e66",
@@ -3603,7 +3519,7 @@
    "reason": "bo lubisz Tommy'ego Emmanuela i Santanę – gitarowa wirtuozeria",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-e5c3f50efd",
@@ -3624,7 +3540,7 @@
    "reason": "bo lubisz Tommy'ego Emmanuela i Santanę – gitarowa wirtuozeria",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-89118820ab",
@@ -3645,7 +3561,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-52474b9e55",
@@ -3666,7 +3582,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-528e783c69",
@@ -3687,7 +3603,7 @@
    "reason": "bo lubisz Scorpions – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-59c345dd76",
@@ -3708,7 +3624,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-2e8ab00d66",
@@ -3729,7 +3645,7 @@
    "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-6053d2b3ba",
@@ -3750,7 +3666,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-babbcdd36a",
@@ -3771,7 +3687,7 @@
    "reason": "bo lubisz gitarowe granie – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-16T08:05",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-cce29e0019",
@@ -3792,7 +3708,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-d4b741834f",
@@ -3813,7 +3729,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "tm-1755857939",
@@ -3834,7 +3750,7 @@
    "reason": "bo lubisz Erica Claptona – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-19T08:04",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-52e6630571",
@@ -3855,7 +3771,7 @@
    "reason": "bo lubisz gitarowe granie – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-16T08:05",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-00df2487bc",
@@ -3876,7 +3792,7 @@
    "reason": "bo lubisz gitarowe granie – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-19T08:04",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-00089f8b17",
@@ -3897,7 +3813,7 @@
    "reason": "bo lubisz gitarowe granie – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-19T08:04",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-b670589037",
@@ -3918,7 +3834,7 @@
    "reason": "bo lubisz gitarowe granie – tribute/koncert w hołdzie",
    "status": "",
    "firstSeen": "2026-11-19T08:04",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-a2075f66d6",
@@ -3939,7 +3855,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-b81c0545ce",
@@ -3960,7 +3876,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-d7ac405fe7",
@@ -3981,7 +3897,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-6520da1a3a",
@@ -4002,7 +3918,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-35ea8ca70f",
@@ -4023,7 +3939,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-d67259ec82",
@@ -4044,7 +3960,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-caa82b12a2",
@@ -4065,7 +3981,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "tm-386964585",
@@ -4086,7 +4002,7 @@
    "reason": "bo lubisz Bryana Adamsa i Claptona – wielkie przeboje pop-rocka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "tm-1047384207",
@@ -4107,7 +4023,7 @@
    "reason": "bo lubisz Bryana Adamsa i Claptona – wielkie przeboje pop-rocka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "tm-2069207703",
@@ -4128,7 +4044,7 @@
    "reason": "bo lubisz Bryana Adamsa i Claptona – wielkie przeboje pop-rocka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-b19d0c3541",
@@ -4149,7 +4065,7 @@
    "reason": "bo lubisz Scorpions i gitarowe solówki – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "tm-907885954",
@@ -4170,7 +4086,7 @@
    "reason": "bo lubisz Bryana Adamsa i Claptona – wielkie przeboje pop-rocka",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-db2b4e27d5",
@@ -4191,7 +4107,7 @@
    "reason": "bo lubisz Scorpions i Bryana Adamsa – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "tm-195924746",
@@ -4218,7 +4134,7 @@
     }
    ],
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "tm-1255941455",
@@ -4239,7 +4155,7 @@
    "reason": "bo lubisz Santanę – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-b668e621f1",
@@ -4260,7 +4176,7 @@
    "reason": "bo lubisz Scorpions i Bryana Adamsa – klasyczny rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-02580f004b",
@@ -4281,7 +4197,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-3aca817011",
@@ -4302,7 +4218,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-eea8e8a097",
@@ -4323,7 +4239,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-dc3e809c28",
@@ -4344,7 +4260,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-1b816c965b",
@@ -4365,7 +4281,7 @@
    "reason": "bo lubisz Varius Manx i Lady Pank – polski pop-rock",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-b4352452dd",
@@ -4386,7 +4302,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-16T08:05",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-b10f3dc5c8",
@@ -4407,7 +4323,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-f5113dccfa",
@@ -4428,7 +4344,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-3dd9cff9c1",
@@ -4449,7 +4365,7 @@
    "reason": "bo lubisz Claptona i Mayera – gitarowa klasyka",
    "status": "",
    "firstSeen": "2026-11-19T08:04",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-040b0d2f9c",
@@ -4470,7 +4386,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-05T08:20",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-d761899ae7",
@@ -4491,7 +4407,7 @@
    "reason": "bo lubisz Claptona i Mayera – gitarowa klasyka",
    "status": "",
    "firstSeen": "2026-11-19T08:04",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-10705212fc",
@@ -4512,7 +4428,7 @@
    "reason": "bo lubisz Claptona i Mayera – gitarowa klasyka",
    "status": "",
    "firstSeen": "2026-11-19T08:04",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-b714706c01",
@@ -4533,7 +4449,7 @@
    "reason": "bo lubisz Claptona i Mayera – gitarowa klasyka",
    "status": "",
    "firstSeen": "2026-11-19T08:04",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-765009f543",
@@ -4554,7 +4470,7 @@
    "reason": "bo lubisz Claptona i Mayera – gitarowa klasyka",
    "status": "",
    "firstSeen": "2026-11-19T08:04",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-4b4c9c0d6e",
@@ -4575,7 +4491,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-03T11:22",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-2aa4c4b923",
@@ -4596,7 +4512,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-05T08:20",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-7f33db0c4e",
@@ -4617,7 +4533,7 @@
    "reason": "bo lubisz Lady Pank – wykonawca z Twojej listy",
    "status": "",
    "firstSeen": "2026-11-23T08:11",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-e066b9dd81",
@@ -4638,7 +4554,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-05T08:20",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-b59dde91b4",
@@ -4659,7 +4575,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-05T08:20",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-34590a9ca3",
@@ -4680,7 +4596,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-09T08:32",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   },
   {
    "id": "eb-941b98f8ba",
@@ -4701,7 +4617,7 @@
    "reason": "bo lubisz Lady Pank – polska klasyka",
    "status": "",
    "firstSeen": "2026-11-23T08:11",
-   "lastSeen": "2026-11-23T08:11"
+   "lastSeen": "2026-11-26T08:03"
   }
  ],
  "archive": [
@@ -4911,6 +4827,121 @@
    "lastSeen": "2026-11-19T08:04",
    "archivedAt": "2026-11-23",
    "archiveReason": "zniknął ze strony sprzedawcy"
+  },
+  {
+   "id": "eb-f233504441",
+   "artist": "Małgorzata Ostrowska - 45 lat: koncert jubileuszowy",
+   "title": "Małgorzata Ostrowska - 45 lat: koncert jubileuszowy",
+   "date": "2026-11-25",
+   "time": "19:00",
+   "city": "Lublin",
+   "venue": "Centrum Spotkania Kultur",
+   "url": "https://www.ebilet.pl/muzyka/rock/malgorzata-ostrowska?city=Lublin",
+   "priceFrom": 159.9,
+   "currency": "PLN",
+   "soldOut": false,
+   "image": "https://www.ebilet.pl/media/cms/media/qgtakynn/ostrowska_-eb_656x369.webp",
+   "source": "eBilet.pl",
+   "score": 7,
+   "group": "podobne",
+   "reason": "bo lubisz Perfect – klasyka polskiego rocka lat 80.",
+   "status": "",
+   "firstSeen": "2026-11-03T11:22",
+   "lastSeen": "2026-11-23T08:11",
+   "archivedAt": "2026-11-26",
+   "archiveReason": "odbył się"
+  },
+  {
+   "id": "eb-174c3ea009",
+   "artist": "Anita Lipnicka | Trasa jubileuszowa: 30 lat \"Wszystko się może zdarzyć\"",
+   "title": "Anita Lipnicka | Trasa jubileuszowa: 30 lat \"Wszystko się może zdarzyć\"",
+   "date": "2026-11-25",
+   "time": "19:00",
+   "city": "Gdynia",
+   "venue": "Teatr Muzyczny w Gdyni",
+   "url": "https://www.ebilet.pl/muzyka/pop/anita-lipnicka?city=Gdynia",
+   "priceFrom": 277.9,
+   "currency": "PLN",
+   "soldOut": false,
+   "image": "https://www.ebilet.pl/media/cms/media/i31jwyhr/bilet_656x369px.webp",
+   "source": "eBilet.pl",
+   "score": 7,
+   "group": "podobne",
+   "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
+   "status": "",
+   "firstSeen": "2026-11-03T11:22",
+   "lastSeen": "2026-11-23T08:11",
+   "archivedAt": "2026-11-26",
+   "archiveReason": "odbył się"
+  },
+  {
+   "id": "eb-732a259092",
+   "artist": "Kasia Kowalska Akustycznie",
+   "title": "Kasia Kowalska Akustycznie",
+   "date": "2026-11-23",
+   "time": "19:00",
+   "city": "Tarnów",
+   "venue": "Centrum Sztuki Mościce",
+   "url": "https://www.ebilet.pl/muzyka/pop/kasia-kowalska-koncert?city=Tarnów",
+   "priceFrom": 154.1,
+   "currency": "PLN",
+   "soldOut": false,
+   "image": "https://www.ebilet.pl/media/cms/media/heflh2yk/ebilet_656x369_kasia-kowalska_akustycznie-61253c64-73c5-4227-91dd-8bcf9153c0f4.webp",
+   "source": "eBilet.pl",
+   "score": 7,
+   "group": "podobne",
+   "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
+   "status": "",
+   "firstSeen": "2026-11-03T11:22",
+   "lastSeen": "2026-11-23T08:11",
+   "archivedAt": "2026-11-26",
+   "archiveReason": "odbył się"
+  },
+  {
+   "id": "eb-b2ff602c3a",
+   "artist": "Patrycja Markowska: 25 lat na scenie",
+   "title": "Patrycja Markowska: 25 lat na scenie",
+   "date": "2026-11-23",
+   "time": "19:00",
+   "city": "Kraków",
+   "venue": "Kino Kijów Centrum",
+   "url": "https://www.ebilet.pl/muzyka/pop/patrycja-markowska?city=Kraków",
+   "priceFrom": 234.9,
+   "currency": "PLN",
+   "soldOut": false,
+   "image": "https://www.ebilet.pl/media/cms/media/cachswok/656x369_eb_patrycja-markowska-25-lat-na-scenie-a20944bf-d167-43e5-817d-1f0504ecb365.webp",
+   "source": "eBilet.pl",
+   "score": 7,
+   "group": "podobne",
+   "reason": "bo lubisz Varius Manx – polski pop-rock z mocnym wokalem",
+   "status": "",
+   "firstSeen": "2026-11-03T11:22",
+   "lastSeen": "2026-11-23T08:11",
+   "archivedAt": "2026-11-26",
+   "archiveReason": "odbył się"
+  },
+  {
+   "id": "eb-72a35dac57",
+   "artist": "Raz Dwa Trzy - Ważne Piosenki",
+   "title": "Raz Dwa Trzy - Ważne Piosenki",
+   "date": "2026-11-23",
+   "time": "19:00",
+   "city": "Poznań",
+   "venue": "Teatr Wielki im. Stanisława Moniuszki w Poznaniu",
+   "url": "https://www.ebilet.pl/muzyka/rock/koncert-raz-dwa-trzy?city=Poznań",
+   "priceFrom": 191.9,
+   "currency": "PLN",
+   "soldOut": false,
+   "image": "https://www.ebilet.pl/media/cms/media/3hfb3omo/rdt_wp_656x369-40d9bccc-e59a-4b3a-86f6-2feb12995830.webp",
+   "source": "eBilet.pl",
+   "score": 6,
+   "group": "podobne",
+   "reason": "bo lubisz polski rock z gitarą",
+   "status": "",
+   "firstSeen": "2026-11-03T11:22",
+   "lastSeen": "2026-11-23T08:11",
+   "archivedAt": "2026-11-26",
+   "archiveReason": "odbył się"
   },
   {
    "id": "eb-b89e3e0433",
